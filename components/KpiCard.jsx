@@ -60,7 +60,7 @@ const KpiCard = ({ label, value, subLabel, icon: Icon, color, isPercent = false,
       <div style={{ display: 'flex', flexDirection: 'column', minWidth: 0, flex: 1 }}>
         <span style={{
           fontSize: 11,
-          fontWeight: 700,
+          fontWeight: 400,
           color: theme.textMuted,
           textTransform: 'uppercase',
           letterSpacing: '1px',
@@ -72,7 +72,7 @@ const KpiCard = ({ label, value, subLabel, icon: Icon, color, isPercent = false,
         
         <span style={{
           fontSize: 22,
-          fontWeight: 800,
+          fontWeight: 400,
           color: theme.text,
           lineHeight: 1.1,
           letterSpacing: '-0.5px'
