@@ -146,7 +146,7 @@ function SellerList({ items, title, hovered, setHovered, darkMode, onSellerClick
                     <div style={{ 
                       width: `${pctShare}%`, 
                       height: '100%', 
-                      background: isTeam ? 'linear-gradient(90deg, #ec6e2a 0%, #f57e42 100%)' : (CHANNEL_ICONS[s.name]?.color || '#FFE600'),
+                      background: 'linear-gradient(90deg, #ec6e2a 0%, #f57e42 100%)',
                       borderRadius: 2,
                       transition: 'width 0.5s ease-out'
                     }} />
