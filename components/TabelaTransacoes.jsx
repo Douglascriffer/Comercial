@@ -215,7 +215,7 @@ export default function TabelaTransacoes({ transactions = [], darkMode = false }
                   onMouseLeave={e => e.currentTarget.style.backgroundColor = 'transparent'}
                 >
                   <td style={{ padding: '12px 16px', color: '#ec6e2a' }} className="numeric">#{row.pedido}</td>
-                  <td style={{ padding: '12px 16px', color: t.text, fontWeight: 500 }}>{row.cliente}</td>
+                  <td style={{ padding: '12px 16px', color: t.text, fontWeight: 400 }}>{row.cliente}</td>
                   <td style={{ padding: '12px 16px', color: t.text }}>
                     <span style={{ 
                       padding: '4px 8px', 
@@ -249,7 +249,7 @@ export default function TabelaTransacoes({ transactions = [], darkMode = false }
       {/* Paginação */}
       {totalPages > 1 && (
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: 8 }}>
-          <span style={{ fontSize: 12, color: t.textMuted, fontWeight: 500 }}>
+          <span style={{ fontSize: 12, color: t.textMuted, fontWeight: 400 }}>
             Mostrando {paginated.length} de {filteredTxs.length} transações (Pág. {page}/{totalPages})
           </span>
           

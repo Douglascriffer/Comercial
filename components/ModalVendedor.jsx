@@ -237,7 +237,7 @@ export default function ModalVendedor({ isOpen, onClose, sellerName, data, filte
                     sellerTxs.map((row, idx) => (
                       <tr key={`${row.pedido}-${idx}`} style={{ borderBottom: idx === sellerTxs.length - 1 ? 'none' : `1px solid ${t.border}` }}>
                         <td style={{ padding: '8px 12px', color: '#ec6e2a' }} className="numeric">#{row.pedido}</td>
-                        <td style={{ padding: '8px 12px', color: t.text, fontWeight: 500 }}>{row.cliente}</td>
+                        <td style={{ padding: '8px 12px', color: t.text, fontWeight: 400 }}>{row.cliente}</td>
                         <td style={{ padding: '8px 12px', color: t.text, }} className="numeric">{fmtCurrency(row.valor)}</td>
                         <td style={{ padding: '8px 12px', color: t.text }}>
                           {row.data.split('-')[2]}/{row.data.split('-')[1]}/{row.data.split('-')[0]}
