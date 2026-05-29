@@ -22,12 +22,12 @@ export default function TabelaTransacoes({ transactions = [], darkMode = false }
   const [vendedorFilter, setVendedorFilter] = useState('all')
 
   const t = {
-    card: darkMode ? '#1e1e2d' : '#ffffff',
+    card: darkMode ? '#1e1e2d' : '#f0f0f5',
     border: darkMode ? 'rgba(255,255,255,0.08)' : 'rgba(0,0,0,0.08)',
-    text: darkMode ? '#ffffff' : '#1e1e2d',
-    textMuted: darkMode ? '#ffffff' : '#666666',
-    thBg: darkMode ? 'rgba(255,255,255,0.03)' : 'rgba(0,0,0,0.02)',
-    rowHover: darkMode ? 'rgba(255,255,255,0.02)' : 'rgba(0,0,0,0.01)',
+    text: darkMode ? '#ffffff' : '#000000',
+    textMuted: darkMode ? '#ffffff' : '#000000',
+    thBg: darkMode ? 'rgba(255,255,255,0.03)' : 'rgba(0,0,0,0.04)',
+    rowHover: darkMode ? 'rgba(255,255,255,0.02)' : 'rgba(0,0,0,0.03)',
     pillBg: darkMode ? 'rgba(255,255,255,0.05)' : 'rgba(0,0,0,0.05)',
     inputBg: darkMode ? 'rgba(255,255,255,0.04)' : '#ffffff',
     inputText: darkMode ? '#ffffff' : '#000000'

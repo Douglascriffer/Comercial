@@ -51,17 +51,17 @@ export default function DashboardPage() {
   const isDark = theme === 'dark'
   
   const colors = {
-    bg: isDark ? '#0c0c14' : '#f8f9fa',
+    bg: isDark ? '#0c0c14' : '#ffffff',
     header: 'linear-gradient(135deg, #52525b 0%, #71717a 35%, #ec6e2a 75%, #f28246 100%)',
-    card: isDark ? '#1e1e2d' : '#ffffff',
+    card: isDark ? '#1e1e2d' : '#f0f0f5',
     border: isDark ? 'rgba(255,255,255,0.08)' : 'rgba(0,0,0,0.08)',
-    text: isDark ? '#ffffff' : '#1e1e2d',
-    textMuted: isDark ? '#ffffff' : '#666666',
+    text: isDark ? '#ffffff' : '#000000',
+    textMuted: isDark ? '#ffffff' : '#000000',
   }
 
   if (loading) {
     return (
-      <div style={{ height: '100vh', background: isDark ? '#0c0c14' : '#f8f9fa', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', fontFamily: "'Syne', 'Gotham', sans-serif", color: isDark ? '#fff' : '#000' }}>
+      <div style={{ height: '100vh', background: isDark ? '#0c0c14' : '#ffffff', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', fontFamily: "'Syne', 'Gotham', sans-serif", color: isDark ? '#fff' : '#000' }}>
         <div style={{ width: 48, height: 48, borderRadius: '50%', border: '4px solid #ec6e2a', borderTopColor: 'transparent', animation: 'spin 1s linear infinite' }} />
         <span style={{ marginTop: 16, fontSize: 14, letterSpacing: 1 }}>CARREGANDO DASHBOARD...</span>
         <style>{`@keyframes spin { to { transform: rotate(360deg); } }`}</style>
@@ -71,7 +71,7 @@ export default function DashboardPage() {
 
   if (error) {
     return (
-      <div style={{ height: '100vh', background: isDark ? '#0c0c14' : '#f8f9fa', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', fontFamily: "'Syne', 'Gotham', sans-serif", color: '#ef4444', padding: 24, textAlign: 'center' }}>
+      <div style={{ height: '100vh', background: isDark ? '#0c0c14' : '#ffffff', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', fontFamily: "'Syne', 'Gotham', sans-serif", color: '#ef4444', padding: 24, textAlign: 'center' }}>
         <p style={{ fontSize: 18, }}>Erro ao carregar dados do comercial:</p>
         <p style={{ fontSize: 14, color: isDark ? '#aaa' : '#666', marginTop: 8 }}>{error}</p>
         <p style={{ fontSize: 13, color: '#ec6e2a', marginTop: 16 }}>Verifique se o arquivo Excel foi processado e gerou dados.json corretos.</p>

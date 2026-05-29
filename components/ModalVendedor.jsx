@@ -12,12 +12,12 @@ export default function ModalVendedor({ isOpen, onClose, sellerName, data, filte
 
   const t = {
     overlay: 'rgba(0,0,0,0.7)',
-    bg: darkMode ? '#1e1e2d' : '#ffffff',
-    card: darkMode ? '#151521' : '#f8f8fa',
-    text: darkMode ? '#ffffff' : '#1e1e2d',
-    textMuted: darkMode ? '#ffffff' : '#666666',
+    bg: darkMode ? '#1e1e2d' : '#f0f0f5',
+    card: darkMode ? '#151521' : '#e2e8f0',
+    text: darkMode ? '#ffffff' : '#000000',
+    textMuted: darkMode ? '#ffffff' : '#000000',
     border: darkMode ? 'rgba(255,255,255,0.08)' : 'rgba(0,0,0,0.08)',
-    thBg: darkMode ? 'rgba(255,255,255,0.03)' : 'rgba(0,0,0,0.02)'
+    thBg: darkMode ? 'rgba(255,255,255,0.03)' : 'rgba(0,0,0,0.04)'
   }
 
   const targetYear = Number(filters.ano || 2026)

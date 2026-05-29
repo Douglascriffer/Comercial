@@ -4,7 +4,7 @@ import { ResponsiveContainer, BarChart, Bar, CartesianGrid, XAxis, YAxis, Toolti
 export default function GraficoMensalMeta({ historyMonths = [], darkMode = false }) {
   const colors = {
     grid: darkMode ? 'rgba(255,255,255,0.05)' : 'rgba(0,0,0,0.05)',
-    text: darkMode ? '#ffffff' : '#666666',
+    text: darkMode ? '#ffffff' : '#000000',
     tooltipBg: darkMode ? '#1a1a24' : '#ffffff',
     tooltipBorder: darkMode ? 'rgba(255,255,255,0.1)' : 'rgba(0,0,0,0.1)'
   }
@@ -57,7 +57,7 @@ export default function GraficoMensalMeta({ historyMonths = [], darkMode = false
   return (
     <div style={{ width: '100%', height: '100%', display: 'flex', flexDirection: 'column', gap: 10 }}>
       <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-        <h4 style={{ fontSize: 13, color: darkMode ? '#ccc' : '#444', textTransform: 'uppercase', letterSpacing: '0.5px', margin: 0 }}>
+        <h4 style={{ fontSize: 13, color: darkMode ? '#ccc' : '#000', textTransform: 'uppercase', letterSpacing: '0.5px', margin: 0 }}>
           Histórico Mensal vs Metas (2026)
         </h4>
       </div>

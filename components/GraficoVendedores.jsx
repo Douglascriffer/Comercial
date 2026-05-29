@@ -128,7 +128,7 @@ function SellerList({ items, title, hovered, setHovered, darkMode, onSellerClick
                   <p style={{ 
                     margin: 0, 
                     fontSize: 14, 
-                    color: darkMode ? '#fff' : '#1e1e2d',
+                    color: darkMode ? '#fff' : '#000000',
                     whiteSpace: 'nowrap',
                     overflow: 'hidden',
                     textOverflow: 'ellipsis'
