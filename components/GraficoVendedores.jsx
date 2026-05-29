@@ -70,7 +70,7 @@ function SellerList({ items, title, hovered, setHovered, darkMode, onSellerClick
                 gap: 12,
                 padding: '8px 12px',
                 background: isHovered ? (darkMode ? 'rgba(255,106,34,0.06)' : 'rgba(255,106,34,0.02)') : (darkMode ? 'rgba(255,255,255,0.02)' : 'rgba(0,0,0,0.01)'),
-                border: `1px solid ${isHovered ? 'rgba(255,106,34,0.2)' : (darkMode ? 'rgba(255,255,255,0.05)' : '#000000')}`,
+                border: `1px solid ${isHovered ? 'rgba(255,106,34,0.2)' : '#000000'}`,
                 borderRadius: 10,
                 cursor: isTeam ? 'pointer' : 'default',
                 transition: 'all 0.2s ease',
