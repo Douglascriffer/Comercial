@@ -276,12 +276,14 @@ export default function TabelaTransacoes({ transactions = [], darkMode = false }
             
             {/* Numeração de Páginas compacta */}
             {Array.from({ length: Math.min(5, totalPages) }, (_, i) => {
-              // Desenha botões de página ao redor da página atual
-              let targetPage = page - 2 + i
-              if (page <= 2) targetPage = i + 1
-              if (page >= totalPages - 1) targetPage = totalPages - 4 + i
-              
-              // Garante limites corretos
+              let targetPage;
+              if (totalPages <= 5) {
+                targetPage = i + 1;
+              } else {
+                targetPage = page - 2 + i;
+                if (page <= 2) targetPage = i + 1;
+                if (page >= totalPages - 1) targetPage = totalPages - 4 + i;
+              }
               if (targetPage < 1 || targetPage > totalPages) return null
               
               return (
