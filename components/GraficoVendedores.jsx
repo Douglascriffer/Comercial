@@ -8,21 +8,13 @@ function fmt(v) {
   return `R$ ${Math.round(v).toLocaleString('pt-BR')}`
 }
 
-const EQUIPE_VENDAS = [
-  'Gabriel Klein',
-  'Rogislei',
-  'Gabriel Ferreira',
-  'Gabriel Dias',
-  'Josiane',
-  'Vanessa'
-]
-
 // Avatar initials or mapping
 const AVATAR_MAP = {
   'Gabriel Klein': 'GK',
   'Rogislei': 'R',
   'Gabriel Ferreira': 'GF',
   'Gabriel Dias': 'GD',
+  'Gabriel Medeiros': 'GM',
   'Josiane': 'J',
   'Vanessa': 'V'
 }
@@ -34,7 +26,7 @@ const CHANNEL_ICONS = {
   'Sem Vendedor': { isImage: true, src: '/logo-base.png', color: '#ffffff', label: 'N/A' }
 }
 
-function SellerList({ items, title, hovered, setHovered, darkMode, onSellerClick, totalValue }) {
+function SellerList({ items, title, hovered, setHovered, darkMode, onSellerClick, totalValue, isTeamList }) {
   return (
     <div style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: 10, height: '100%' }}>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', marginBottom: 12 }}>
@@ -55,7 +47,7 @@ function SellerList({ items, title, hovered, setHovered, darkMode, onSellerClick
         items.map((s, i) => {
           const isHovered = hovered === s.name
           const rank = i + 1
-          const isTeam = EQUIPE_VENDAS.includes(s.name)
+          const isTeam = isTeamList
           const pctShare = totalValue > 0 ? (s.valor / totalValue) * 100 : 0
 
           return (
@@ -206,6 +198,7 @@ export default function GraficoVendedores({ salesTeam = [], otherChannels = [], 
               darkMode={darkMode}
               onSellerClick={handleSellerClick}
               totalValue={grandTotal}
+              isTeamList={true}
             />
           </div>
         </div>
@@ -225,6 +218,7 @@ export default function GraficoVendedores({ salesTeam = [], otherChannels = [], 
               darkMode={darkMode}
               onSellerClick={() => { }}
               totalValue={grandTotal}
+              isTeamList={false}
             />
           </div>
         </div>
