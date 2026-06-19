@@ -2,8 +2,9 @@ const fs = require('fs');
 const XLSX = require('xlsx');
 const path = require('path');
 
-const EXCEL_VENDAS_PATH = "Y:\\.SAP VENDA\\DASHBOARD VENDAS\\1- ACOMPANHAMENTO VENDAS 2026 - Copia.xlsx";
-const EXCEL_LOCACOES_PATH = "Y:\\.SAP VENDA\\DASHBOARD VENDAS\\1- ACOMPANHAMENTO LOCAÇÕES 2026 - Copia.xlsx";
+const EXCEL_VENDAS_PATH = "Y:\\.SAP VENDA\\DASHBOARD VENDAS\\1- ACOMPANHAMENTO VENDAS 2026.xlsx";
+const EXCEL_LOCACOES_PATH = "Y:\\.SAP VENDA\\DASHBOARD VENDAS\\1- ACOMPANHAMENTO LOCAÇÕES 2026.xlsx";
+const EXCEL_SERVICOS_PATH = "Y:\\.SAP VENDA\\DASHBOARD VENDAS\\1- ACOMPANHAMENTO SERVIÇOS 2026.xlsx";
 const JSON_OUTPUT = "Y:\\.SAP VENDA\\DASHBOARD VENDAS\\public\\data\\dados.json";
 
 const monthsNames = {
@@ -124,6 +125,12 @@ function run() {
         wbLocacoes = XLSX.readFile(EXCEL_LOCACOES_PATH, { cellDates: true });
     }
     
+    let wbServicos = null;
+    if (fs.existsSync(EXCEL_SERVICOS_PATH)) {
+        log(`Lendo ${EXCEL_SERVICOS_PATH}`);
+        wbServicos = XLSX.readFile(EXCEL_SERVICOS_PATH, { cellDates: true });
+    }
+    
     let result = {
         byPeriod: [],
         bySeller: [],
@@ -193,6 +200,23 @@ function run() {
             }
         }
         
+        if (wbServicos) {
+            let sheetServicosName = wbServicos.SheetNames.find(s => s.toUpperCase() === mName || s.toUpperCase() === mNameAlt);
+            if (sheetServicosName) {
+                log(`Processando Serviços Mês ${m}`);
+                let wsServicos = wbServicos.Sheets[sheetServicosName];
+                
+                let sMeta = wsServicos['I2'] ? parseFloat(wsServicos['I2'].v) : 0;
+                if (isNaN(sMeta)) sMeta = 0;
+                
+                let sRealizado = wsServicos['D11'] ? parseFloat(wsServicos['D11'].v) : 0;
+                if (isNaN(sRealizado)) sRealizado = 0;
+                
+                annualMetrics[m].servicos_meta = sMeta;
+                annualMetrics[m].servicos_realizado = sRealizado;
+            }
+        }
+        
         let metrics = annualMetrics[m];
         let vendasReal = metrics.vendas_realizado;
         if ((vendasReal === 0 || isNaN(vendasReal)) && vendasSum > 0) {
@@ -204,6 +228,8 @@ function run() {
             locacaoReal = locacoesSum;
         }
         
+        let servicosFalta = metrics.servicos_meta - metrics.servicos_realizado;
+        
         result.byPeriod.push({
             ano: 2026,
             mes: m,
@@ -214,6 +240,7 @@ function run() {
             locacao_realizado: locacaoReal,
             servicos_meta: metrics.servicos_meta,
             servicos_realizado: metrics.servicos_realizado,
+            servicos_falta: servicosFalta,
             total_meta: metrics.total_meta,
             total_realizado: vendasReal + locacaoReal + metrics.servicos_realizado,
             count: txList.length
