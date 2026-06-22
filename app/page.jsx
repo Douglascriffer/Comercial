@@ -157,8 +157,17 @@ export default function DashboardPage() {
             {['VENDAS', 'METAS'].map(t => (
               <button 
                 key={t} 
-                onClick={() => {
-                  if (autoPlay) setAutoPlay(false);
+                onClick={async () => {
+                  if (autoPlay) {
+                    setAutoPlay(false);
+                    try {
+                      if (document.fullscreenElement && document.exitFullscreen) {
+                        await document.exitFullscreen();
+                      }
+                    } catch (e) {
+                      console.error("Erro ao sair da tela cheia:", e);
+                    }
+                  }
                   setCurrentTab(t);
                 }}
                 style={{
@@ -184,12 +193,30 @@ export default function DashboardPage() {
           </div>
 
           <button
-            onClick={() => {
+            onClick={async () => {
               const nextState = !autoPlay;
               setAutoPlay(nextState);
               if (nextState) {
+                // Forçar filtro do mês atual ao iniciar
+                setFilters(prev => ({ ...prev, mes: String(new Date().getMonth() + 1) }));
                 setPresentationStep(0);
                 setCurrentTab('VENDAS');
+                try {
+                  if (document.documentElement.requestFullscreen) {
+                    await document.documentElement.requestFullscreen();
+                  }
+                } catch (e) {
+                  console.error("Erro ao entrar em tela cheia:", e);
+                }
+              } else {
+                // Sair de tela cheia ao desligar a transmissão
+                try {
+                  if (document.fullscreenElement && document.exitFullscreen) {
+                    await document.exitFullscreen();
+                  }
+                } catch (e) {
+                  console.error("Erro ao sair da tela cheia:", e);
+                }
               }
             }}
             style={{
