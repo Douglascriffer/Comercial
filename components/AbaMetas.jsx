@@ -79,7 +79,7 @@ function MetaCard({ title, icon: Icon, data, color, darkMode, diasUteis }) {
         boxShadow: darkMode ? '0 4px 20px rgba(0,0,0,0.15)' : '0 4px 20px rgba(0,0,0,0.02)'
       }}>
         {/* Header do Card */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 12, textAlign: 'center' }}>
           <div style={{
             width: 48, height: 48, borderRadius: 12,
             background: `${color}15`,
@@ -99,8 +99,8 @@ function MetaCard({ title, icon: Icon, data, color, darkMode, diasUteis }) {
         {/* Grid de Valores Principais */}
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }}>
           <div style={{ background: bgCardSecondary, padding: 16, borderRadius: 12, border: `1px solid ${border}` }}>
-            <div style={{ fontSize: 12, color: textMuted, textTransform: 'uppercase', letterSpacing: 0.5, marginBottom: 8 }}>Meta Empresa</div>
-            <div className="numeric" style={{ fontSize: 22, fontWeight: 400, letterSpacing: '-0.5px', color: textMain }}>{fmt(meta_empresa)}</div>
+            <div style={{ fontSize: 12, color: textMuted, textTransform: 'uppercase', letterSpacing: 0.5, marginBottom: 8, textAlign: 'center' }}>Meta Empresa</div>
+            <div className="numeric" style={{ fontSize: 22, fontWeight: 400, letterSpacing: '-0.5px', color: textMain, textAlign: 'center' }}>{fmt(meta_empresa)}</div>
             
             <div style={{ marginTop: 12 }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: 12, marginBottom: 4 }}>
@@ -114,8 +114,8 @@ function MetaCard({ title, icon: Icon, data, color, darkMode, diasUteis }) {
           </div>
 
           <div style={{ background: bgCardSecondary, padding: 16, borderRadius: 12, border: `1px solid ${border}` }}>
-            <div style={{ fontSize: 12, color: textMuted, textTransform: 'uppercase', letterSpacing: 0.5, marginBottom: 8 }}>Meta Comercial</div>
-            <div className="numeric" style={{ fontSize: 22, fontWeight: 400, letterSpacing: '-0.5px', color: textMain }}>{fmt(meta_comercial)}</div>
+            <div style={{ fontSize: 12, color: textMuted, textTransform: 'uppercase', letterSpacing: 0.5, marginBottom: 8, textAlign: 'center' }}>Meta Comercial</div>
+            <div className="numeric" style={{ fontSize: 22, fontWeight: 400, letterSpacing: '-0.5px', color: textMain, textAlign: 'center' }}>{fmt(meta_comercial)}</div>
             
             <div style={{ marginTop: 12 }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: 12, marginBottom: 4 }}>
@@ -130,21 +130,21 @@ function MetaCard({ title, icon: Icon, data, color, darkMode, diasUteis }) {
         </div>
 
         {/* Meta Realizada Destaque */}
-        <div style={{ background: `${color}10`, padding: 20, borderRadius: 12, border: `1px solid ${color}30`, display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+        <div style={{ background: `${color}10`, padding: 20, borderRadius: 12, border: `1px solid ${color}30`, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', textAlign: 'center', gap: 8 }}>
+          <TrendingUp size={28} color={color} style={{ opacity: 0.8 }} />
           <div>
             <div style={{ fontSize: 13, color: textMuted, textTransform: 'uppercase', letterSpacing: 0.5, marginBottom: 4 }}>Realizado Total</div>
             <div className="numeric" style={{ fontSize: 28, fontWeight: 400, letterSpacing: '-0.5px', color: textMain }}>{fmt(meta_realizada)}</div>
           </div>
-          <TrendingUp size={36} color={color} style={{ opacity: 0.8 }} />
         </div>
 
         {/* Grid de Valores Restantes */}
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }}>
-          <div>
+          <div style={{ textAlign: 'center' }}>
             <div style={{ fontSize: 12, color: textMuted, marginBottom: 4 }}>Restante Empresa</div>
             <div className="numeric" style={{ fontSize: 16, fontWeight: 400, letterSpacing: '-0.5px', color: textMain }}>{fmt(restante_empresa)}</div>
           </div>
-          <div>
+          <div style={{ textAlign: 'center' }}>
             <div style={{ fontSize: 12, color: textMuted, marginBottom: 4 }}>Restante Comercial</div>
             <div className="numeric" style={{ fontSize: 16, fontWeight: 400, letterSpacing: '-0.5px', color: textMain }}>{fmt(restante_comercial)}</div>
           </div>
@@ -164,7 +164,7 @@ function MetaCard({ title, icon: Icon, data, color, darkMode, diasUteis }) {
           boxShadow: darkMode ? '0 4px 20px rgba(0,0,0,0.15)' : '0 4px 20px rgba(0,0,0,0.02)'
         }}>
           {/* Título Principal do Card */}
-          <div style={{ fontSize: 14, fontWeight: 600, color: textMain, textTransform: 'uppercase', letterSpacing: 0.5 }}>
+          <div style={{ fontSize: 14, fontWeight: 600, color: textMain, textTransform: 'uppercase', letterSpacing: 0.5, textAlign: 'center' }}>
             FATURAMENTO A REALIZAR PARA META
           </div>
 
