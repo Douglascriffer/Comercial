@@ -160,10 +160,10 @@ export default function DashboardPage() {
 
         {/* Aviso de Atualização */}
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '0 12px' }}>
-          <span style={{ fontSize: 11, color: 'rgba(255,255,255,0.95)', fontWeight: 500, letterSpacing: 0.5 }}>
+          <span style={{ fontSize: 13, color: 'rgba(255,255,255,0.95)', fontWeight: 500, letterSpacing: 0.5 }}>
             Atualizações efetuadas às
           </span>
-          <span style={{ fontSize: 11, color: 'rgba(255,255,255,0.95)', fontWeight: 500, letterSpacing: 0.5 }}>
+          <span style={{ fontSize: 13, color: 'rgba(255,255,255,0.95)', fontWeight: 600, letterSpacing: 0.5 }}>
             10h, 16h e 17h50 diariamente.
           </span>
         </div>
