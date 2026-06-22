@@ -8,9 +8,9 @@ const formatCurrency = (val) => {
   return new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(val || 0)
 }
 
-// Função para formatar sem decimais (até a vírgula)
-const formatCurrencyNoDecimal = (val) => {
-  return new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL', minimumFractionDigits: 0, maximumFractionDigits: 0 }).format(val || 0)
+// Função para formatar sem decimais (até a vírgula) e sem R$
+const formatNumberNoDecimal = (val) => {
+  return new Intl.NumberFormat('pt-BR', { minimumFractionDigits: 0, maximumFractionDigits: 0 }).format(val || 0)
 }
 
 function getDiasUteisFaltantes(ano, mesId) {
@@ -104,7 +104,7 @@ function MetaCard({ title, icon: Icon, data, color, darkMode, diasUteis }) {
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }}>
           <div style={{ background: bgCardSecondary, padding: 16, borderRadius: 12, border: `1px solid ${border}` }}>
             <div style={{ fontSize: 12, color: textMuted, textTransform: 'uppercase', letterSpacing: 0.5, marginBottom: 8 }}>Meta Empresa</div>
-            <div style={{ fontSize: 22, fontWeight: 700, color: textMain }}>{formatCurrencyNoDecimal(meta_empresa)}</div>
+            <div style={{ fontSize: 22, fontWeight: 700, color: textMain }}>{formatCurrency(meta_empresa)}</div>
             
             <div style={{ marginTop: 12 }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: 12, marginBottom: 4 }}>
@@ -119,7 +119,7 @@ function MetaCard({ title, icon: Icon, data, color, darkMode, diasUteis }) {
 
           <div style={{ background: bgCardSecondary, padding: 16, borderRadius: 12, border: `1px solid ${border}` }}>
             <div style={{ fontSize: 12, color: textMuted, textTransform: 'uppercase', letterSpacing: 0.5, marginBottom: 8 }}>Meta Comercial</div>
-            <div style={{ fontSize: 22, fontWeight: 700, color: textMain }}>{formatCurrencyNoDecimal(meta_comercial)}</div>
+            <div style={{ fontSize: 22, fontWeight: 700, color: textMain }}>{formatCurrency(meta_comercial)}</div>
             
             <div style={{ marginTop: 12 }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: 12, marginBottom: 4 }}>
@@ -137,7 +137,7 @@ function MetaCard({ title, icon: Icon, data, color, darkMode, diasUteis }) {
         <div style={{ background: `${color}10`, padding: 20, borderRadius: 12, border: `1px solid ${color}30`, display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
           <div>
             <div style={{ fontSize: 13, color: textMuted, textTransform: 'uppercase', letterSpacing: 0.5, marginBottom: 4 }}>Realizado Total</div>
-            <div style={{ fontSize: 28, fontWeight: 800, color: textMain }}>{formatCurrencyNoDecimal(meta_realizada)}</div>
+            <div style={{ fontSize: 28, fontWeight: 800, color: textMain }}>{formatCurrency(meta_realizada)}</div>
           </div>
           <TrendingUp size={36} color={color} style={{ opacity: 0.8 }} />
         </div>
@@ -146,16 +146,16 @@ function MetaCard({ title, icon: Icon, data, color, darkMode, diasUteis }) {
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }}>
           <div>
             <div style={{ fontSize: 12, color: textMuted, marginBottom: 4 }}>Restante Empresa</div>
-            <div style={{ fontSize: 16, fontWeight: 600, color: textMain }}>{formatCurrencyNoDecimal(restante_empresa)}</div>
+            <div style={{ fontSize: 16, fontWeight: 600, color: textMain }}>{formatCurrency(restante_empresa)}</div>
           </div>
           <div>
             <div style={{ fontSize: 12, color: textMuted, marginBottom: 4 }}>Restante Comercial</div>
-            <div style={{ fontSize: 16, fontWeight: 600, color: textMain }}>{formatCurrencyNoDecimal(restante_comercial)}</div>
+            <div style={{ fontSize: 16, fontWeight: 600, color: textMain }}>{formatCurrency(restante_comercial)}</div>
           </div>
         </div>
       </div>
 
-      {/* Novo Card: Dias Úteis e Necessário por Dia */}
+      {/* Novo Card: Dias Úteis e Faturamento por Dia */}
       {diasUteis > 0 && (
         <div style={{
           background: bg,
@@ -167,31 +167,38 @@ function MetaCard({ title, icon: Icon, data, color, darkMode, diasUteis }) {
           gap: 16,
           boxShadow: darkMode ? '0 4px 20px rgba(0,0,0,0.15)' : '0 4px 20px rgba(0,0,0,0.02)'
         }}>
+          {/* Título Principal do Card */}
+          <div style={{ fontSize: 14, fontWeight: 600, color: textMain, textTransform: 'uppercase', letterSpacing: 0.5 }}>
+            FATURAMENTO A REALIZAR PARA META
+          </div>
+
+          <div style={{ height: 1, background: border, width: '100%' }}></div>
+
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-              <Calendar size={18} color={color} />
-              <span style={{ fontSize: 14, fontWeight: 600, color: textMain }}>Dias Úteis Restantes</span>
+              <Calendar size={16} color={color} />
+              <span style={{ fontSize: 14, color: textMain }}>Dias Úteis Restantes</span>
             </div>
-            <div style={{ fontSize: 18, fontWeight: 700, color: textMain }}>{diasUteis} <span style={{fontSize:12, fontWeight:400, color:textMuted}}>dias</span></div>
+            <div style={{ fontSize: 14, fontWeight: 600, color: textMain }}>{diasUteis} dias</div>
           </div>
           
           <div style={{ height: 1, background: border, width: '100%' }}></div>
           
           <div>
-            <div style={{ fontSize: 12, color: textMuted, textTransform: 'uppercase', letterSpacing: 0.5, marginBottom: 12 }}>
-              Necessário por Dia
+            <div style={{ fontSize: 14, color: textMain, marginBottom: 12 }}>
+              Faturamento por dia
             </div>
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12 }}>
               <div style={{ background: bgCardSecondary, padding: 12, borderRadius: 8, border: `1px solid ${border}` }}>
-                <div style={{ fontSize: 11, color: textMuted, marginBottom: 4 }}>Empresa</div>
-                <div style={{ fontSize: 16, fontWeight: 700, color: textMain }}>
-                  {formatCurrencyNoDecimal(necDiaEmpresa)}
+                <div style={{ fontSize: 14, color: textMuted, marginBottom: 4 }}>Empresa</div>
+                <div style={{ fontSize: 14, fontWeight: 600, color: textMain }}>
+                  {formatNumberNoDecimal(necDiaEmpresa)}
                 </div>
               </div>
               <div style={{ background: bgCardSecondary, padding: 12, borderRadius: 8, border: `1px solid ${border}` }}>
-                <div style={{ fontSize: 11, color: textMuted, marginBottom: 4 }}>Comercial</div>
-                <div style={{ fontSize: 16, fontWeight: 700, color: textMain }}>
-                  {formatCurrencyNoDecimal(necDiaComercial)}
+                <div style={{ fontSize: 14, color: textMuted, marginBottom: 4 }}>Comercial</div>
+                <div style={{ fontSize: 14, fontWeight: 600, color: textMain }}>
+                  {formatNumberNoDecimal(necDiaComercial)}
                 </div>
               </div>
             </div>
