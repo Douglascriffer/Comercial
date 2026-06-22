@@ -41,7 +41,7 @@ export default function DashboardPage() {
     let interval;
     if (autoPlay) {
       interval = setInterval(() => {
-        setPresentationStep(prev => (prev + 1) % 3)
+        setPresentationStep(prev => (prev + 1) % 2)
       }, 10000) // 10 segundos
     }
     return () => clearInterval(interval)
@@ -51,8 +51,7 @@ export default function DashboardPage() {
   useEffect(() => {
     if (autoPlay) {
       if (presentationStep === 0) setCurrentTab('VENDAS')
-      if (presentationStep === 1) setCurrentTab('VENDAS')
-      if (presentationStep === 2) setCurrentTab('METAS')
+      if (presentationStep === 1) setCurrentTab('METAS')
     }
   }, [presentationStep, autoPlay])
 
@@ -337,10 +336,8 @@ export default function DashboardPage() {
         
         {currentTab === 'VENDAS' ? (
           <>
-            {(!autoPlay || presentationStep === 0) && (
-              <>
-                {/* ================= KPI GRID (7 Cards) ================= */}
-                <section style={{ display: 'grid', gridTemplateColumns: 'repeat(7, 1fr)', gap: 10 }}>
+            {/* ================= KPI GRID (7 Cards) ================= */}
+            <section style={{ display: 'grid', gridTemplateColumns: 'repeat(7, 1fr)', gap: 10 }}>
               <KpiCard 
             label="Vendas" 
             value={kpis.vendasRealizado} 
@@ -442,18 +439,13 @@ export default function DashboardPage() {
           </div>
         </section>
 
-              </>
-            )}
-
             {/* ================= DETAILED TRANSACTIONS TABLE ================= */}
-            {(!autoPlay || presentationStep === 1) && (
-              <section>
-                <TabelaTransacoes 
-                  transactions={autoPlay && presentationStep === 1 ? filtered.transactions.slice(0, 10) : filtered.transactions}
-                  darkMode={isDark}
-                />
-              </section>
-            )}
+            <section>
+              <TabelaTransacoes 
+                transactions={autoPlay ? filtered.transactions.slice(0, 10) : filtered.transactions}
+                darkMode={isDark}
+              />
+            </section>
           </>
         ) : (
           <AbaMetas 
