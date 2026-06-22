@@ -59,8 +59,8 @@ function SellerList({ items, title, hovered, setHovered, darkMode, onSellerClick
               style={{
                 display: 'flex',
                 alignItems: 'center',
-                gap: 12,
-                padding: '8px 12px',
+                gap: 16,
+                padding: '12px 16px',
                 background: isHovered ? (darkMode ? 'rgba(255,106,34,0.06)' : 'rgba(255,106,34,0.02)') : (darkMode ? 'rgba(255,255,255,0.02)' : 'rgba(0,0,0,0.01)'),
                 border: `1px solid ${isHovered ? 'rgba(255,106,34,0.2)' : '#000000'}`,
                 borderRadius: 10,
@@ -87,8 +87,8 @@ function SellerList({ items, title, hovered, setHovered, darkMode, onSellerClick
 
               {/* Avatar / Circle */}
               <div style={{
-                width: 40,
-                height: 40,
+                width: 48,
+                height: 48,
                 borderRadius: '50%',
                 overflow: 'hidden',
                 border: `2px solid ${darkMode ? 'rgba(255,255,255,0.1)' : 'rgba(0,0,0,0.06)'}`,
@@ -98,7 +98,7 @@ function SellerList({ items, title, hovered, setHovered, darkMode, onSellerClick
                 alignItems: 'center',
                 justifyContent: 'center',
                 color: isTeam ? '#fff' : (darkMode ? '#ccc' : '#333'),
-                fontSize: 14,
+                fontSize: 16,
               }}>
                 {isTeam ? (
                   AVATAR_MAP[s.name] || s.name.charAt(0)
@@ -122,7 +122,8 @@ function SellerList({ items, title, hovered, setHovered, darkMode, onSellerClick
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                   <p style={{
                     margin: 0,
-                    fontSize: 14,
+                    fontSize: 16,
+                    fontWeight: 500,
                     color: darkMode ? '#fff' : '#000000',
                     whiteSpace: 'nowrap',
                     overflow: 'hidden',
@@ -130,7 +131,7 @@ function SellerList({ items, title, hovered, setHovered, darkMode, onSellerClick
                   }}>
                     {s.name}
                   </p>
-                  <span style={{ fontSize: 14, color: '#ec6e2a' }} className="numeric">
+                  <span style={{ fontSize: 16, fontWeight: 600, color: '#ec6e2a' }} className="numeric">
                     {fmt(s.valor)}
                   </span>
                 </div>
@@ -146,7 +147,7 @@ function SellerList({ items, title, hovered, setHovered, darkMode, onSellerClick
                       transition: 'width 0.5s ease-out'
                     }} />
                   </div>
-                  <span style={{ fontSize: 10, color: darkMode ? '#ffffff' : '#888', width: 32, textAlign: 'right' }} className="numeric">
+                  <span style={{ fontSize: 12, color: darkMode ? '#ffffff' : '#888', width: 36, textAlign: 'right' }} className="numeric">
                     {pctShare.toFixed(1)}%
                   </span>
                 </div>
@@ -185,9 +186,9 @@ export default function GraficoVendedores({ salesTeam = [], otherChannels = [], 
       <div style={{ display: 'flex', gap: 32, flex: 1 }}>
         {/* Equipe de Vendas */}
         <div style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: 12 }}>
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', borderBottom: `2px solid ${t.accent}`, paddingBottom: 8 }}>
-            <h3 style={{ fontSize: 15, color: t.text, margin: 0, letterSpacing: '0.5px' }}>EQUIPE DE VENDAS</h3>
-            <span style={{ fontSize: 15, color: t.accent }} className="numeric">{fmt(totalTeam)}</span>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', borderBottom: `2px solid ${t.accent}`, paddingBottom: 10 }}>
+            <h3 style={{ fontSize: 18, fontWeight: 700, color: t.text, margin: 0, letterSpacing: '0.5px' }}>EQUIPE DE VENDAS</h3>
+            <span style={{ fontSize: 18, fontWeight: 700, color: t.accent }} className="numeric">{fmt(totalTeam)}</span>
           </div>
           <div style={{ flex: 1, overflowY: 'auto' }} className="custom-scroll">
             <SellerList
@@ -205,9 +206,9 @@ export default function GraficoVendedores({ salesTeam = [], otherChannels = [], 
 
         {/* Outros Canais */}
         <div style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: 12 }}>
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', borderBottom: `2px solid ${t.border}`, paddingBottom: 8 }}>
-            <h3 style={{ fontSize: 15, color: t.text, margin: 0, letterSpacing: '0.5px' }}>OUTROS CANAIS</h3>
-            <span style={{ fontSize: 15, color: t.text }} className="numeric">{fmt(totalOthers)}</span>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', borderBottom: `2px solid ${t.border}`, paddingBottom: 10 }}>
+            <h3 style={{ fontSize: 18, fontWeight: 700, color: t.text, margin: 0, letterSpacing: '0.5px' }}>OUTROS CANAIS</h3>
+            <span style={{ fontSize: 18, fontWeight: 700, color: t.text }} className="numeric">{fmt(totalOthers)}</span>
           </div>
           <div style={{ flex: 1, overflowY: 'auto' }} className="custom-scroll">
             <SellerList
