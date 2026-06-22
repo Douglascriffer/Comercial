@@ -59,8 +59,8 @@ function SellerList({ items, title, hovered, setHovered, darkMode, onSellerClick
               style={{
                 display: 'flex',
                 alignItems: 'center',
-                gap: 16,
-                padding: '12px 16px',
+                gap: 18,
+                padding: '14px 16px',
                 background: isHovered ? (darkMode ? 'rgba(255,106,34,0.06)' : 'rgba(255,106,34,0.02)') : (darkMode ? 'rgba(255,255,255,0.02)' : 'rgba(0,0,0,0.01)'),
                 border: `1px solid ${isHovered ? 'rgba(255,106,34,0.2)' : '#000000'}`,
                 borderRadius: 10,
@@ -87,8 +87,8 @@ function SellerList({ items, title, hovered, setHovered, darkMode, onSellerClick
 
               {/* Avatar / Circle */}
               <div style={{
-                width: 48,
-                height: 48,
+                width: 50,
+                height: 50,
                 borderRadius: '50%',
                 overflow: 'hidden',
                 border: `2px solid ${darkMode ? 'rgba(255,255,255,0.1)' : 'rgba(0,0,0,0.06)'}`,
@@ -98,7 +98,7 @@ function SellerList({ items, title, hovered, setHovered, darkMode, onSellerClick
                 alignItems: 'center',
                 justifyContent: 'center',
                 color: isTeam ? '#fff' : (darkMode ? '#ccc' : '#333'),
-                fontSize: 16,
+                fontSize: 18,
               }}>
                 {isTeam ? (
                   AVATAR_MAP[s.name] || s.name.charAt(0)
@@ -122,7 +122,7 @@ function SellerList({ items, title, hovered, setHovered, darkMode, onSellerClick
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                   <p style={{
                     margin: 0,
-                    fontSize: 16,
+                    fontSize: 18,
                     fontWeight: 500,
                     color: darkMode ? '#fff' : '#000000',
                     whiteSpace: 'nowrap',
@@ -131,7 +131,7 @@ function SellerList({ items, title, hovered, setHovered, darkMode, onSellerClick
                   }}>
                     {s.name}
                   </p>
-                  <span style={{ fontSize: 16, fontWeight: 600, color: '#ec6e2a' }} className="numeric">
+                  <span style={{ fontSize: 18, fontWeight: 600, color: '#ec6e2a' }} className="numeric">
                     {fmt(s.valor)}
                   </span>
                 </div>
@@ -147,7 +147,7 @@ function SellerList({ items, title, hovered, setHovered, darkMode, onSellerClick
                       transition: 'width 0.5s ease-out'
                     }} />
                   </div>
-                  <span style={{ fontSize: 12, color: darkMode ? '#ffffff' : '#888', width: 36, textAlign: 'right' }} className="numeric">
+                  <span style={{ fontSize: 14, color: darkMode ? '#ffffff' : '#888', width: 42, textAlign: 'right' }} className="numeric">
                     {pctShare.toFixed(1)}%
                   </span>
                 </div>
