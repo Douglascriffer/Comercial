@@ -100,7 +100,7 @@ function MetaCard({ title, icon: Icon, data, color, darkMode, diasUteis }) {
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }}>
           <div style={{ background: bgCardSecondary, padding: 16, borderRadius: 12, border: `1px solid ${border}` }}>
             <div style={{ fontSize: 12, color: textMuted, textTransform: 'uppercase', letterSpacing: 0.5, marginBottom: 8 }}>Meta Empresa</div>
-            <div style={{ fontSize: 22, fontWeight: 700, color: textMain }}>{fmt(meta_empresa)}</div>
+            <div className="numeric" style={{ fontSize: 22, fontWeight: 400, letterSpacing: '-0.5px', color: textMain }}>{fmt(meta_empresa)}</div>
             
             <div style={{ marginTop: 12 }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: 12, marginBottom: 4 }}>
@@ -115,7 +115,7 @@ function MetaCard({ title, icon: Icon, data, color, darkMode, diasUteis }) {
 
           <div style={{ background: bgCardSecondary, padding: 16, borderRadius: 12, border: `1px solid ${border}` }}>
             <div style={{ fontSize: 12, color: textMuted, textTransform: 'uppercase', letterSpacing: 0.5, marginBottom: 8 }}>Meta Comercial</div>
-            <div style={{ fontSize: 22, fontWeight: 700, color: textMain }}>{fmt(meta_comercial)}</div>
+            <div className="numeric" style={{ fontSize: 22, fontWeight: 400, letterSpacing: '-0.5px', color: textMain }}>{fmt(meta_comercial)}</div>
             
             <div style={{ marginTop: 12 }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: 12, marginBottom: 4 }}>
@@ -133,7 +133,7 @@ function MetaCard({ title, icon: Icon, data, color, darkMode, diasUteis }) {
         <div style={{ background: `${color}10`, padding: 20, borderRadius: 12, border: `1px solid ${color}30`, display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
           <div>
             <div style={{ fontSize: 13, color: textMuted, textTransform: 'uppercase', letterSpacing: 0.5, marginBottom: 4 }}>Realizado Total</div>
-            <div style={{ fontSize: 28, fontWeight: 800, color: textMain }}>{fmt(meta_realizada)}</div>
+            <div className="numeric" style={{ fontSize: 28, fontWeight: 400, letterSpacing: '-0.5px', color: textMain }}>{fmt(meta_realizada)}</div>
           </div>
           <TrendingUp size={36} color={color} style={{ opacity: 0.8 }} />
         </div>
@@ -142,11 +142,11 @@ function MetaCard({ title, icon: Icon, data, color, darkMode, diasUteis }) {
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }}>
           <div>
             <div style={{ fontSize: 12, color: textMuted, marginBottom: 4 }}>Restante Empresa</div>
-            <div style={{ fontSize: 16, fontWeight: 600, color: textMain }}>{fmt(restante_empresa)}</div>
+            <div className="numeric" style={{ fontSize: 16, fontWeight: 400, letterSpacing: '-0.5px', color: textMain }}>{fmt(restante_empresa)}</div>
           </div>
           <div>
             <div style={{ fontSize: 12, color: textMuted, marginBottom: 4 }}>Restante Comercial</div>
-            <div style={{ fontSize: 16, fontWeight: 600, color: textMain }}>{fmt(restante_comercial)}</div>
+            <div className="numeric" style={{ fontSize: 16, fontWeight: 400, letterSpacing: '-0.5px', color: textMain }}>{fmt(restante_comercial)}</div>
           </div>
         </div>
       </div>
@@ -175,7 +175,7 @@ function MetaCard({ title, icon: Icon, data, color, darkMode, diasUteis }) {
               <Calendar size={16} color={color} />
               <span style={{ fontSize: 14, color: textMain }}>Dias Úteis Restantes</span>
             </div>
-            <div style={{ fontSize: 14, fontWeight: 600, color: textMain }}>{diasUteis} dias</div>
+            <div className="numeric" style={{ fontSize: 16, fontWeight: 400, letterSpacing: '-0.5px', color: textMain }}>{diasUteis} <span style={{fontSize:12, fontWeight:400, color:textMuted}}>dias</span></div>
           </div>
           
           <div style={{ height: 1, background: border, width: '100%' }}></div>
@@ -187,13 +187,13 @@ function MetaCard({ title, icon: Icon, data, color, darkMode, diasUteis }) {
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12 }}>
               <div style={{ background: bgCardSecondary, padding: 12, borderRadius: 8, border: `1px solid ${border}` }}>
                 <div style={{ fontSize: 14, color: textMuted, marginBottom: 4 }}>Empresa</div>
-                <div style={{ fontSize: 14, fontWeight: 600, color: textMain }}>
+                <div className="numeric" style={{ fontSize: 16, fontWeight: 400, letterSpacing: '-0.5px', color: textMain }}>
                   {fmt(necDiaEmpresa)}
                 </div>
               </div>
               <div style={{ background: bgCardSecondary, padding: 12, borderRadius: 8, border: `1px solid ${border}` }}>
                 <div style={{ fontSize: 14, color: textMuted, marginBottom: 4 }}>Comercial</div>
-                <div style={{ fontSize: 14, fontWeight: 600, color: textMain }}>
+                <div className="numeric" style={{ fontSize: 16, fontWeight: 400, letterSpacing: '-0.5px', color: textMain }}>
                   {fmt(necDiaComercial)}
                 </div>
               </div>
