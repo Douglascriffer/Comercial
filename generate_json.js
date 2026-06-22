@@ -186,28 +186,46 @@ function run() {
         
         let txList = [];
         let vendasSum = 0.0;
+        let vMeta = 0, vFat = 0;
         if (sheetVendasName) {
             log(`Processando Vendas Mês ${m}`);
-            vendasSum = processSheet(wbVendas.Sheets[sheetVendasName], m, result, txList, false);
+            let wsV = wbVendas.Sheets[sheetVendasName];
+            vendasSum = processSheet(wsV, m, result, txList, false);
+            
+            vMeta = wsV['I2'] ? parseFloat(wsV['I2'].v) : 0;
+            vFat = wsV['H1'] ? parseFloat(wsV['H1'].v) : 0;
+            if (isNaN(vMeta)) vMeta = 0;
+            if (isNaN(vFat)) vFat = 0;
         }
         
         let locacoesSum = 0.0;
+        let lMeta = 0, lFat = 0;
         if (wbLocacoes) {
             let sheetLocacoesName = wbLocacoes.SheetNames.find(s => s.toUpperCase() === mName || s.toUpperCase() === mNameAlt);
             if (sheetLocacoesName) {
                 log(`Processando Locações Mês ${m}`);
-                locacoesSum = processSheet(wbLocacoes.Sheets[sheetLocacoesName], m, result, txList, true);
+                let wsL = wbLocacoes.Sheets[sheetLocacoesName];
+                locacoesSum = processSheet(wsL, m, result, txList, true);
+                
+                lMeta = wsL['I2'] ? parseFloat(wsL['I2'].v) : 0;
+                lFat = wsL['H1'] ? parseFloat(wsL['H1'].v) : 0;
+                if (isNaN(lMeta)) lMeta = 0;
+                if (isNaN(lFat)) lFat = 0;
             }
         }
         
+        let sMeta = 0, sFat = 0;
         if (wbServicos) {
             let sheetServicosName = wbServicos.SheetNames.find(s => s.toUpperCase() === mName || s.toUpperCase() === mNameAlt);
             if (sheetServicosName) {
                 log(`Processando Serviços Mês ${m}`);
                 let wsServicos = wbServicos.Sheets[sheetServicosName];
                 
-                let sMeta = wsServicos['I2'] ? parseFloat(wsServicos['I2'].v) : 0;
+                sMeta = wsServicos['I2'] ? parseFloat(wsServicos['I2'].v) : 0;
                 if (isNaN(sMeta)) sMeta = 0;
+                
+                sFat = wsServicos['H1'] ? parseFloat(wsServicos['H1'].v) : 0;
+                if (isNaN(sFat)) sFat = 0;
                 
                 let sRealizado = wsServicos['D11'] ? parseFloat(wsServicos['D11'].v) : 0;
                 if (isNaN(sRealizado)) sRealizado = 0;
@@ -230,6 +248,11 @@ function run() {
         
         let servicosFalta = metrics.servicos_meta - metrics.servicos_realizado;
         
+        // Se a planilha do mês não existe para nenhuma área, desconsiderar no histórico (ou apenas colocar o valor de onde existe)
+        // Se a sheet existe e tem valores, eles já estão nas vars vMeta, lMeta, sMeta, etc.
+        let historicoMeta = vMeta + lMeta + sMeta;
+        let historicoFat = vFat + lFat + sFat;
+        
         result.byPeriod.push({
             ano: 2026,
             mes: m,
@@ -243,6 +266,8 @@ function run() {
             servicos_falta: servicosFalta,
             total_meta: metrics.total_meta,
             total_realizado: vendasReal + locacaoReal + metrics.servicos_realizado,
+            historico_meta: historicoMeta,
+            historico_faturamento: historicoFat,
             count: txList.length
         });
     }

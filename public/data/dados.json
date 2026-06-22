@@ -13,6 +13,8 @@
       "servicos_falta": -112258.22999999998,
       "total_meta": 1259000,
       "total_realizado": 1582055.8800000001,
+      "historico_meta": 0,
+      "historico_faturamento": 117050.3,
       "count": 145
     },
     {
@@ -28,6 +30,8 @@
       "servicos_falta": -7510.590000000026,
       "total_meta": 2123000,
       "total_realizado": 1724102.4500000002,
+      "historico_meta": 1729000,
+      "historico_faturamento": 0,
       "count": 153
     },
     {
@@ -43,6 +47,8 @@
       "servicos_falta": -74365.56,
       "total_meta": 2157000,
       "total_realizado": 2486341.34,
+      "historico_meta": 1758000,
+      "historico_faturamento": 0,
       "count": 269
     },
     {
@@ -58,6 +64,8 @@
       "servicos_falta": -65048.20000000001,
       "total_meta": 2324000,
       "total_realizado": 1906807.71,
+      "historico_meta": 2000000,
+      "historico_faturamento": 1446739.8299999998,
       "count": 228
     },
     {
@@ -73,6 +81,8 @@
       "servicos_falta": -126720.35999999999,
       "total_meta": 1540000,
       "total_realizado": 1822241.7200000002,
+      "historico_meta": 1850000,
+      "historico_faturamento": 1478963.8390000002,
       "count": 299
     },
     {
@@ -88,6 +98,8 @@
       "servicos_falta": 133477.84999999998,
       "total_meta": 1423000,
       "total_realizado": 1401166.19,
+      "historico_meta": 2100000,
+      "historico_faturamento": 1401166.19,
       "count": 201
     },
     {
@@ -103,6 +115,8 @@
       "servicos_falta": 0,
       "total_meta": 2568000,
       "total_realizado": 0,
+      "historico_meta": 0,
+      "historico_faturamento": 0,
       "count": 0
     },
     {
@@ -118,6 +132,8 @@
       "servicos_falta": 0,
       "total_meta": 3102000,
       "total_realizado": 0,
+      "historico_meta": 0,
+      "historico_faturamento": 0,
       "count": 0
     },
     {
@@ -133,6 +149,8 @@
       "servicos_falta": 0,
       "total_meta": 2332000,
       "total_realizado": 0,
+      "historico_meta": 0,
+      "historico_faturamento": 0,
       "count": 0
     },
     {
@@ -148,6 +166,8 @@
       "servicos_falta": 0,
       "total_meta": 3325000,
       "total_realizado": 0,
+      "historico_meta": 0,
+      "historico_faturamento": 0,
       "count": 0
     },
     {
@@ -163,6 +183,8 @@
       "servicos_falta": 0,
       "total_meta": 2877000,
       "total_realizado": 0,
+      "historico_meta": 0,
+      "historico_faturamento": 0,
       "count": 0
     },
     {
@@ -178,6 +200,8 @@
       "servicos_falta": 0,
       "total_meta": 1428000,
       "total_realizado": 0,
+      "historico_meta": 0,
+      "historico_faturamento": 0,
       "count": 0
     }
   ],
