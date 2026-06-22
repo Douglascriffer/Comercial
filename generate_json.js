@@ -166,7 +166,8 @@ function run() {
                 vendas_meta: mv, vendas_realizado: rv,
                 locacao_meta: ml, locacao_realizado: rl,
                 servicos_meta: ms, servicos_realizado: rs,
-                total_meta: mt
+                total_meta: mt,
+                meta_anual_faturamento: rv + rl + rs
             };
             
             result.meta["2026"].push({
@@ -248,10 +249,8 @@ function run() {
         
         let servicosFalta = metrics.servicos_meta - metrics.servicos_realizado;
         
-        // Se a planilha do mês não existe para nenhuma área, desconsiderar no histórico (ou apenas colocar o valor de onde existe)
-        // Se a sheet existe e tem valores, eles já estão nas vars vMeta, lMeta, sMeta, etc.
-        let historicoMeta = vMeta + lMeta + sMeta;
-        let historicoFat = vFat + lFat + sFat;
+        let historicoMeta = metrics.total_meta;
+        let historicoFat = metrics.meta_anual_faturamento;
         
         result.byPeriod.push({
             ano: 2026,
