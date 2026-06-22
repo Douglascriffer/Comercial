@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react'
 import { 
   TrendingUp, Users, Target, Activity, 
   ShoppingCart, DollarSign, Award, Calendar,
-  Sun, Moon, Wrench, Key
+  Sun, Moon, Wrench, Key, Play, Pause, MonitorPlay
 } from 'lucide-react'
 import { useFinancialData, useFilteredData } from '@/lib/hooks'
 
@@ -32,6 +32,29 @@ export default function DashboardPage() {
   const [filters, setFilters] = useState({ ano: '2026', mes: String(new Date().getMonth() + 1) }) // Mês atual como padrão
   const [currentTab, setCurrentTab] = useState('VENDAS')
   const [theme, setTheme] = useState('dark')
+
+  const [autoPlay, setAutoPlay] = useState(false)
+  const [presentationStep, setPresentationStep] = useState(0)
+
+  // Controle da Transmissão Automática
+  useEffect(() => {
+    let interval;
+    if (autoPlay) {
+      interval = setInterval(() => {
+        setPresentationStep(prev => (prev + 1) % 3)
+      }, 10000) // 10 segundos
+    }
+    return () => clearInterval(interval)
+  }, [autoPlay])
+
+  // Sincronizar abas com a Transmissão Automática
+  useEffect(() => {
+    if (autoPlay) {
+      if (presentationStep === 0) setCurrentTab('VENDAS')
+      if (presentationStep === 1) setCurrentTab('VENDAS')
+      if (presentationStep === 2) setCurrentTab('METAS')
+    }
+  }, [presentationStep, autoPlay])
 
   const { data, loading, error } = useFinancialData()
   const filtered = useFilteredData(data, filters)
@@ -128,13 +151,16 @@ export default function DashboardPage() {
           </div>
         </div>
 
-        {/* Tabs VENDAS / METAS */}
-        <div style={{ flex: 1, display: 'flex', justifyContent: 'center' }}>
+        {/* Tabs VENDAS / METAS e Botão Transmissão */}
+        <div style={{ flex: 1, display: 'flex', justifyContent: 'center', gap: 12 }}>
           <div style={{ display: 'flex', background: 'rgba(0,0,0,0.15)', padding: 4, borderRadius: 10, backdropFilter: 'blur(4px)', boxShadow: 'inset 0 2px 4px rgba(0,0,0,0.1)' }}>
             {['VENDAS', 'METAS'].map(t => (
               <button 
                 key={t} 
-                onClick={() => setCurrentTab(t)}
+                onClick={() => {
+                  if (autoPlay) setAutoPlay(false);
+                  setCurrentTab(t);
+                }}
                 style={{
                   padding: '8px 20px',
                   borderRadius: 8,
@@ -156,6 +182,36 @@ export default function DashboardPage() {
               </button>
             ))}
           </div>
+
+          <button
+            onClick={() => {
+              const nextState = !autoPlay;
+              setAutoPlay(nextState);
+              if (nextState) {
+                setPresentationStep(0);
+                setCurrentTab('VENDAS');
+              }
+            }}
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              gap: 8,
+              padding: '8px 16px',
+              borderRadius: 10,
+              border: 'none',
+              background: autoPlay ? '#10b981' : 'rgba(0,0,0,0.15)',
+              color: '#ffffff',
+              fontSize: 14,
+              fontWeight: 600,
+              cursor: 'pointer',
+              transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
+              backdropFilter: 'blur(4px)',
+              boxShadow: autoPlay ? '0 0 15px rgba(16,185,129,0.3)' : 'none'
+            }}
+          >
+            <MonitorPlay size={18} />
+            {autoPlay ? 'Transmissão Ativa' : 'Transmitir Tela'}
+          </button>
         </div>
 
         {/* Aviso de Atualização */}
@@ -254,8 +310,10 @@ export default function DashboardPage() {
         
         {currentTab === 'VENDAS' ? (
           <>
-            {/* ================= KPI GRID (7 Cards) ================= */}
-            <section style={{ display: 'grid', gridTemplateColumns: 'repeat(7, 1fr)', gap: 10 }}>
+            {(!autoPlay || presentationStep === 0) && (
+              <>
+                {/* ================= KPI GRID (7 Cards) ================= */}
+                <section style={{ display: 'grid', gridTemplateColumns: 'repeat(7, 1fr)', gap: 10 }}>
               <KpiCard 
             label="Vendas" 
             value={kpis.vendasRealizado} 
@@ -357,13 +415,18 @@ export default function DashboardPage() {
           </div>
         </section>
 
-        {/* ================= DETAILED TRANSACTIONS TABLE ================= */}
-        <section>
-            <TabelaTransacoes 
-              transactions={filtered.transactions}
-              darkMode={isDark}
-            />
-          </section>
+              </>
+            )}
+
+            {/* ================= DETAILED TRANSACTIONS TABLE ================= */}
+            {(!autoPlay || presentationStep === 1) && (
+              <section>
+                <TabelaTransacoes 
+                  transactions={autoPlay && presentationStep === 1 ? filtered.transactions.slice(0, 10) : filtered.transactions}
+                  darkMode={isDark}
+                />
+              </section>
+            )}
           </>
         ) : (
           <AbaMetas 
