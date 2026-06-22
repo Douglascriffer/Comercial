@@ -3,6 +3,11 @@ import { useState, useEffect } from 'react'
 import { 
   TrendingUp, Users, Target, Activity, 
   ShoppingCart, DollarSign, Award, Calendar,
+'use client'
+import { useState, useEffect } from 'react'
+import { 
+  TrendingUp, Users, Target, Activity, 
+  ShoppingCart, DollarSign, Award, Calendar,
   Sun, Moon, Wrench, Key
 } from 'lucide-react'
 import { useFinancialData, useFilteredData } from '@/lib/hooks'
@@ -11,6 +16,7 @@ import KpiCard from '@/components/KpiCard'
 import GraficoVendedores from '@/components/GraficoVendedores'
 import GraficoMensalMeta from '@/components/GraficoMensalMeta'
 import TabelaTransacoes from '@/components/TabelaTransacoes'
+import AbaMetas from '@/components/AbaMetas'
 
 const MESES = [
   { id: '1', name: 'Janeiro' },
@@ -355,11 +361,10 @@ export default function DashboardPage() {
           </section>
           </>
         ) : (
-          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '100px 0', minHeight: '60vh', background: colors.card, borderRadius: 16, border: `1px solid ${colors.border}` }}>
-            <Target size={64} color="#ec6e2a" style={{ opacity: 0.5, marginBottom: 24 }} />
-            <h2 style={{ fontSize: 24, fontWeight: 600, color: colors.text, marginBottom: 8 }}>Metas Pessoais</h2>
-            <p style={{ color: colors.textMuted, fontSize: 16, opacity: 0.7 }}>As informações de Metas Pessoais serão exibidas aqui.</p>
-          </div>
+          <AbaMetas 
+            metas_pessoais={filtered?.metas_pessoais} 
+            darkMode={isDark} 
+          />
         )}
 
       </main>

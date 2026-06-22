@@ -188,6 +188,7 @@ function run() {
         let txList = [];
         let vendasSum = 0.0;
         let vMeta = 0, vFat = 0;
+        let vMetaComercial = 0, vRestanteEmpresa = 0, vRestanteComercial = 0;
         if (sheetVendasName) {
             log(`Processando Vendas Mês ${m}`);
             let wsV = wbVendas.Sheets[sheetVendasName];
@@ -195,12 +196,20 @@ function run() {
             
             vMeta = wsV['I2'] ? parseFloat(wsV['I2'].v) : 0;
             vFat = wsV['H1'] ? parseFloat(wsV['H1'].v) : 0;
+            vMetaComercial = vMeta;
+            vRestanteEmpresa = wsV['H3'] ? parseFloat(wsV['H3'].v) : 0;
+            vRestanteComercial = wsV['I3'] ? parseFloat(wsV['I3'].v) : 0;
+            
             if (isNaN(vMeta)) vMeta = 0;
             if (isNaN(vFat)) vFat = 0;
+            if (isNaN(vMetaComercial)) vMetaComercial = 0;
+            if (isNaN(vRestanteEmpresa)) vRestanteEmpresa = 0;
+            if (isNaN(vRestanteComercial)) vRestanteComercial = 0;
         }
         
         let locacoesSum = 0.0;
         let lMeta = 0, lFat = 0;
+        let lMetaComercial = 0, lRestanteEmpresa = 0, lRestanteComercial = 0;
         if (wbLocacoes) {
             let sheetLocacoesName = wbLocacoes.SheetNames.find(s => s.toUpperCase() === mName || s.toUpperCase() === mNameAlt);
             if (sheetLocacoesName) {
@@ -210,12 +219,20 @@ function run() {
                 
                 lMeta = wsL['I2'] ? parseFloat(wsL['I2'].v) : 0;
                 lFat = wsL['H1'] ? parseFloat(wsL['H1'].v) : 0;
+                lMetaComercial = lMeta;
+                lRestanteEmpresa = wsL['H3'] ? parseFloat(wsL['H3'].v) : 0;
+                lRestanteComercial = wsL['I3'] ? parseFloat(wsL['I3'].v) : 0;
+                
                 if (isNaN(lMeta)) lMeta = 0;
                 if (isNaN(lFat)) lFat = 0;
+                if (isNaN(lMetaComercial)) lMetaComercial = 0;
+                if (isNaN(lRestanteEmpresa)) lRestanteEmpresa = 0;
+                if (isNaN(lRestanteComercial)) lRestanteComercial = 0;
             }
         }
         
         let sMeta = 0, sFat = 0;
+        let sMetaComercial = 0, sRestanteEmpresa = 0, sRestanteComercial = 0;
         if (wbServicos) {
             let sheetServicosName = wbServicos.SheetNames.find(s => s.toUpperCase() === mName || s.toUpperCase() === mNameAlt);
             if (sheetServicosName) {
@@ -227,6 +244,13 @@ function run() {
                 
                 sFat = wsServicos['H1'] ? parseFloat(wsServicos['H1'].v) : 0;
                 if (isNaN(sFat)) sFat = 0;
+                
+                sMetaComercial = sMeta;
+                sRestanteEmpresa = wsServicos['H3'] ? parseFloat(wsServicos['H3'].v) : 0;
+                sRestanteComercial = wsServicos['I3'] ? parseFloat(wsServicos['I3'].v) : 0;
+                if (isNaN(sMetaComercial)) sMetaComercial = 0;
+                if (isNaN(sRestanteEmpresa)) sRestanteEmpresa = 0;
+                if (isNaN(sRestanteComercial)) sRestanteComercial = 0;
                 
                 let sRealizado = wsServicos['D11'] ? parseFloat(wsServicos['D11'].v) : 0;
                 if (isNaN(sRealizado)) sRealizado = 0;
@@ -252,6 +276,31 @@ function run() {
         let historicoMeta = metrics.total_meta;
         let historicoFat = metrics.meta_anual_faturamento;
         
+        // --- METRICAS DE METAS PESSOAIS ---
+        let metas_pessoais = {
+            vendas: {
+                meta_empresa: metrics.vendas_meta,
+                meta_comercial: vMetaComercial,
+                meta_realizada: vFat,
+                restante_empresa: vRestanteEmpresa,
+                restante_comercial: vRestanteComercial
+            },
+            locacao: {
+                meta_empresa: metrics.locacao_meta,
+                meta_comercial: lMetaComercial,
+                meta_realizada: m <= 4 ? metrics.locacao_realizado : lFat,
+                restante_empresa: lRestanteEmpresa,
+                restante_comercial: lRestanteComercial
+            },
+            servicos: {
+                meta_empresa: metrics.servicos_meta,
+                meta_comercial: sMetaComercial,
+                meta_realizada: m <= 5 ? metrics.servicos_realizado : sFat,
+                restante_empresa: sRestanteEmpresa,
+                restante_comercial: sRestanteComercial
+            }
+        };
+        
         result.byPeriod.push({
             ano: 2026,
             mes: m,
@@ -267,7 +316,8 @@ function run() {
             total_realizado: vendasReal + locacaoReal + metrics.servicos_realizado,
             historico_meta: historicoMeta,
             historico_faturamento: historicoFat,
-            count: txList.length
+            count: txList.length,
+            metas_pessoais: metas_pessoais
         });
     }
     

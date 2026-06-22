@@ -15,7 +15,30 @@
       "total_realizado": 1582055.8800000001,
       "historico_meta": 1259000,
       "historico_faturamento": 1582055.8800000001,
-      "count": 145
+      "count": 145,
+      "metas_pessoais": {
+        "vendas": {
+          "meta_empresa": 948000,
+          "meta_comercial": 0,
+          "meta_realizada": 117050.3,
+          "restante_empresa": 0,
+          "restante_comercial": 0
+        },
+        "locacao": {
+          "meta_empresa": 75000,
+          "meta_comercial": 0,
+          "meta_realizada": 81621.1,
+          "restante_empresa": 0,
+          "restante_comercial": 0
+        },
+        "servicos": {
+          "meta_empresa": 236000,
+          "meta_comercial": 0,
+          "meta_realizada": 348258.23,
+          "restante_empresa": 0,
+          "restante_comercial": 0
+        }
+      }
     },
     {
       "ano": 2026,
@@ -32,7 +55,30 @@
       "total_realizado": 1724102.4500000002,
       "historico_meta": 2123000,
       "historico_faturamento": 1724102.4500000002,
-      "count": 153
+      "count": 153,
+      "metas_pessoais": {
+        "vendas": {
+          "meta_empresa": 1729000,
+          "meta_comercial": 1729000,
+          "meta_realizada": 0,
+          "restante_empresa": 0,
+          "restante_comercial": 417499.81999999983
+        },
+        "locacao": {
+          "meta_empresa": 75000,
+          "meta_comercial": 0,
+          "meta_realizada": 76264,
+          "restante_empresa": 0,
+          "restante_comercial": 0
+        },
+        "servicos": {
+          "meta_empresa": 319000,
+          "meta_comercial": 0,
+          "meta_realizada": 326510.59,
+          "restante_empresa": 0,
+          "restante_comercial": 0
+        }
+      }
     },
     {
       "ano": 2026,
@@ -49,7 +95,30 @@
       "total_realizado": 2486341.34,
       "historico_meta": 2157000,
       "historico_faturamento": 2486341.34,
-      "count": 269
+      "count": 269,
+      "metas_pessoais": {
+        "vendas": {
+          "meta_empresa": 1758000,
+          "meta_comercial": 1758000,
+          "meta_realizada": 0,
+          "restante_empresa": 0,
+          "restante_comercial": -288383.6100000008
+        },
+        "locacao": {
+          "meta_empresa": 75000,
+          "meta_comercial": 0,
+          "meta_realizada": 80167.55,
+          "restante_empresa": 0,
+          "restante_comercial": 0
+        },
+        "servicos": {
+          "meta_empresa": 324000,
+          "meta_comercial": 0,
+          "meta_realizada": 398365.56,
+          "restante_empresa": 0,
+          "restante_comercial": 0
+        }
+      }
     },
     {
       "ano": 2026,
@@ -66,7 +135,30 @@
       "total_realizado": 1906807.71,
       "historico_meta": 2324000,
       "historico_faturamento": 1906807.71,
-      "count": 228
+      "count": 228,
+      "metas_pessoais": {
+        "vendas": {
+          "meta_empresa": 1913000,
+          "meta_comercial": 2000000,
+          "meta_realizada": 1446739.8299999998,
+          "restante_empresa": 466260.17000000016,
+          "restante_comercial": 553260.1700000002
+        },
+        "locacao": {
+          "meta_empresa": 75000,
+          "meta_comercial": 0,
+          "meta_realizada": 115370.5,
+          "restante_empresa": 0,
+          "restante_comercial": 0
+        },
+        "servicos": {
+          "meta_empresa": 336000,
+          "meta_comercial": 0,
+          "meta_realizada": 401048.2,
+          "restante_empresa": 0,
+          "restante_comercial": 0
+        }
+      }
     },
     {
       "ano": 2026,
@@ -83,7 +175,30 @@
       "total_realizado": 1822241.7200000002,
       "historico_meta": 1540000,
       "historico_faturamento": 1815030.62,
-      "count": 299
+      "count": 299,
+      "metas_pessoais": {
+        "vendas": {
+          "meta_empresa": 1232000,
+          "meta_comercial": 1750000,
+          "meta_realizada": 1362173.8390000002,
+          "restante_empresa": -130173.83900000015,
+          "restante_comercial": 387826.16099999985
+        },
+        "locacao": {
+          "meta_empresa": 75000,
+          "meta_comercial": 100000,
+          "meta_realizada": 116790,
+          "restante_empresa": -41790,
+          "restante_comercial": -16790
+        },
+        "servicos": {
+          "meta_empresa": 233000,
+          "meta_comercial": 0,
+          "meta_realizada": 359720.36,
+          "restante_empresa": 0,
+          "restante_comercial": 0
+        }
+      }
     },
     {
       "ano": 2026,
@@ -100,7 +215,30 @@
       "total_realizado": 1401166.19,
       "historico_meta": 1423000,
       "historico_faturamento": 0,
-      "count": 201
+      "count": 201,
+      "metas_pessoais": {
+        "vendas": {
+          "meta_empresa": 1100000,
+          "meta_comercial": 1500000,
+          "meta_realizada": 935202.0399999999,
+          "restante_empresa": 164797.96000000008,
+          "restante_comercial": 564797.9600000001
+        },
+        "locacao": {
+          "meta_empresa": 75000,
+          "meta_comercial": 100000,
+          "meta_realizada": 99442,
+          "restante_empresa": -24442,
+          "restante_comercial": 558
+        },
+        "servicos": {
+          "meta_empresa": 500000,
+          "meta_comercial": 500000,
+          "meta_realizada": 366522.15,
+          "restante_empresa": -118522.15000000002,
+          "restante_comercial": 266376.6
+        }
+      }
     },
     {
       "ano": 2026,
@@ -117,7 +255,30 @@
       "total_realizado": 0,
       "historico_meta": 2568000,
       "historico_faturamento": 0,
-      "count": 0
+      "count": 0,
+      "metas_pessoais": {
+        "vendas": {
+          "meta_empresa": 2116000,
+          "meta_comercial": 0,
+          "meta_realizada": 0,
+          "restante_empresa": 0,
+          "restante_comercial": 0
+        },
+        "locacao": {
+          "meta_empresa": 75000,
+          "meta_comercial": 0,
+          "meta_realizada": 0,
+          "restante_empresa": 0,
+          "restante_comercial": 0
+        },
+        "servicos": {
+          "meta_empresa": 0,
+          "meta_comercial": 0,
+          "meta_realizada": 0,
+          "restante_empresa": 0,
+          "restante_comercial": 0
+        }
+      }
     },
     {
       "ano": 2026,
@@ -134,7 +295,30 @@
       "total_realizado": 0,
       "historico_meta": 3102000,
       "historico_faturamento": 0,
-      "count": 0
+      "count": 0,
+      "metas_pessoais": {
+        "vendas": {
+          "meta_empresa": 2640000,
+          "meta_comercial": 0,
+          "meta_realizada": 0,
+          "restante_empresa": 0,
+          "restante_comercial": 0
+        },
+        "locacao": {
+          "meta_empresa": 75000,
+          "meta_comercial": 0,
+          "meta_realizada": 0,
+          "restante_empresa": 0,
+          "restante_comercial": 0
+        },
+        "servicos": {
+          "meta_empresa": 0,
+          "meta_comercial": 0,
+          "meta_realizada": 0,
+          "restante_empresa": 0,
+          "restante_comercial": 0
+        }
+      }
     },
     {
       "ano": 2026,
@@ -151,7 +335,30 @@
       "total_realizado": 0,
       "historico_meta": 2332000,
       "historico_faturamento": 0,
-      "count": 0
+      "count": 0,
+      "metas_pessoais": {
+        "vendas": {
+          "meta_empresa": 1942000,
+          "meta_comercial": 0,
+          "meta_realizada": 0,
+          "restante_empresa": 0,
+          "restante_comercial": 0
+        },
+        "locacao": {
+          "meta_empresa": 75000,
+          "meta_comercial": 0,
+          "meta_realizada": 0,
+          "restante_empresa": 0,
+          "restante_comercial": 0
+        },
+        "servicos": {
+          "meta_empresa": 0,
+          "meta_comercial": 0,
+          "meta_realizada": 0,
+          "restante_empresa": 0,
+          "restante_comercial": 0
+        }
+      }
     },
     {
       "ano": 2026,
@@ -168,7 +375,30 @@
       "total_realizado": 0,
       "historico_meta": 3325000,
       "historico_faturamento": 0,
-      "count": 0
+      "count": 0,
+      "metas_pessoais": {
+        "vendas": {
+          "meta_empresa": 2900000,
+          "meta_comercial": 0,
+          "meta_realizada": 0,
+          "restante_empresa": 0,
+          "restante_comercial": 0
+        },
+        "locacao": {
+          "meta_empresa": 75000,
+          "meta_comercial": 0,
+          "meta_realizada": 0,
+          "restante_empresa": 0,
+          "restante_comercial": 0
+        },
+        "servicos": {
+          "meta_empresa": 0,
+          "meta_comercial": 0,
+          "meta_realizada": 0,
+          "restante_empresa": 0,
+          "restante_comercial": 0
+        }
+      }
     },
     {
       "ano": 2026,
@@ -185,7 +415,30 @@
       "total_realizado": 0,
       "historico_meta": 2877000,
       "historico_faturamento": 0,
-      "count": 0
+      "count": 0,
+      "metas_pessoais": {
+        "vendas": {
+          "meta_empresa": 2410000,
+          "meta_comercial": 0,
+          "meta_realizada": 0,
+          "restante_empresa": 0,
+          "restante_comercial": 0
+        },
+        "locacao": {
+          "meta_empresa": 75000,
+          "meta_comercial": 0,
+          "meta_realizada": 0,
+          "restante_empresa": 0,
+          "restante_comercial": 0
+        },
+        "servicos": {
+          "meta_empresa": 0,
+          "meta_comercial": 0,
+          "meta_realizada": 0,
+          "restante_empresa": 0,
+          "restante_comercial": 0
+        }
+      }
     },
     {
       "ano": 2026,
@@ -202,7 +455,30 @@
       "total_realizado": 0,
       "historico_meta": 1428000,
       "historico_faturamento": 0,
-      "count": 0
+      "count": 0,
+      "metas_pessoais": {
+        "vendas": {
+          "meta_empresa": 1100000,
+          "meta_comercial": 0,
+          "meta_realizada": 0,
+          "restante_empresa": 0,
+          "restante_comercial": 0
+        },
+        "locacao": {
+          "meta_empresa": 75000,
+          "meta_comercial": 0,
+          "meta_realizada": 0,
+          "restante_empresa": 0,
+          "restante_comercial": 0
+        },
+        "servicos": {
+          "meta_empresa": 0,
+          "meta_comercial": 0,
+          "meta_realizada": 0,
+          "restante_empresa": 0,
+          "restante_comercial": 0
+        }
+      }
     }
   ],
   "bySeller": [
