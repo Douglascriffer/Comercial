@@ -255,7 +255,6 @@ function run() {
                 let sRealizado = wsServicos['D11'] ? parseFloat(wsServicos['D11'].v) : 0;
                 if (isNaN(sRealizado)) sRealizado = 0;
                 
-                annualMetrics[m].servicos_meta = sMeta;
                 annualMetrics[m].servicos_realizado = sRealizado;
             }
         }

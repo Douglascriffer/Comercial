@@ -359,6 +359,7 @@ export default function DashboardPage() {
           <AbaMetas 
             metas_pessoais={filtered?.metas_pessoais} 
             darkMode={isDark} 
+            filters={filters}
           />
         )}
 
