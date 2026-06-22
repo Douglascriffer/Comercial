@@ -29,6 +29,7 @@ const MESES = [
 
 export default function DashboardPage() {
   const [filters, setFilters] = useState({ ano: '2026', mes: '5' }) // Maio/2026 como padrão
+  const [currentTab, setCurrentTab] = useState('VENDAS')
   const [theme, setTheme] = useState('dark')
 
   const { data, loading, error } = useFinancialData()
@@ -126,6 +127,36 @@ export default function DashboardPage() {
           </div>
         </div>
 
+        {/* Tabs VENDAS / METAS */}
+        <div style={{ flex: 1, display: 'flex', justifyContent: 'center' }}>
+          <div style={{ display: 'flex', background: 'rgba(0,0,0,0.15)', padding: 4, borderRadius: 10, backdropFilter: 'blur(4px)', boxShadow: 'inset 0 2px 4px rgba(0,0,0,0.1)' }}>
+            {['VENDAS', 'METAS'].map(t => (
+              <button 
+                key={t} 
+                onClick={() => setCurrentTab(t)}
+                style={{
+                  padding: '8px 20px',
+                  borderRadius: 8,
+                  border: 'none',
+                  background: currentTab === t ? '#ffffff' : 'transparent',
+                  color: currentTab === t ? '#ec6e2a' : 'rgba(255,255,255,0.9)',
+                  fontSize: 14,
+                  fontWeight: currentTab === t ? 600 : 500,
+                  cursor: 'pointer',
+                  transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: 8,
+                  boxShadow: currentTab === t ? '0 2px 10px rgba(0,0,0,0.1)' : 'none'
+                }}
+              >
+                {t === 'VENDAS' ? <Activity size={18} /> : <Target size={18} />}
+                {t}
+              </button>
+            ))}
+          </div>
+        </div>
+
         {/* Seletores e Filtros */}
         <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
           <div style={{ display: 'flex', background: 'rgba(0,0,0,0.15)', padding: 3, borderRadius: 8, backdropFilter: 'blur(4px)' }}>
@@ -210,9 +241,11 @@ export default function DashboardPage() {
       {/* ================= CONTENT MAIN ================= */}
       <main style={{ maxWidth: '96%', margin: '24px auto 0 auto', display: 'flex', flexDirection: 'column', gap: 24 }}>
         
-        {/* ================= KPI GRID (7 Cards) ================= */}
-        <section style={{ display: 'grid', gridTemplateColumns: 'repeat(7, 1fr)', gap: 10 }}>
-          <KpiCard 
+        {currentTab === 'VENDAS' ? (
+          <>
+            {/* ================= KPI GRID (7 Cards) ================= */}
+            <section style={{ display: 'grid', gridTemplateColumns: 'repeat(7, 1fr)', gap: 10 }}>
+              <KpiCard 
             label="Vendas" 
             value={kpis.vendasRealizado} 
             subLabel="Faturamento Comercial" 
@@ -315,11 +348,19 @@ export default function DashboardPage() {
 
         {/* ================= DETAILED TRANSACTIONS TABLE ================= */}
         <section>
-          <TabelaTransacoes 
-            transactions={filtered.transactions}
-            darkMode={isDark}
-          />
-        </section>
+            <TabelaTransacoes 
+              transactions={filtered.transactions}
+              darkMode={isDark}
+            />
+          </section>
+          </>
+        ) : (
+          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '100px 0', minHeight: '60vh', background: colors.card, borderRadius: 16, border: `1px solid ${colors.border}` }}>
+            <Target size={64} color="#ec6e2a" style={{ opacity: 0.5, marginBottom: 24 }} />
+            <h2 style={{ fontSize: 24, fontWeight: 600, color: colors.text, marginBottom: 8 }}>Metas Pessoais</h2>
+            <p style={{ color: colors.textMuted, fontSize: 16, opacity: 0.7 }}>As informações de Metas Pessoais serão exibidas aqui.</p>
+          </div>
+        )}
 
       </main>
     </div>
