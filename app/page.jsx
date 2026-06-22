@@ -3,11 +3,6 @@ import { useState, useEffect } from 'react'
 import { 
   TrendingUp, Users, Target, Activity, 
   ShoppingCart, DollarSign, Award, Calendar,
-'use client'
-import { useState, useEffect } from 'react'
-import { 
-  TrendingUp, Users, Target, Activity, 
-  ShoppingCart, DollarSign, Award, Calendar,
   Sun, Moon, Wrench, Key
 } from 'lucide-react'
 import { useFinancialData, useFilteredData } from '@/lib/hooks'
