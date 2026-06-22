@@ -205,31 +205,31 @@
       "mes": 6,
       "label": "Junho/26",
       "vendas_meta": 1100000,
-      "vendas_realizado": 935202.0399999999,
+      "vendas_realizado": 983189.7599999999,
       "locacao_meta": 75000,
-      "locacao_realizado": 99442,
+      "locacao_realizado": 101805,
       "servicos_meta": 248000,
       "servicos_realizado": 366522.15,
       "servicos_falta": -118522.15000000002,
       "total_meta": 1423000,
-      "total_realizado": 1401166.19,
+      "total_realizado": 1451516.9099999997,
       "historico_meta": 1423000,
       "historico_faturamento": 0,
-      "count": 201,
+      "count": 215,
       "metas_pessoais": {
         "vendas": {
           "meta_empresa": 1100000,
           "meta_comercial": 1500000,
-          "meta_realizada": 935202.0399999999,
-          "restante_empresa": 164797.96000000008,
-          "restante_comercial": 564797.9600000001
+          "meta_realizada": 983189.7599999999,
+          "restante_empresa": 116810.2400000001,
+          "restante_comercial": 516810.2400000001
         },
         "locacao": {
           "meta_empresa": 75000,
           "meta_comercial": 100000,
-          "meta_realizada": 99442,
-          "restante_empresa": -24442,
-          "restante_comercial": 558
+          "meta_realizada": 101805,
+          "restante_empresa": -26805,
+          "restante_comercial": -1805
         },
         "servicos": {
           "meta_empresa": 248000,
@@ -703,15 +703,15 @@
       "ano": 2026,
       "mes": 6,
       "vendedor": "Rogislei",
-      "valor": 301906.14,
-      "count": 36
+      "valor": 312555.14,
+      "count": 37
     },
     {
       "ano": 2026,
       "mes": 6,
       "vendedor": "Mercado Livre",
-      "valor": 145676.82000000004,
-      "count": 88
+      "valor": 183015.54000000007,
+      "count": 98
     },
     {
       "ano": 2026,
@@ -731,15 +731,15 @@
       "ano": 2026,
       "mes": 6,
       "vendedor": "Josiane",
-      "valor": 86985,
-      "count": 37
+      "valor": 88608,
+      "count": 39
     },
     {
       "ano": 2026,
       "mes": 6,
       "vendedor": "Vanessa",
-      "valor": 12457,
-      "count": 3
+      "valor": 13197,
+      "count": 4
     }
   ],
   "transactions": [
@@ -14551,6 +14551,127 @@
     {
       "ano": 2026,
       "mes": 6,
+      "pedido": "17770",
+      "cliente": "Janio",
+      "valor": 6555,
+      "vendedor": "Mercado Livre",
+      "data": "2026-06-22",
+      "obs": "",
+      "tipo": "Venda"
+    },
+    {
+      "ano": 2026,
+      "mes": 6,
+      "pedido": "17771",
+      "cliente": "Ribas",
+      "valor": 190.23,
+      "vendedor": "Mercado Livre",
+      "data": "2026-06-22",
+      "obs": "",
+      "tipo": "Venda"
+    },
+    {
+      "ano": 2026,
+      "mes": 6,
+      "pedido": "17772",
+      "cliente": "Ribas",
+      "valor": 1305.42,
+      "vendedor": "Mercado Livre",
+      "data": "2026-06-22",
+      "obs": "",
+      "tipo": "Venda"
+    },
+    {
+      "ano": 2026,
+      "mes": 6,
+      "pedido": "17774",
+      "cliente": "Unniroyal",
+      "valor": 145,
+      "vendedor": "Mercado Livre",
+      "data": "2026-06-22",
+      "obs": "",
+      "tipo": "Venda"
+    },
+    {
+      "ano": 2026,
+      "mes": 6,
+      "pedido": "17775",
+      "cliente": "Jose",
+      "valor": 5436.85,
+      "vendedor": "Mercado Livre",
+      "data": "2026-06-22",
+      "obs": "",
+      "tipo": "Venda"
+    },
+    {
+      "ano": 2026,
+      "mes": 6,
+      "pedido": "17776",
+      "cliente": "Edriano",
+      "valor": 5215.5,
+      "vendedor": "Mercado Livre",
+      "data": "2026-06-22",
+      "obs": "venda por publicidade",
+      "tipo": "Venda"
+    },
+    {
+      "ano": 2026,
+      "mes": 6,
+      "pedido": "17777",
+      "cliente": "Rodrigo",
+      "valor": 131.1,
+      "vendedor": "Mercado Livre",
+      "data": "2026-06-22",
+      "obs": "",
+      "tipo": "Venda"
+    },
+    {
+      "ano": 2026,
+      "mes": 6,
+      "pedido": "17778",
+      "cliente": "Raquel",
+      "valor": 452.62,
+      "vendedor": "Mercado Livre",
+      "data": "2026-06-22",
+      "obs": "",
+      "tipo": "Venda"
+    },
+    {
+      "ano": 2026,
+      "mes": 6,
+      "pedido": "17780",
+      "cliente": "Jose",
+      "valor": 5700,
+      "vendedor": "Mercado Livre",
+      "data": "2026-06-22",
+      "obs": "",
+      "tipo": "Venda"
+    },
+    {
+      "ano": 2026,
+      "mes": 6,
+      "pedido": "17781",
+      "cliente": "Jefferson",
+      "valor": 12207,
+      "vendedor": "Mercado Livre",
+      "data": "2026-06-22",
+      "obs": "",
+      "tipo": "Venda"
+    },
+    {
+      "ano": 2026,
+      "mes": 6,
+      "pedido": "17797",
+      "cliente": "Evolucao",
+      "valor": 10649,
+      "vendedor": "Rogislei",
+      "data": "2026-06-22",
+      "obs": "Origem:  Shopping",
+      "tipo": "Venda"
+    },
+    {
+      "ano": 2026,
+      "mes": 6,
       "pedido": "LOC-17316",
       "cliente": "TOXIMED",
       "valor": 360,
@@ -14986,6 +15107,39 @@
       "vendedor": "Josiane",
       "data": "2026-06-18",
       "obs": "Prorrogação contrato 681",
+      "tipo": "Locação"
+    },
+    {
+      "ano": 2026,
+      "mes": 6,
+      "pedido": "LOC-793",
+      "cliente": "FILIPE SCHMITZ",
+      "valor": 363,
+      "vendedor": "Josiane",
+      "data": "2026-06-19",
+      "obs": "",
+      "tipo": "Locação"
+    },
+    {
+      "ano": 2026,
+      "mes": 6,
+      "pedido": "LOC-794",
+      "cliente": "LCWM ENGENHARIA",
+      "valor": 1260,
+      "vendedor": "Josiane",
+      "data": "2026-06-19",
+      "obs": "",
+      "tipo": "Locação"
+    },
+    {
+      "ano": 2026,
+      "mes": 6,
+      "pedido": "LOC-795",
+      "cliente": "GEO CONSULTORES ENGENHARIA",
+      "valor": 740,
+      "vendedor": "Vanessa",
+      "data": "2026-06-19",
+      "obs": "",
       "tipo": "Locação"
     }
   ],
