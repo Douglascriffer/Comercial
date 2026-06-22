@@ -207,12 +207,12 @@
       "vendas_meta": 1100000,
       "vendas_realizado": 983189.7599999999,
       "locacao_meta": 75000,
-      "locacao_realizado": 101805,
+      "locacao_realizado": 102405,
       "servicos_meta": 248000,
       "servicos_realizado": 366522.15,
       "servicos_falta": -118522.15000000002,
       "total_meta": 1423000,
-      "total_realizado": 1451516.9099999997,
+      "total_realizado": 1452116.9099999997,
       "historico_meta": 1423000,
       "historico_faturamento": 0,
       "count": 215,
@@ -227,9 +227,9 @@
         "locacao": {
           "meta_empresa": 75000,
           "meta_comercial": 100000,
-          "meta_realizada": 101805,
-          "restante_empresa": -26805,
-          "restante_comercial": -1805
+          "meta_realizada": 102405,
+          "restante_empresa": -27405,
+          "restante_comercial": -2405
         },
         "servicos": {
           "meta_empresa": 248000,
@@ -731,7 +731,7 @@
       "ano": 2026,
       "mes": 6,
       "vendedor": "Josiane",
-      "valor": 88608,
+      "valor": 89208,
       "count": 39
     },
     {
@@ -15070,7 +15070,7 @@
       "mes": 6,
       "pedido": "LOC-790",
       "cliente": "ANTONIO MARCOS VIANA",
-      "valor": 29055,
+      "valor": 29655,
       "vendedor": "Josiane",
       "data": "2026-06-17",
       "obs": "",

@@ -42,9 +42,9 @@ export default function TabelaTransacoes({ transactions = [], darkMode = false }
     return Array.from(list).sort()
   }, [transactions])
 
-  // Filtrar dados
+  // Filtrar e Ordenar dados
   const filteredTxs = useMemo(() => {
-    return transactions.filter(item => {
+    const result = transactions.filter(item => {
       // Filtro de Vendedor
       if (vendedorFilter !== 'all' && item.vendedor !== vendedorFilter) return false
       
@@ -58,7 +58,14 @@ export default function TabelaTransacoes({ transactions = [], darkMode = false }
       }
       
       return true
-    })
+    });
+
+    // Ordenar do mais novo (maior data) para o mais antigo (menor data)
+    return result.sort((a, b) => {
+      const dateA = new Date(a.data || 0);
+      const dateB = new Date(b.data || 0);
+      return dateB - dateA;
+    });
   }, [transactions, search, vendedorFilter])
 
   // Paginação
