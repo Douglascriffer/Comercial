@@ -79,8 +79,10 @@ function MetaCard({ title, icon: Icon, data, color, darkMode, diasUteis }) {
         boxShadow: darkMode ? '0 4px 20px rgba(0,0,0,0.15)' : '0 4px 20px rgba(0,0,0,0.02)'
       }}>
         {/* Header do Card */}
-        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 12, textAlign: 'center' }}>
+        <div style={{ position: 'relative', display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: 48 }}>
           <div style={{
+            position: 'absolute',
+            left: 0,
             width: 48, height: 48, borderRadius: 12,
             background: `${color}15`,
             display: 'flex', alignItems: 'center', justifyContent: 'center',
@@ -88,7 +90,7 @@ function MetaCard({ title, icon: Icon, data, color, darkMode, diasUteis }) {
           }}>
             <Icon size={24} />
           </div>
-          <div>
+          <div style={{ textAlign: 'center' }}>
             <h2 style={{ margin: 0, fontSize: 20, fontWeight: 700, color: textMain }}>{title}</h2>
             <span style={{ fontSize: 13, color: textMuted }}>Acompanhamento de Metas</span>
           </div>
