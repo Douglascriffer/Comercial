@@ -29,7 +29,7 @@ const MESES = [
 ]
 
 export default function DashboardPage() {
-  const [filters, setFilters] = useState({ ano: '2026', mes: '5' }) // Maio/2026 como padrão
+  const [filters, setFilters] = useState({ ano: '2026', mes: String(new Date().getMonth() + 1) }) // Mês atual como padrão
   const [currentTab, setCurrentTab] = useState('VENDAS')
   const [theme, setTheme] = useState('dark')
 
