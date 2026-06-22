@@ -132,8 +132,10 @@ function MetaCard({ title, icon: Icon, data, color, darkMode, diasUteis }) {
         </div>
 
         {/* Meta Realizada Destaque */}
-        <div style={{ background: `${color}10`, padding: 20, borderRadius: 12, border: `1px solid ${color}30`, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', textAlign: 'center', gap: 8 }}>
-          <TrendingUp size={28} color={color} style={{ opacity: 0.8 }} />
+        <div style={{ position: 'relative', background: `${color}10`, padding: 20, borderRadius: 12, border: `1px solid ${color}30`, display: 'flex', alignItems: 'center', justifyContent: 'center', textAlign: 'center', minHeight: 80 }}>
+          <div style={{ position: 'absolute', left: 20, display: 'flex', alignItems: 'center' }}>
+            <TrendingUp size={32} color={color} style={{ opacity: 0.8 }} />
+          </div>
           <div>
             <div style={{ fontSize: 13, color: textMuted, textTransform: 'uppercase', letterSpacing: 0.5, marginBottom: 4 }}>Realizado Total</div>
             <div className="numeric" style={{ fontSize: 28, fontWeight: 400, letterSpacing: '-0.5px', color: textMain }}>{fmt(meta_realizada)}</div>
