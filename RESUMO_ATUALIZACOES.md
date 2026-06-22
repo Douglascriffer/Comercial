@@ -24,6 +24,15 @@ Toda vez que uma alteração é feita no código ou nas planilhas, o fluxo de at
     *   **Canais Separados**: As strings `'Mercado Livre'`, `'Site'`, `'Retorno de golpe'` e `'Sem Vendedor'` foram isoladas para entrarem sempre na categoria secundária de "Outros Canais".
 *   **Separação de Repositório**:
     *   O link oficial do Git na pasta raiz foi desconectado do repositório `criffer-erp` e migrado em definitivo para `https://github.com/Douglascriffer/Comercial.git` para separar os sistemas.
+*   **Nova Estrutura de Vendas vs Metas**:
+    *   O painel foi reorganizado com abas de navegação no topo, dividindo a tela principal em duas janelas distintas: **VENDAS** e **METAS**.
+    *   **Filtro Automático de Mês**: A navegação superior agora inicia com o *Mês Atual* pré-selecionado nativamente (`new Date().getMonth() + 1`), acabando com travamentos de filtro em meses passados.
+    *   **Atualização do ETL (generate_json.js)**: As rotinas de coleta do Excel foram fortemente editadas para ler corretamente a linha de meta das empresas, metas comerciais e calculo do restante (`restante_empresa` e `restante_comercial`). 
+    *   **Novo Card de "Faturamento A Realizar"**: Adicionado um bloco inteligente na aba de metas que exibe quantos dias úteis faltam para o mês acabar e o valor matemático do faturamento exigido por dia (Empresa e Comercial).
+    *   **Ajuste Fino Visual (Tipografia e Design)**: 
+        *   O "R$" foi removido dos card da aba de metas. O valor passou a ser formatado como puro com milhar matemático (ex: `935.202`) e sem decimais, acompanhando a mesma lógica de Javascript utilizada na aba Vendas.
+        *   A fonte e tipografia de todos os números da Aba Metas foram padronizados (`fontWeight: 400`, `letterSpacing: -0.5px`, CSS class `.numeric`).
+        *   Os ícones e cabeçalhos dos cards da aba Metas foram centralizados de maneira simétrica (títulos ao centro fixo, logotipos/ícones do lado esquerdo de forma absoluta).
 
 ## 4. Onde Encontrar Arquivos Importantes
 *   `lib/hooks.js`: Onde ocorre a filtragem dos vendedores por nome e mês.
