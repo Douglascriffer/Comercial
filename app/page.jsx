@@ -158,75 +158,73 @@ export default function DashboardPage() {
           </div>
         </div>
 
+        {/* Aviso de Atualização */}
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '0 12px' }}>
+          <span style={{ fontSize: 11, color: 'rgba(255,255,255,0.95)', fontWeight: 500, letterSpacing: 0.5 }}>
+            Atualizações efetuadas às
+          </span>
+          <span style={{ fontSize: 11, color: 'rgba(255,255,255,0.95)', fontWeight: 500, letterSpacing: 0.5 }}>
+            10h, 16h e 17h50 diariamente.
+          </span>
+        </div>
+
         {/* Seletores e Filtros */}
         <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
-          {/* Container for Year and Months to align them together, with text below */}
-          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
-              {/* Year Select */}
-              <div style={{ display: 'flex', background: 'rgba(0,0,0,0.15)', padding: 3, borderRadius: 8, backdropFilter: 'blur(4px)' }}>
-                {['2026'].map(y => (
-                  <button 
-                    key={y} 
-                    onClick={() => setFilters(prev => ({ ...prev, ano: y }))}
-                    style={{
-                      padding: '4px 12px',
-                      borderRadius: 6,
-                      border: 'none',
-                      background: filters.ano === y ? '#ffffff' : 'transparent',
-                      color: filters.ano === y ? '#ec6e2a' : 'rgba(255,255,255,0.85)',
-                      fontSize: 12,
-                      cursor: 'pointer',
-                      transition: 'all 0.2s'
-                    }}
-                  >
-                    {y}
-                  </button>
-                ))}
-              </div>
+          <div style={{ display: 'flex', background: 'rgba(0,0,0,0.15)', padding: 3, borderRadius: 8, backdropFilter: 'blur(4px)' }}>
+            {['2026'].map(y => (
+              <button 
+                key={y} 
+                onClick={() => setFilters(prev => ({ ...prev, ano: y }))}
+                style={{
+                  padding: '4px 12px',
+                  borderRadius: 6,
+                  border: 'none',
+                  background: filters.ano === y ? '#ffffff' : 'transparent',
+                  color: filters.ano === y ? '#ec6e2a' : 'rgba(255,255,255,0.85)',
+                  fontSize: 12,
+                  cursor: 'pointer',
+                  transition: 'all 0.2s'
+                }}
+              >
+                {y}
+              </button>
+            ))}
+          </div>
 
-              {/* Month Select */}
-              <div style={{ display: 'flex', background: 'rgba(0,0,0,0.15)', padding: 3, borderRadius: 8, backdropFilter: 'blur(4px)' }}>
-                <button
-                  onClick={() => setFilters(prev => ({ ...prev, mes: 'all' }))}
-                  style={{
-                    padding: '4px 12px',
-                    borderRadius: 6,
-                    border: 'none',
-                    background: filters.mes === 'all' ? '#ffffff' : 'transparent',
-                    color: filters.mes === 'all' ? '#ec6e2a' : 'rgba(255,255,255,0.85)',
-                    fontSize: 12,
-                    cursor: 'pointer',
-                    transition: 'all 0.2s'
-                  }}
-                >
-                  Todos
-                </button>
-                {MESES.map(m => (
-                  <button 
-                    key={m.id} 
-                    onClick={() => setFilters(prev => ({ ...prev, mes: m.id }))}
-                    style={{
-                      padding: '4px 10px',
-                      borderRadius: 6,
-                      border: 'none',
-                      background: filters.mes === m.id ? '#ffffff' : 'transparent',
-                      color: filters.mes === m.id ? '#ec6e2a' : 'rgba(255,255,255,0.85)',
-                      fontSize: 12,
-                      cursor: 'pointer',
-                      transition: 'all 0.2s'
-                    }}
-                  >
-                    {m.name.slice(0, 3)}
-                  </button>
-                ))}
-              </div>
-            </div>
-            
-            {/* Aviso de Atualização */}
-            <span style={{ fontSize: 11, color: 'rgba(255,255,255,0.95)', fontWeight: 500, marginTop: 8, letterSpacing: 0.5 }}>
-              Atualizações efetuadas às 10h, 16h e 17h50 diariamente.
-            </span>
+          <div style={{ display: 'flex', background: 'rgba(0,0,0,0.15)', padding: 3, borderRadius: 8, backdropFilter: 'blur(4px)' }}>
+            <button
+              onClick={() => setFilters(prev => ({ ...prev, mes: 'all' }))}
+              style={{
+                padding: '4px 12px',
+                borderRadius: 6,
+                border: 'none',
+                background: filters.mes === 'all' ? '#ffffff' : 'transparent',
+                color: filters.mes === 'all' ? '#ec6e2a' : 'rgba(255,255,255,0.85)',
+                fontSize: 12,
+                cursor: 'pointer',
+                transition: 'all 0.2s'
+              }}
+            >
+              Todos
+            </button>
+            {MESES.map(m => (
+              <button 
+                key={m.id} 
+                onClick={() => setFilters(prev => ({ ...prev, mes: m.id }))}
+                style={{
+                  padding: '4px 10px',
+                  borderRadius: 6,
+                  border: 'none',
+                  background: filters.mes === m.id ? '#ffffff' : 'transparent',
+                  color: filters.mes === m.id ? '#ec6e2a' : 'rgba(255,255,255,0.85)',
+                  fontSize: 12,
+                  cursor: 'pointer',
+                  transition: 'all 0.2s'
+                }}
+              >
+                {m.name.slice(0, 3)}
+              </button>
+            ))}
           </div>
 
           {/* Theme Button */}
