@@ -3,14 +3,10 @@
 import React from 'react'
 import { Target, TrendingUp, ShoppingCart, Key, Wrench, Calendar, DollarSign } from 'lucide-react'
 
-// Função auxiliar para formatar moeda
-const formatCurrency = (val) => {
-  return new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(val || 0)
-}
-
-// Função para formatar sem decimais (até a vírgula) e sem R$
-const formatNumberNoDecimal = (val) => {
-  return new Intl.NumberFormat('pt-BR', { minimumFractionDigits: 0, maximumFractionDigits: 0 }).format(val || 0)
+// Função auxiliar para formatar números sem R$ e sem decimais, no mesmo estilo da aba de vendas
+const fmt = (v) => {
+  if (!v && v !== 0) return '—'
+  return Math.round(v).toLocaleString('pt-BR')
 }
 
 function getDiasUteisFaltantes(ano, mesId) {
@@ -104,7 +100,7 @@ function MetaCard({ title, icon: Icon, data, color, darkMode, diasUteis }) {
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }}>
           <div style={{ background: bgCardSecondary, padding: 16, borderRadius: 12, border: `1px solid ${border}` }}>
             <div style={{ fontSize: 12, color: textMuted, textTransform: 'uppercase', letterSpacing: 0.5, marginBottom: 8 }}>Meta Empresa</div>
-            <div style={{ fontSize: 22, fontWeight: 700, color: textMain }}>{formatCurrency(meta_empresa)}</div>
+            <div style={{ fontSize: 22, fontWeight: 700, color: textMain }}>{fmt(meta_empresa)}</div>
             
             <div style={{ marginTop: 12 }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: 12, marginBottom: 4 }}>
@@ -119,7 +115,7 @@ function MetaCard({ title, icon: Icon, data, color, darkMode, diasUteis }) {
 
           <div style={{ background: bgCardSecondary, padding: 16, borderRadius: 12, border: `1px solid ${border}` }}>
             <div style={{ fontSize: 12, color: textMuted, textTransform: 'uppercase', letterSpacing: 0.5, marginBottom: 8 }}>Meta Comercial</div>
-            <div style={{ fontSize: 22, fontWeight: 700, color: textMain }}>{formatCurrency(meta_comercial)}</div>
+            <div style={{ fontSize: 22, fontWeight: 700, color: textMain }}>{fmt(meta_comercial)}</div>
             
             <div style={{ marginTop: 12 }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: 12, marginBottom: 4 }}>
@@ -137,7 +133,7 @@ function MetaCard({ title, icon: Icon, data, color, darkMode, diasUteis }) {
         <div style={{ background: `${color}10`, padding: 20, borderRadius: 12, border: `1px solid ${color}30`, display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
           <div>
             <div style={{ fontSize: 13, color: textMuted, textTransform: 'uppercase', letterSpacing: 0.5, marginBottom: 4 }}>Realizado Total</div>
-            <div style={{ fontSize: 28, fontWeight: 800, color: textMain }}>{formatCurrency(meta_realizada)}</div>
+            <div style={{ fontSize: 28, fontWeight: 800, color: textMain }}>{fmt(meta_realizada)}</div>
           </div>
           <TrendingUp size={36} color={color} style={{ opacity: 0.8 }} />
         </div>
@@ -146,11 +142,11 @@ function MetaCard({ title, icon: Icon, data, color, darkMode, diasUteis }) {
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }}>
           <div>
             <div style={{ fontSize: 12, color: textMuted, marginBottom: 4 }}>Restante Empresa</div>
-            <div style={{ fontSize: 16, fontWeight: 600, color: textMain }}>{formatCurrency(restante_empresa)}</div>
+            <div style={{ fontSize: 16, fontWeight: 600, color: textMain }}>{fmt(restante_empresa)}</div>
           </div>
           <div>
             <div style={{ fontSize: 12, color: textMuted, marginBottom: 4 }}>Restante Comercial</div>
-            <div style={{ fontSize: 16, fontWeight: 600, color: textMain }}>{formatCurrency(restante_comercial)}</div>
+            <div style={{ fontSize: 16, fontWeight: 600, color: textMain }}>{fmt(restante_comercial)}</div>
           </div>
         </div>
       </div>
@@ -192,13 +188,13 @@ function MetaCard({ title, icon: Icon, data, color, darkMode, diasUteis }) {
               <div style={{ background: bgCardSecondary, padding: 12, borderRadius: 8, border: `1px solid ${border}` }}>
                 <div style={{ fontSize: 14, color: textMuted, marginBottom: 4 }}>Empresa</div>
                 <div style={{ fontSize: 14, fontWeight: 600, color: textMain }}>
-                  {formatNumberNoDecimal(necDiaEmpresa)}
+                  {fmt(necDiaEmpresa)}
                 </div>
               </div>
               <div style={{ background: bgCardSecondary, padding: 12, borderRadius: 8, border: `1px solid ${border}` }}>
                 <div style={{ fontSize: 14, color: textMuted, marginBottom: 4 }}>Comercial</div>
                 <div style={{ fontSize: 14, fontWeight: 600, color: textMain }}>
-                  {formatNumberNoDecimal(necDiaComercial)}
+                  {fmt(necDiaComercial)}
                 </div>
               </div>
             </div>
