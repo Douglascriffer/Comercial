@@ -181,40 +181,45 @@ export default function DashboardPage() {
             ))}
           </div>
 
-          <div style={{ display: 'flex', background: 'rgba(0,0,0,0.15)', padding: 3, borderRadius: 8, backdropFilter: 'blur(4px)' }}>
-            <button
-              onClick={() => setFilters(prev => ({ ...prev, mes: 'all' }))}
-              style={{
-                padding: '4px 12px',
-                borderRadius: 6,
-                border: 'none',
-                background: filters.mes === 'all' ? '#ffffff' : 'transparent',
-                color: filters.mes === 'all' ? '#ec6e2a' : 'rgba(255,255,255,0.85)',
-                fontSize: 12,
-                cursor: 'pointer',
-                transition: 'all 0.2s'
-              }}
-            >
-              Todos
-            </button>
-            {MESES.map(m => (
-              <button 
-                key={m.id} 
-                onClick={() => setFilters(prev => ({ ...prev, mes: m.id }))}
+          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+            <div style={{ display: 'flex', background: 'rgba(0,0,0,0.15)', padding: 3, borderRadius: 8, backdropFilter: 'blur(4px)' }}>
+              <button
+                onClick={() => setFilters(prev => ({ ...prev, mes: 'all' }))}
                 style={{
-                  padding: '4px 10px',
+                  padding: '4px 12px',
                   borderRadius: 6,
                   border: 'none',
-                  background: filters.mes === m.id ? '#ffffff' : 'transparent',
-                  color: filters.mes === m.id ? '#ec6e2a' : 'rgba(255,255,255,0.85)',
+                  background: filters.mes === 'all' ? '#ffffff' : 'transparent',
+                  color: filters.mes === 'all' ? '#ec6e2a' : 'rgba(255,255,255,0.85)',
                   fontSize: 12,
                   cursor: 'pointer',
                   transition: 'all 0.2s'
                 }}
               >
-                {m.name.slice(0, 3)}
+                Todos
               </button>
-            ))}
+              {MESES.map(m => (
+                <button 
+                  key={m.id} 
+                  onClick={() => setFilters(prev => ({ ...prev, mes: m.id }))}
+                  style={{
+                    padding: '4px 10px',
+                    borderRadius: 6,
+                    border: 'none',
+                    background: filters.mes === m.id ? '#ffffff' : 'transparent',
+                    color: filters.mes === m.id ? '#ec6e2a' : 'rgba(255,255,255,0.85)',
+                    fontSize: 12,
+                    cursor: 'pointer',
+                    transition: 'all 0.2s'
+                  }}
+                >
+                  {m.name.slice(0, 3)}
+                </button>
+              ))}
+            </div>
+            <span style={{ fontSize: 9, color: 'rgba(255,255,255,0.75)', marginTop: 6, letterSpacing: 0.5 }}>
+              Atualizações efetuadas às 10h, 16h e 17h50 diariamente.
+            </span>
           </div>
 
           {/* Theme Button */}
