@@ -209,21 +209,13 @@ function MetaCard({ title, icon: Icon, data, color, darkMode, diasUteis }) {
   )
 }
 
-export default function AbaMetas({ metas_pessoais, darkMode, filters, presentationMode }) {
+export default function AbaMetas({ metas_pessoais, darkMode, filters }) {
   if (!metas_pessoais) return null;
 
   const diasUteis = filters ? getDiasUteisFaltantes(filters.ano, filters.mes) : 0;
 
   return (
-    <div style={{ 
-      display: 'grid', 
-      gridTemplateColumns: 'repeat(3, 1fr)', 
-      gap: 24, 
-      paddingBottom: 40,
-      transform: presentationMode ? 'scale(1.15)' : 'none',
-      transformOrigin: 'top center',
-      marginBottom: presentationMode ? 100 : 0
-    }}>
+    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 24, paddingBottom: 40 }}>
       <MetaCard title="Vendas" icon={ShoppingCart} data={metas_pessoais.vendas} color="#ec6e2a" darkMode={darkMode} diasUteis={diasUteis} />
       <MetaCard title="Locação" icon={Key} data={metas_pessoais.locacao} color="#3b82f6" darkMode={darkMode} diasUteis={diasUteis} />
       <MetaCard title="Serviços" icon={Wrench} data={metas_pessoais.servicos} color="#10b981" darkMode={darkMode} diasUteis={diasUteis} />

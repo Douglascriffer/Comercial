@@ -409,7 +409,7 @@ export default function DashboardPage() {
             border: `1px solid ${colors.border}`,
             borderRadius: 12,
             padding: '20px',
-            height: (autoPlay && presentationStep === 0) ? 780 : 575,
+            height: 575,
             overflow: 'hidden',
             display: 'flex',
             flexDirection: 'column',
@@ -430,7 +430,7 @@ export default function DashboardPage() {
             border: `1px solid ${colors.border}`,
             borderRadius: 12,
             padding: '20px',
-            height: (autoPlay && presentationStep === 0) ? 780 : 575,
+            height: 575,
             display: 'flex',
             flexDirection: 'column',
             boxShadow: isDark ? '0 4px 20px rgba(0,0,0,0.15)' : '0 4px 20px rgba(0,0,0,0.02)'
@@ -449,7 +449,7 @@ export default function DashboardPage() {
             {(!autoPlay || presentationStep === 1) && (
               <section>
                 <TabelaTransacoes 
-                  transactions={autoPlay && presentationStep === 1 ? filtered.transactions.slice(0, 15) : filtered.transactions}
+                  transactions={autoPlay && presentationStep === 1 ? filtered.transactions.slice(0, 10) : filtered.transactions}
                   darkMode={isDark}
                 />
               </section>
@@ -460,7 +460,6 @@ export default function DashboardPage() {
             metas_pessoais={filtered?.metas_pessoais} 
             darkMode={isDark} 
             filters={filters}
-            presentationMode={autoPlay && presentationStep === 2}
           />
         )}
 
