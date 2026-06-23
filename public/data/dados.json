@@ -205,24 +205,24 @@
       "mes": 6,
       "label": "Junho/26",
       "vendas_meta": 1100000,
-      "vendas_realizado": 1114535.18,
+      "vendas_realizado": 1109535.18,
       "locacao_meta": 75000,
       "locacao_realizado": 113113,
       "servicos_meta": 248000,
-      "servicos_realizado": 366522.15,
-      "servicos_falta": -118522.15000000002,
+      "servicos_realizado": 403428.94999999995,
+      "servicos_falta": -155428.94999999995,
       "total_meta": 1423000,
-      "total_realizado": 1594170.33,
+      "total_realizado": 1626077.13,
       "historico_meta": 1423000,
       "historico_faturamento": 0,
-      "count": 233,
+      "count": 232,
       "metas_pessoais": {
         "vendas": {
           "meta_empresa": 1100000,
           "meta_comercial": 1500000,
-          "meta_realizada": 1114731.83,
-          "restante_empresa": -14731.830000000075,
-          "restante_comercial": 385268.1699999999
+          "meta_realizada": 1109731.83,
+          "restante_empresa": -9731.830000000075,
+          "restante_comercial": 390268.1699999999
         },
         "locacao": {
           "meta_empresa": 75000,
@@ -234,8 +234,8 @@
         "servicos": {
           "meta_empresa": 248000,
           "meta_comercial": 500000,
-          "meta_realizada": 366522.15,
-          "restante_empresa": -118522.15000000002,
+          "meta_realizada": 403428.94999999995,
+          "restante_empresa": -155428.94999999995,
           "restante_comercial": 266376.6
         }
       }
@@ -726,13 +726,6 @@
       "vendedor": "Gabriel Klein",
       "valor": 274050,
       "count": 23
-    },
-    {
-      "ano": 2026,
-      "mes": 6,
-      "vendedor": "Douglas",
-      "valor": 5000,
-      "count": 1
     },
     {
       "ano": 2026,
@@ -14806,17 +14799,6 @@
       "vendedor": "Gabriel Klein",
       "data": "2026-06-23",
       "obs": "18x",
-      "tipo": "Venda"
-    },
-    {
-      "ano": 2026,
-      "mes": 6,
-      "pedido": "99999",
-      "cliente": "teste",
-      "valor": 5000,
-      "vendedor": "Douglas",
-      "data": "2026-06-23",
-      "obs": "teste",
       "tipo": "Venda"
     },
     {
