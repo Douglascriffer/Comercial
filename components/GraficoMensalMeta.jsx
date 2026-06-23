@@ -57,7 +57,7 @@ export default function GraficoMensalMeta({ historyMonths = [], darkMode = false
   return (
     <div style={{ width: '100%', height: '100%', display: 'flex', flexDirection: 'column', gap: 10 }}>
       <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-        <h4 style={{ fontSize: 16, fontWeight: 700, color: darkMode ? '#ccc' : '#000', margin: 0 }}>
+        <h4 style={{ fontSize: 16, fontWeight: 700, color: '#ffffff', margin: 0 }}>
           HISTÓRICO MENSAL VS METAS (2026)
         </h4>
       </div>
