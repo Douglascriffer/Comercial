@@ -105,30 +105,55 @@ function MetaCard({ title, icon: Icon, data, color, darkMode, diasUteis }) {
           <div style={{ background: bgCardSecondary, padding: 16, borderRadius: 12, border: `1px solid ${border}` }}>
             <div style={{ fontSize: 18, color: '#ffffff', textTransform: 'uppercase', letterSpacing: 0.5, marginBottom: 8, textAlign: 'center' }}>Meta Empresa</div>
             <div className="numeric" style={{ fontSize: 18, fontWeight: 400, letterSpacing: '-0.5px', color: '#ffffff', textAlign: 'center' }}>{fmt(meta_empresa)}</div>
-            
-            <div style={{ marginTop: 12 }}>
-              <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: 18, marginBottom: 4, color: '#ffffff' }}>
-                <span>Atingido</span>
-                <span style={{ fontWeight: 600 }}>{pctEmpresa.toFixed(1)}%</span>
-              </div>
-              <div style={{ height: 6, background: `${color}20`, borderRadius: 4, overflow: 'hidden' }}>
-                <div style={{ height: '100%', background: color, width: `${Math.min(pctEmpresa, 100)}%`, borderRadius: 4 }} />
-              </div>
-            </div>
           </div>
 
           <div style={{ background: bgCardSecondary, padding: 16, borderRadius: 12, border: `1px solid ${border}` }}>
             <div style={{ fontSize: 18, color: '#ffffff', textTransform: 'uppercase', letterSpacing: 0.5, marginBottom: 8, textAlign: 'center' }}>Meta Comercial</div>
             <div className="numeric" style={{ fontSize: 18, fontWeight: 400, letterSpacing: '-0.5px', color: '#ffffff', textAlign: 'center' }}>{fmt(meta_comercial)}</div>
-            
-            <div style={{ marginTop: 12 }}>
-              <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: 18, marginBottom: 4, color: '#ffffff' }}>
-                <span>Atingido</span>
-                <span style={{ fontWeight: 600 }}>{pctComercial.toFixed(1)}%</span>
+          </div>
+        </div>
+
+        {/* Progressos */}
+        <div style={{ display: 'flex', gap: 24 }}>
+          {/* Empresa */}
+          <div style={{ flex: 1 }}>
+            <div style={{ marginBottom: 6, fontSize: 16 }}>
+              <span style={{ color: '#ffffff' }}>Atingido</span>
+            </div>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+              <div style={{ flex: 1, height: 4, background: 'rgba(255,255,255,0.1)', borderRadius: 2, overflow: 'hidden' }}>
+                <div style={{
+                  width: `${Math.min(pctEmpresa, 100)}%`,
+                  height: '100%',
+                  background: color,
+                  borderRadius: 2,
+                  transition: 'width 1s ease-out'
+                }} />
               </div>
-              <div style={{ height: 6, background: `${color}20`, borderRadius: 4, overflow: 'hidden' }}>
-                <div style={{ height: '100%', background: color, width: `${Math.min(pctComercial, 100)}%`, borderRadius: 4 }} />
+              <span className="numeric" style={{ fontSize: 16, fontWeight: 600, color: '#ffffff', textAlign: 'right', minWidth: 46 }}>
+                {(pctEmpresa).toFixed(1)}%
+              </span>
+            </div>
+          </div>
+
+          {/* Comercial */}
+          <div style={{ flex: 1 }}>
+            <div style={{ marginBottom: 6, fontSize: 16 }}>
+              <span style={{ color: '#ffffff' }}>Atingido</span>
+            </div>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+              <div style={{ flex: 1, height: 4, background: 'rgba(255,255,255,0.1)', borderRadius: 2, overflow: 'hidden' }}>
+                <div style={{
+                  width: `${Math.min(pctComercial, 100)}%`,
+                  height: '100%',
+                  background: color,
+                  borderRadius: 2,
+                  transition: 'width 1s ease-out'
+                }} />
               </div>
+              <span className="numeric" style={{ fontSize: 16, fontWeight: 600, color: '#ffffff', textAlign: 'right', minWidth: 46 }}>
+                {(pctComercial).toFixed(1)}%
+              </span>
             </div>
           </div>
         </div>
