@@ -406,7 +406,7 @@ export default function DashboardPage() {
             border: `1px solid ${colors.border}`,
             borderRadius: 12,
             padding: '20px',
-            height: 775,
+            height: 785,
             overflow: 'hidden',
             display: 'flex',
             flexDirection: 'column',
@@ -427,7 +427,7 @@ export default function DashboardPage() {
             border: `1px solid ${colors.border}`,
             borderRadius: 12,
             padding: '20px',
-            height: 775,
+            height: 785,
             display: 'flex',
             flexDirection: 'column',
             boxShadow: isDark ? '0 4px 20px rgba(0,0,0,0.15)' : '0 4px 20px rgba(0,0,0,0.02)'
