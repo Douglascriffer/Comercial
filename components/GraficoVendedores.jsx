@@ -58,6 +58,7 @@ function SellerList({ items, title, hovered, setHovered, darkMode, onSellerClick
               onClick={() => isTeam && onSellerClick(s.name)}
               style={{
                 display: 'flex',
+                flex: 1,
                 alignItems: 'center',
                 gap: 18,
                 padding: '16.5px 16px',
