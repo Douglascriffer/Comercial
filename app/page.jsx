@@ -41,7 +41,7 @@ export default function DashboardPage() {
     let interval;
     if (autoPlay) {
       interval = setInterval(() => {
-        setPresentationStep(prev => (prev + 1) % 2)
+        setPresentationStep(prev => (prev + 1) % 3)
       }, 10000) // 10 segundos
     }
     return () => clearInterval(interval)
@@ -52,6 +52,7 @@ export default function DashboardPage() {
     if (autoPlay) {
       if (presentationStep === 0) setCurrentTab('VENDAS')
       if (presentationStep === 1) setCurrentTab('METAS')
+      if (presentationStep === 2) setCurrentTab('VENDAS')
     }
   }, [presentationStep, autoPlay])
 
@@ -118,7 +119,9 @@ export default function DashboardPage() {
       color: colors.text,
       fontFamily: "'Syne', 'Gotham', sans-serif",
       transition: 'background 0.3s ease, color 0.3s ease',
-      paddingBottom: 40
+      paddingBottom: 40,
+      display: 'flex',
+      flexDirection: 'column'
     }}>
       <style>{`
         .hover-lift:hover { transform: translateY(-3px); }
@@ -137,7 +140,8 @@ export default function DashboardPage() {
         position: 'sticky',
         top: 0,
         zIndex: 100,
-        gap: 24
+        gap: 24,
+        height: 76 // fix height roughly to make calc easier
       }}>
         {/* Brand Logo */}
         <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
@@ -332,9 +336,9 @@ export default function DashboardPage() {
       </header>
 
       {/* ================= CONTENT MAIN ================= */}
-      <main style={{ maxWidth: '96%', margin: '24px auto 0 auto', display: 'flex', flexDirection: 'column', gap: 24 }}>
+      <main style={{ maxWidth: '96%', width: '100%', margin: '24px auto 0 auto', display: 'flex', flexDirection: 'column', gap: 24, flex: 1 }}>
         
-        {currentTab === 'VENDAS' ? (
+        {(!autoPlay && currentTab === 'VENDAS') || (autoPlay && presentationStep === 0) ? (
           <>
             {/* ================= KPI GRID (7 Cards) ================= */}
             <section style={{ display: 'grid', gridTemplateColumns: 'repeat(7, 1fr)', gap: 10 }}>
@@ -399,14 +403,14 @@ export default function DashboardPage() {
         </section>
 
         {/* ================= MAIN DASHBOARD ROW (Side by Side) ================= */}
-        <section style={{ display: 'grid', gridTemplateColumns: '1.2fr 1fr', gap: 24 }}>
+        <section style={{ display: 'grid', gridTemplateColumns: '1.2fr 1fr', gap: 24, flex: autoPlay ? 1 : 'none' }}>
           {/* Left Box: Ranking of Sellers */}
           <div style={{ 
             background: colors.card,
             border: `1px solid ${colors.border}`,
             borderRadius: 12,
             padding: '20px',
-            height: 785,
+            height: autoPlay ? 'calc(100vh - 250px)' : 785,
             overflow: 'hidden',
             display: 'flex',
             flexDirection: 'column',
@@ -427,7 +431,7 @@ export default function DashboardPage() {
             border: `1px solid ${colors.border}`,
             borderRadius: 12,
             padding: '20px',
-            height: 785,
+            height: autoPlay ? 'calc(100vh - 250px)' : 785,
             display: 'flex',
             flexDirection: 'column',
             boxShadow: isDark ? '0 4px 20px rgba(0,0,0,0.15)' : '0 4px 20px rgba(0,0,0,0.02)'
@@ -439,21 +443,32 @@ export default function DashboardPage() {
           </div>
         </section>
 
-            {/* ================= DETAILED TRANSACTIONS TABLE ================= */}
-            <section>
-              <TabelaTransacoes 
-                transactions={autoPlay ? filtered.transactions.slice(0, 10) : filtered.transactions}
-                darkMode={isDark}
-              />
-            </section>
+            {/* Only render Table in combined view if NOT autoPlay */}
+            {!autoPlay && (
+              <section>
+                <TabelaTransacoes 
+                  transactions={filtered.transactions}
+                  darkMode={isDark}
+                />
+              </section>
+            )}
           </>
-        ) : (
-          <AbaMetas 
-            metas_pessoais={filtered?.metas_pessoais} 
-            darkMode={isDark} 
-            filters={filters}
-          />
-        )}
+        ) : (!autoPlay && currentTab === 'METAS') || (autoPlay && presentationStep === 1) ? (
+          <div style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
+            <AbaMetas 
+              metas_pessoais={filtered?.metas_pessoais} 
+              darkMode={isDark} 
+              filters={filters}
+            />
+          </div>
+        ) : (autoPlay && presentationStep === 2) ? (
+          <div style={{ flex: 1, display: 'flex', flexDirection: 'column', height: 'calc(100vh - 160px)', overflow: 'hidden' }}>
+            <TabelaTransacoes 
+              transactions={filtered.transactions.slice(0, 20)}
+              darkMode={isDark}
+            />
+          </div>
+        ) : null}
 
       </main>
     </div>
