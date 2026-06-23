@@ -89,10 +89,10 @@ export default function GraficoMensalMeta({ historyMonths = [], darkMode = false
             />
             <Legend verticalAlign="top" height={36} iconType="circle" iconSize={8} wrapperStyle={{ fontSize: 14 }} />
             <Bar dataKey="Faturamento" fill="#ec6e2a" radius={[0, 4, 4, 0]} maxBarSize={20}>
-              <LabelList dataKey="Faturamento" position="insideRight" fill="#fff" fontSize={11} formatter={(v) => `${(v/1000).toFixed(0)}k`} />
+              <LabelList dataKey="Faturamento" position="insideRight" fill="#fff" fontSize={11} formatter={(v) => Math.round(v).toLocaleString('pt-BR')} />
             </Bar>
             <Bar dataKey="Meta" fill="#71717a" radius={[0, 4, 4, 0]} maxBarSize={20}>
-              <LabelList dataKey="Meta" position="insideRight" fill="#fff" fontSize={11} formatter={(v) => `${(v/1000).toFixed(0)}k`} />
+              <LabelList dataKey="Meta" position="insideRight" fill="#fff" fontSize={11} formatter={(v) => Math.round(v).toLocaleString('pt-BR')} />
             </Bar>
           </BarChart>
         </ResponsiveContainer>
