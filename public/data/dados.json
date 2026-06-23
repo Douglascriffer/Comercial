@@ -205,31 +205,31 @@
       "mes": 6,
       "label": "Junho/26",
       "vendas_meta": 1100000,
-      "vendas_realizado": 1079535.18,
+      "vendas_realizado": 1109535.18,
       "locacao_meta": 75000,
-      "locacao_realizado": 110790,
+      "locacao_realizado": 113113,
       "servicos_meta": 248000,
       "servicos_realizado": 366522.15,
       "servicos_falta": -118522.15000000002,
       "total_meta": 1423000,
-      "total_realizado": 1556847.33,
+      "total_realizado": 1589170.33,
       "historico_meta": 1423000,
       "historico_faturamento": 0,
-      "count": 228,
+      "count": 232,
       "metas_pessoais": {
         "vendas": {
           "meta_empresa": 1100000,
           "meta_comercial": 1500000,
-          "meta_realizada": 1079731.83,
-          "restante_empresa": 20268.169999999925,
-          "restante_comercial": 420268.1699999999
+          "meta_realizada": 1109731.83,
+          "restante_empresa": -9731.830000000075,
+          "restante_comercial": 390268.1699999999
         },
         "locacao": {
           "meta_empresa": 75000,
           "meta_comercial": 100000,
-          "meta_realizada": 110790,
-          "restante_empresa": -35790,
-          "restante_comercial": -10790
+          "meta_realizada": 113113,
+          "restante_empresa": -38113,
+          "restante_comercial": -13113
         },
         "servicos": {
           "meta_empresa": 248000,
@@ -724,15 +724,15 @@
       "ano": 2026,
       "mes": 6,
       "vendedor": "Gabriel Klein",
-      "valor": 244050,
-      "count": 22
+      "valor": 274050,
+      "count": 23
     },
     {
       "ano": 2026,
       "mes": 6,
       "vendedor": "Josiane",
-      "valor": 96783,
-      "count": 40
+      "valor": 99106,
+      "count": 43
     },
     {
       "ano": 2026,
@@ -14793,6 +14793,17 @@
     {
       "ano": 2026,
       "mes": 6,
+      "pedido": "17842",
+      "cliente": "Wily",
+      "valor": 30000,
+      "vendedor": "Gabriel Klein",
+      "data": "2026-06-23",
+      "obs": "18x",
+      "tipo": "Venda"
+    },
+    {
+      "ano": 2026,
+      "mes": 6,
       "pedido": "LOC-17316",
       "cliente": "TOXIMED",
       "valor": 360,
@@ -15282,6 +15293,39 @@
       "valor": 810,
       "vendedor": "Vanessa",
       "data": "2026-06-22",
+      "obs": "",
+      "tipo": "Locação"
+    },
+    {
+      "ano": 2026,
+      "mes": 6,
+      "pedido": "LOC-797",
+      "cliente": "VERTICE",
+      "valor": 644,
+      "vendedor": "Josiane",
+      "data": "2026-06-23",
+      "obs": "",
+      "tipo": "Locação"
+    },
+    {
+      "ano": 2026,
+      "mes": 6,
+      "pedido": "LOC-798",
+      "cliente": "ALLES ESPUMAS E ESTOFADOS",
+      "valor": 1275,
+      "vendedor": "Josiane",
+      "data": "2026-06-23",
+      "obs": "",
+      "tipo": "Locação"
+    },
+    {
+      "ano": 2026,
+      "mes": 6,
+      "pedido": "LOC-799",
+      "cliente": "EDUARDO LIRIA GARDIN",
+      "valor": 404,
+      "vendedor": "Josiane",
+      "data": "2026-06-23",
       "obs": "",
       "tipo": "Locação"
     }
