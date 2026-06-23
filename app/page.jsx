@@ -462,11 +462,11 @@ export default function DashboardPage() {
             />
           </div>
         ) : (autoPlay && presentationStep === 2) ? (
-          <div style={{ flex: 1, display: 'flex', flexDirection: 'column', height: 'calc(100vh - 160px)', overflow: 'hidden' }}>
+          <div style={{ flex: 1, display: 'flex', flexDirection: 'column', height: 'calc(100vh - 180px)', overflow: 'hidden' }}>
             <TabelaTransacoes 
               transactions={filtered.transactions}
               darkMode={isDark}
-              pageSize={20}
+              pageSize={18}
             />
           </div>
         ) : null}
