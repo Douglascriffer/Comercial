@@ -1,5 +1,5 @@
 'use client'
-import { ResponsiveContainer, BarChart, Bar, CartesianGrid, XAxis, YAxis, Tooltip, Legend } from 'recharts'
+import { ResponsiveContainer, BarChart, Bar, CartesianGrid, XAxis, YAxis, Tooltip, Legend, LabelList } from 'recharts'
 
 export default function GraficoMensalMeta({ historyMonths = [], darkMode = false }) {
   const colors = {
@@ -64,32 +64,36 @@ export default function GraficoMensalMeta({ historyMonths = [], darkMode = false
 
       <div style={{ flex: 1, minHeight: 220 }}>
         <ResponsiveContainer width="100%" height="100%">
-          <BarChart data={data} margin={{ top: 10, right: 10, left: 10, bottom: 0 }}>
-            <CartesianGrid strokeDasharray="3 3" stroke={colors.grid} vertical={false} />
+          <BarChart data={data} layout="vertical" margin={{ top: 10, right: 30, left: 10, bottom: 0 }}>
+            <CartesianGrid strokeDasharray="3 3" stroke={colors.grid} horizontal={false} vertical={true} />
             <XAxis 
-              dataKey="name" 
+              type="number"
               stroke={colors.text} 
               fontSize={12}
               tickLine={false}
               axisLine={false}
-              dy={10}
+              hide={true}
             />
             <YAxis 
+              type="category"
+              dataKey="name"
               stroke={colors.text} 
-              fontSize={11}
+              fontSize={12}
               tickLine={false}
               axisLine={false}
-              tickFormatter={(v) => `${(v / 1000).toFixed(0)}k`}
-              dx={-10}
-              hide={true}
+              dx={-5}
             />
             <Tooltip 
               content={<CustomTooltip />} 
               cursor={{ fill: darkMode ? 'rgba(255,255,255,0.05)' : 'rgba(0,0,0,0.05)' }}
             />
             <Legend verticalAlign="top" height={36} iconType="circle" iconSize={8} wrapperStyle={{ fontSize: 14 }} />
-            <Bar dataKey="Faturamento" fill="#ec6e2a" radius={[4, 4, 0, 0]} maxBarSize={28} />
-            <Bar dataKey="Meta" fill="#71717a" radius={[4, 4, 0, 0]} maxBarSize={28} />
+            <Bar dataKey="Faturamento" fill="#ec6e2a" radius={[0, 4, 4, 0]} maxBarSize={20}>
+              <LabelList dataKey="Faturamento" position="insideRight" fill="#fff" fontSize={11} formatter={(v) => `${(v/1000).toFixed(0)}k`} />
+            </Bar>
+            <Bar dataKey="Meta" fill="#71717a" radius={[0, 4, 4, 0]} maxBarSize={20}>
+              <LabelList dataKey="Meta" position="insideRight" fill="#fff" fontSize={11} formatter={(v) => `${(v/1000).toFixed(0)}k`} />
+            </Bar>
           </BarChart>
         </ResponsiveContainer>
       </div>
