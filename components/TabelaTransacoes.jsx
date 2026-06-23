@@ -60,8 +60,19 @@ export default function TabelaTransacoes({ transactions = [], darkMode = false }
       return true
     });
 
-    // Ordenar por Pedido decrescente (do maior/mais recente para o menor/mais antigo)
+    // Ordenar por:
+    // 1º Data decrescente (mais recente primeiro)
+    // 2º Pedido decrescente (maior/mais recente primeiro)
     return result.sort((a, b) => {
+      const dateA = new Date(a.data || 0);
+      const dateB = new Date(b.data || 0);
+      
+      // Compara as datas primeiro
+      if (dateB.getTime() !== dateA.getTime()) {
+        return dateB - dateA;
+      }
+      
+      // Se as datas forem iguais, compara o pedido
       const numA = Number(a.pedido);
       const numB = Number(b.pedido);
       if (!isNaN(numA) && !isNaN(numB)) {
