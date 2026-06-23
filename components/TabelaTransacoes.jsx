@@ -17,7 +17,7 @@ function formatDate(dateStr) {
   return dateStr
 }
 
-export default function TabelaTransacoes({ transactions = [], darkMode = false }) {
+export default function TabelaTransacoes({ transactions = [], darkMode = false, pageSize = 10 }) {
   const [search, setSearch] = useState('')
   const [vendedorFilter, setVendedorFilter] = useState('all')
 
@@ -83,7 +83,6 @@ export default function TabelaTransacoes({ transactions = [], darkMode = false }
   }, [transactions, search, vendedorFilter])
 
   // Paginação
-  const pageSize = 10
   const { paginated, page, totalPages, goTo, prev, next, setPage } = usePagination(filteredTxs, pageSize)
 
   // Resetar página quando a busca ou filtro muda
@@ -130,6 +129,7 @@ export default function TabelaTransacoes({ transactions = [], darkMode = false }
       display: 'flex',
       flexDirection: 'column',
       gap: 16,
+      flex: 1,
       boxShadow: darkMode ? '0 4px 20px rgba(0,0,0,0.15)' : '0 4px 20px rgba(0,0,0,0.02)'
     }}>
       {/* Topo da Tabela: Busca e Ações */}

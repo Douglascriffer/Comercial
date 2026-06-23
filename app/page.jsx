@@ -464,8 +464,9 @@ export default function DashboardPage() {
         ) : (autoPlay && presentationStep === 2) ? (
           <div style={{ flex: 1, display: 'flex', flexDirection: 'column', height: 'calc(100vh - 160px)', overflow: 'hidden' }}>
             <TabelaTransacoes 
-              transactions={filtered.transactions.slice(0, 20)}
+              transactions={filtered.transactions}
               darkMode={isDark}
+              pageSize={20}
             />
           </div>
         ) : null}
