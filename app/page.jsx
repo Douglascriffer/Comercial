@@ -132,16 +132,16 @@ export default function DashboardPage() {
       {/* ================= HEADER BAR ================= */}
       <header style={{
         background: colors.header,
-        padding: '16px 4%',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'space-between',
-        boxShadow: '0 4px 30px rgba(168,68,16,0.3)',
         position: 'sticky',
         top: 0,
         zIndex: 100,
         gap: 24,
-        height: 76 // fix height roughly to make calc easier
+        height: autoPlay ? 90 : 76,
+        padding: autoPlay ? '20px 32px' : '16px 24px',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        boxShadow: '0 4px 30px rgba(168,68,16,0.3)'
       }}>
         {/* Brand Logo */}
         <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
@@ -246,10 +246,10 @@ export default function DashboardPage() {
 
         {/* Aviso de Atualização */}
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '0 12px' }}>
-          <span style={{ fontSize: 14, color: 'rgba(255,255,255,0.95)', fontWeight: 500, letterSpacing: 0.5 }}>
+          <span style={{ fontSize: autoPlay ? 18 : 16, color: 'rgba(255,255,255,0.95)', fontWeight: 500, letterSpacing: 0.5 }}>
             Atualizações a cada 2 horas
           </span>
-          <span style={{ fontSize: 14, color: 'rgba(255,255,255,0.95)', fontWeight: 600, letterSpacing: 0.5 }}>
+          <span style={{ fontSize: autoPlay ? 18 : 16, color: 'rgba(255,255,255,0.95)', fontWeight: 600, letterSpacing: 0.5 }}>
             das 08h30 às 18h00.
           </span>
         </div>
