@@ -58,13 +58,13 @@ function SellerList({ items, title, hovered, setHovered, darkMode, onSellerClick
               onClick={() => isTeam && onSellerClick(s.name)}
               style={{
                 display: 'flex',
-                flex: 1,
+                flex: isTeam ? 1 : 'none',
                 alignItems: 'center',
-                gap: 18,
-                padding: '16.5px 16px',
+                gap: 20,
+                padding: '16px 20px',
                 background: isHovered ? (darkMode ? 'rgba(255,106,34,0.06)' : 'rgba(255,106,34,0.02)') : (darkMode ? 'rgba(255,255,255,0.02)' : 'rgba(0,0,0,0.01)'),
                 border: `1px solid ${isHovered ? 'rgba(255,106,34,0.2)' : '#000000'}`,
-                borderRadius: 10,
+                borderRadius: 12,
                 cursor: isTeam ? 'pointer' : 'default',
                 transition: 'all 0.2s ease',
                 position: 'relative'
@@ -73,23 +73,23 @@ function SellerList({ items, title, hovered, setHovered, darkMode, onSellerClick
             >
               {/* Rank Star/Circle */}
               <div style={{
-                width: 28,
-                height: 28,
+                width: 32,
+                height: 32,
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
-                fontSize: rank <= 3 && isTeam ? 16 : 14,
+                fontSize: rank <= 3 && isTeam ? 18 : 16,
                 color: rank <= 3 && isTeam ? '#ec6e2a' : (darkMode ? '#888' : '#666')
               }}>
                 {rank <= 3 && isTeam ? (
-                  <Star size={18} fill="#ec6e2a" stroke="#ec6e2a" />
+                  <Star size={22} fill="#ec6e2a" stroke="#ec6e2a" />
                 ) : rank}
               </div>
 
               {/* Avatar / Circle */}
               <div style={{
-                width: 50,
-                height: 50,
+                width: 56,
+                height: 56,
                 borderRadius: '50%',
                 overflow: 'hidden',
                 border: `2px solid ${darkMode ? 'rgba(255,255,255,0.1)' : 'rgba(0,0,0,0.06)'}`,
@@ -99,7 +99,7 @@ function SellerList({ items, title, hovered, setHovered, darkMode, onSellerClick
                 alignItems: 'center',
                 justifyContent: 'center',
                 color: isTeam ? '#fff' : (darkMode ? '#ccc' : '#333'),
-                fontSize: 18,
+                fontSize: 20,
               }}>
                 {isTeam ? (
                   AVATAR_MAP[s.name] || s.name.charAt(0)
@@ -108,10 +108,10 @@ function SellerList({ items, title, hovered, setHovered, darkMode, onSellerClick
                     const cfg = CHANNEL_ICONS[s.name]
                     if (cfg) {
                       if (cfg.isImage) {
-                        return <img src={cfg.src} alt={cfg.label} style={{ width: 24, height: 24, objectFit: 'contain' }} />
+                        return <img src={cfg.src} alt={cfg.label} style={{ width: 28, height: 28, objectFit: 'contain' }} />
                       }
                       const Icon = cfg.icon
-                      return <Icon size={20} color={cfg.color} />
+                      return <Icon size={24} color={cfg.color} />
                     }
                     return s.name.charAt(0)
                   })()
@@ -119,11 +119,11 @@ function SellerList({ items, title, hovered, setHovered, darkMode, onSellerClick
               </div>
 
               {/* Nome e Share Bar */}
-              <div style={{ flex: 1, minWidth: 0, display: 'flex', flexDirection: 'column', gap: 4 }}>
+              <div style={{ flex: 1, minWidth: 0, display: 'flex', flexDirection: 'column', gap: 6 }}>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                   <p style={{
                     margin: 0,
-                    fontSize: 18,
+                    fontSize: 20,
                     fontWeight: 500,
                     color: darkMode ? '#fff' : '#000000',
                     whiteSpace: 'nowrap',
@@ -132,7 +132,7 @@ function SellerList({ items, title, hovered, setHovered, darkMode, onSellerClick
                   }}>
                     {s.name}
                   </p>
-                  <span style={{ fontSize: 18, fontWeight: 600, color: '#ec6e2a' }} className="numeric">
+                  <span style={{ fontSize: 20, fontWeight: 600, color: '#ec6e2a' }} className="numeric">
                     {fmt(s.valor)}
                   </span>
                 </div>

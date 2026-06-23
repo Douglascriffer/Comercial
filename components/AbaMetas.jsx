@@ -147,12 +147,20 @@ function MetaCard({ title, icon: Icon, data, color, darkMode, diasUteis }) {
         {/* Grid de Valores Restantes */}
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }}>
           <div style={{ textAlign: 'center' }}>
-            <div style={{ fontSize: 18, color: '#ffffff', marginBottom: 4 }}>Restante Empresa</div>
-            <div className="numeric" style={{ fontSize: 18, fontWeight: 400, letterSpacing: '-0.5px', color: '#ffffff' }}>{fmt(restante_empresa)}</div>
+            <div style={{ fontSize: 18, color: restante_empresa < 0 ? '#10b981' : '#ffffff', marginBottom: 4 }}>
+              {restante_empresa < 0 ? 'Superou a Meta' : 'Restante Empresa'}
+            </div>
+            <div className="numeric" style={{ fontSize: 18, fontWeight: 400, letterSpacing: '-0.5px', color: restante_empresa < 0 ? '#10b981' : '#ffffff' }}>
+              {fmt(Math.abs(restante_empresa))}
+            </div>
           </div>
           <div style={{ textAlign: 'center' }}>
-            <div style={{ fontSize: 18, color: '#ffffff', marginBottom: 4 }}>Restante Comercial</div>
-            <div className="numeric" style={{ fontSize: 18, fontWeight: 400, letterSpacing: '-0.5px', color: '#ffffff' }}>{fmt(restante_comercial)}</div>
+            <div style={{ fontSize: 18, color: restante_comercial < 0 ? '#10b981' : '#ffffff', marginBottom: 4 }}>
+              {restante_comercial < 0 ? 'Superou a Meta' : 'Restante Comercial'}
+            </div>
+            <div className="numeric" style={{ fontSize: 18, fontWeight: 400, letterSpacing: '-0.5px', color: restante_comercial < 0 ? '#10b981' : '#ffffff' }}>
+              {fmt(Math.abs(restante_comercial))}
+            </div>
           </div>
         </div>
       </div>
@@ -219,7 +227,7 @@ export default function AbaMetas({ metas_pessoais, darkMode, filters }) {
   return (
     <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 24, paddingBottom: 40, flex: 1 }}>
       <MetaCard title="Vendas" icon={ShoppingCart} data={metas_pessoais.vendas} color="#ec6e2a" darkMode={darkMode} diasUteis={diasUteis} />
-      <MetaCard title="Locação" icon={Key} data={metas_pessoais.locacao} color="#3b82f6" darkMode={darkMode} diasUteis={diasUteis} />
+      <MetaCard title="Locação" icon={Key} data={metas_pessoais.locacao} color="#a1a1aa" darkMode={darkMode} diasUteis={diasUteis} />
       <MetaCard title="Serviços" icon={Wrench} data={metas_pessoais.servicos} color="#10b981" darkMode={darkMode} diasUteis={diasUteis} />
     </div>
   )
