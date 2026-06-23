@@ -91,8 +91,8 @@ function MetaCard({ title, icon: Icon, data, color, darkMode, diasUteis }) {
             <Icon size={24} />
           </div>
           <div style={{ textAlign: 'center' }}>
-            <h2 style={{ margin: 0, fontSize: 16, fontWeight: 700, color: '#ffffff' }}>{title}</h2>
-            <span style={{ fontSize: 14, color: '#ffffff' }}>Acompanhamento de Metas</span>
+            <h2 style={{ margin: 0, fontSize: 18, fontWeight: 700, color: '#ffffff' }}>{title}</h2>
+            <span style={{ fontSize: 16, color: '#ffffff' }}>Acompanhamento de Metas</span>
           </div>
         </div>
 
@@ -101,11 +101,11 @@ function MetaCard({ title, icon: Icon, data, color, darkMode, diasUteis }) {
         {/* Grid de Valores Principais */}
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }}>
           <div style={{ background: bgCardSecondary, padding: 16, borderRadius: 12, border: `1px solid ${border}` }}>
-            <div style={{ fontSize: 14, color: '#ffffff', textTransform: 'uppercase', letterSpacing: 0.5, marginBottom: 8, textAlign: 'center' }}>Meta Empresa</div>
-            <div className="numeric" style={{ fontSize: 14, fontWeight: 400, letterSpacing: '-0.5px', color: '#ffffff', textAlign: 'center' }}>{fmt(meta_empresa)}</div>
+            <div style={{ fontSize: 16, color: '#ffffff', textTransform: 'uppercase', letterSpacing: 0.5, marginBottom: 8, textAlign: 'center' }}>Meta Empresa</div>
+            <div className="numeric" style={{ fontSize: 16, fontWeight: 400, letterSpacing: '-0.5px', color: '#ffffff', textAlign: 'center' }}>{fmt(meta_empresa)}</div>
             
             <div style={{ marginTop: 12 }}>
-              <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: 14, marginBottom: 4, color: '#ffffff' }}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: 16, marginBottom: 4, color: '#ffffff' }}>
                 <span>Atingido</span>
                 <span style={{ fontWeight: 600 }}>{pctEmpresa.toFixed(1)}%</span>
               </div>
@@ -116,11 +116,11 @@ function MetaCard({ title, icon: Icon, data, color, darkMode, diasUteis }) {
           </div>
 
           <div style={{ background: bgCardSecondary, padding: 16, borderRadius: 12, border: `1px solid ${border}` }}>
-            <div style={{ fontSize: 14, color: '#ffffff', textTransform: 'uppercase', letterSpacing: 0.5, marginBottom: 8, textAlign: 'center' }}>Meta Comercial</div>
-            <div className="numeric" style={{ fontSize: 14, fontWeight: 400, letterSpacing: '-0.5px', color: '#ffffff', textAlign: 'center' }}>{fmt(meta_comercial)}</div>
+            <div style={{ fontSize: 16, color: '#ffffff', textTransform: 'uppercase', letterSpacing: 0.5, marginBottom: 8, textAlign: 'center' }}>Meta Comercial</div>
+            <div className="numeric" style={{ fontSize: 16, fontWeight: 400, letterSpacing: '-0.5px', color: '#ffffff', textAlign: 'center' }}>{fmt(meta_comercial)}</div>
             
             <div style={{ marginTop: 12 }}>
-              <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: 14, marginBottom: 4, color: '#ffffff' }}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: 16, marginBottom: 4, color: '#ffffff' }}>
                 <span>Atingido</span>
                 <span style={{ fontWeight: 600 }}>{pctComercial.toFixed(1)}%</span>
               </div>
@@ -137,20 +137,20 @@ function MetaCard({ title, icon: Icon, data, color, darkMode, diasUteis }) {
             <TrendingUp size={32} color={color} style={{ opacity: 0.8 }} />
           </div>
           <div>
-            <div style={{ fontSize: 14, color: '#ffffff', textTransform: 'uppercase', letterSpacing: 0.5, marginBottom: 4 }}>Realizado Total</div>
-            <div className="numeric" style={{ fontSize: 14, fontWeight: 400, letterSpacing: '-0.5px', color: '#ffffff' }}>{fmt(meta_realizada)}</div>
+            <div style={{ fontSize: 16, color: '#ffffff', textTransform: 'uppercase', letterSpacing: 0.5, marginBottom: 4 }}>Realizado Total</div>
+            <div className="numeric" style={{ fontSize: 16, fontWeight: 400, letterSpacing: '-0.5px', color: '#ffffff' }}>{fmt(meta_realizada)}</div>
           </div>
         </div>
 
         {/* Grid de Valores Restantes */}
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }}>
           <div style={{ textAlign: 'center' }}>
-            <div style={{ fontSize: 14, color: '#ffffff', marginBottom: 4 }}>Restante Empresa</div>
-            <div className="numeric" style={{ fontSize: 14, fontWeight: 400, letterSpacing: '-0.5px', color: '#ffffff' }}>{fmt(restante_empresa)}</div>
+            <div style={{ fontSize: 16, color: '#ffffff', marginBottom: 4 }}>Restante Empresa</div>
+            <div className="numeric" style={{ fontSize: 16, fontWeight: 400, letterSpacing: '-0.5px', color: '#ffffff' }}>{fmt(restante_empresa)}</div>
           </div>
           <div style={{ textAlign: 'center' }}>
-            <div style={{ fontSize: 14, color: '#ffffff', marginBottom: 4 }}>Restante Comercial</div>
-            <div className="numeric" style={{ fontSize: 14, fontWeight: 400, letterSpacing: '-0.5px', color: '#ffffff' }}>{fmt(restante_comercial)}</div>
+            <div style={{ fontSize: 16, color: '#ffffff', marginBottom: 4 }}>Restante Comercial</div>
+            <div className="numeric" style={{ fontSize: 16, fontWeight: 400, letterSpacing: '-0.5px', color: '#ffffff' }}>{fmt(restante_comercial)}</div>
           </div>
         </div>
       </div>
@@ -168,7 +168,7 @@ function MetaCard({ title, icon: Icon, data, color, darkMode, diasUteis }) {
           boxShadow: darkMode ? '0 4px 20px rgba(0,0,0,0.15)' : '0 4px 20px rgba(0,0,0,0.02)'
         }}>
           {/* Título Principal do Card */}
-          <div style={{ fontSize: 16, fontWeight: 600, color: '#ffffff', textTransform: 'uppercase', letterSpacing: 0.5, textAlign: 'center' }}>
+          <div style={{ fontSize: 18, fontWeight: 600, color: '#ffffff', textTransform: 'uppercase', letterSpacing: 0.5, textAlign: 'center' }}>
             FATURAMENTO A REALIZAR PARA META
           </div>
 
@@ -177,27 +177,27 @@ function MetaCard({ title, icon: Icon, data, color, darkMode, diasUteis }) {
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
               <Calendar size={16} color={color} />
-              <span style={{ fontSize: 14, color: '#ffffff' }}>Dias Úteis Restantes</span>
+              <span style={{ fontSize: 16, color: '#ffffff' }}>Dias Úteis Restantes</span>
             </div>
-            <div className="numeric" style={{ fontSize: 14, fontWeight: 400, letterSpacing: '-0.5px', color: '#ffffff' }}>{diasUteis} <span style={{fontSize:14, fontWeight:400, color:'#ffffff'}}>dias</span></div>
+            <div className="numeric" style={{ fontSize: 16, fontWeight: 400, letterSpacing: '-0.5px', color: '#ffffff' }}>{diasUteis} <span style={{fontSize:16, fontWeight:400, color:'#ffffff'}}>dias</span></div>
           </div>
           
           <div style={{ height: 1, background: border, width: '100%' }}></div>
           
           <div>
-            <div style={{ fontSize: 14, color: '#ffffff', marginBottom: 12 }}>
+            <div style={{ fontSize: 16, color: '#ffffff', marginBottom: 12 }}>
               Faturamento por dia
             </div>
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12 }}>
               <div style={{ background: bgCardSecondary, padding: 12, borderRadius: 8, border: `1px solid ${border}` }}>
-                <div style={{ fontSize: 14, color: '#ffffff', marginBottom: 4 }}>Empresa</div>
-                <div className="numeric" style={{ fontSize: 14, fontWeight: 400, letterSpacing: '-0.5px', color: '#ffffff' }}>
+                <div style={{ fontSize: 16, color: '#ffffff', marginBottom: 4 }}>Empresa</div>
+                <div className="numeric" style={{ fontSize: 16, fontWeight: 400, letterSpacing: '-0.5px', color: '#ffffff' }}>
                   {fmt(necDiaEmpresa)}
                 </div>
               </div>
               <div style={{ background: bgCardSecondary, padding: 12, borderRadius: 8, border: `1px solid ${border}` }}>
-                <div style={{ fontSize: 14, color: '#ffffff', marginBottom: 4 }}>Comercial</div>
-                <div className="numeric" style={{ fontSize: 14, fontWeight: 400, letterSpacing: '-0.5px', color: '#ffffff' }}>
+                <div style={{ fontSize: 16, color: '#ffffff', marginBottom: 4 }}>Comercial</div>
+                <div className="numeric" style={{ fontSize: 16, fontWeight: 400, letterSpacing: '-0.5px', color: '#ffffff' }}>
                   {fmt(necDiaComercial)}
                 </div>
               </div>
