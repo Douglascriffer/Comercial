@@ -2,10 +2,10 @@ import React from 'react'
 
 const KpiCard = ({ label, value, subLabel, icon: Icon, color, isPercent = false, isCurrency = true, darkMode = true }) => {
   const theme = {
-    card: darkMode ? '#1e1e2d' : '#e2e8f0',
-    border: darkMode ? 'rgba(255,255,255,0.08)' : 'rgba(0,0,0,0.08)',
-    text: darkMode ? '#ffffff' : '#000000',
-    textMuted: darkMode ? '#ffffff' : '#000000',
+    card: '#1e1e2d',
+    border: 'rgba(255,255,255,0.08)',
+    text: '#ffffff',
+    textMuted: '#ffffff',
   }
 
   const fmt = (v) => {
@@ -59,8 +59,8 @@ const KpiCard = ({ label, value, subLabel, icon: Icon, color, isPercent = false,
       {/* Text Info */}
       <div style={{ display: 'flex', flexDirection: 'column', minWidth: 0, flex: 1 }}>
         <span style={{
-          fontSize: 11,
-          fontWeight: 400,
+          fontSize: 14,
+          fontWeight: 500,
           color: theme.textMuted,
           textTransform: 'uppercase',
           letterSpacing: '1px',
@@ -71,8 +71,8 @@ const KpiCard = ({ label, value, subLabel, icon: Icon, color, isPercent = false,
         }}>{label}</span>
         
         <span style={{
-          fontSize: 22,
-          fontWeight: 400,
+          fontSize: 26,
+          fontWeight: 500,
           color: theme.text,
           lineHeight: 1.1,
           letterSpacing: '-0.5px'
