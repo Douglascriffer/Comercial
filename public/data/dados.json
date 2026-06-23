@@ -205,31 +205,31 @@
       "mes": 6,
       "label": "Junho/26",
       "vendas_meta": 1100000,
-      "vendas_realizado": 983189.7599999999,
+      "vendas_realizado": 1079535.18,
       "locacao_meta": 75000,
-      "locacao_realizado": 102405,
+      "locacao_realizado": 110790,
       "servicos_meta": 248000,
       "servicos_realizado": 366522.15,
       "servicos_falta": -118522.15000000002,
       "total_meta": 1423000,
-      "total_realizado": 1452116.9099999997,
+      "total_realizado": 1556847.33,
       "historico_meta": 1423000,
       "historico_faturamento": 0,
-      "count": 215,
+      "count": 228,
       "metas_pessoais": {
         "vendas": {
           "meta_empresa": 1100000,
           "meta_comercial": 1500000,
-          "meta_realizada": 983189.7599999999,
-          "restante_empresa": 116810.2400000001,
-          "restante_comercial": 516810.2400000001
+          "meta_realizada": 1079731.83,
+          "restante_empresa": 20268.169999999925,
+          "restante_comercial": 420268.1699999999
         },
         "locacao": {
           "meta_empresa": 75000,
           "meta_comercial": 100000,
-          "meta_realizada": 102405,
-          "restante_empresa": -27405,
-          "restante_comercial": -2405
+          "meta_realizada": 110790,
+          "restante_empresa": -35790,
+          "restante_comercial": -10790
         },
         "servicos": {
           "meta_empresa": 248000,
@@ -696,50 +696,50 @@
       "ano": 2026,
       "mes": 6,
       "vendedor": "Gabriel Dias",
-      "valor": 39350,
-      "count": 4
+      "valor": 61540,
+      "count": 5
     },
     {
       "ano": 2026,
       "mes": 6,
       "vendedor": "Rogislei",
-      "valor": 312555.14,
-      "count": 37
+      "valor": 340955.14,
+      "count": 40
     },
     {
       "ano": 2026,
       "mes": 6,
       "vendedor": "Mercado Livre",
-      "valor": 183015.54000000007,
-      "count": 98
+      "valor": 183090.91000000006,
+      "count": 100
     },
     {
       "ano": 2026,
       "mes": 6,
       "vendedor": "Gabriel Ferreira",
-      "valor": 224809.08000000002,
-      "count": 14
+      "valor": 249899.13,
+      "count": 16
     },
     {
       "ano": 2026,
       "mes": 6,
       "vendedor": "Gabriel Klein",
-      "valor": 223460,
-      "count": 19
+      "valor": 244050,
+      "count": 22
     },
     {
       "ano": 2026,
       "mes": 6,
       "vendedor": "Josiane",
-      "valor": 89208,
-      "count": 39
+      "valor": 96783,
+      "count": 40
     },
     {
       "ano": 2026,
       "mes": 6,
       "vendedor": "Vanessa",
-      "valor": 13197,
-      "count": 4
+      "valor": 14007,
+      "count": 5
     }
   ],
   "transactions": [
@@ -14672,6 +14672,127 @@
     {
       "ano": 2026,
       "mes": 6,
+      "pedido": "17807",
+      "cliente": "Valid",
+      "valor": 5890,
+      "vendedor": "Rogislei",
+      "data": "2026-06-22",
+      "obs": "",
+      "tipo": "Venda"
+    },
+    {
+      "ano": 2026,
+      "mes": 6,
+      "pedido": "17814",
+      "cliente": "Regiane",
+      "valor": 65.55,
+      "vendedor": "Mercado Livre",
+      "data": "2026-06-23",
+      "obs": "",
+      "tipo": "Venda"
+    },
+    {
+      "ano": 2026,
+      "mes": 6,
+      "pedido": "17815",
+      "cliente": "Renan",
+      "valor": 9.82,
+      "vendedor": "Mercado Livre",
+      "data": "2026-06-23",
+      "obs": "",
+      "tipo": "Venda"
+    },
+    {
+      "ano": 2026,
+      "mes": 6,
+      "pedido": "17819",
+      "cliente": "Porã",
+      "valor": 5300,
+      "vendedor": "Gabriel Klein",
+      "data": "2026-06-23",
+      "obs": "Origem:  SEO",
+      "tipo": "Venda"
+    },
+    {
+      "ano": 2026,
+      "mes": 6,
+      "pedido": "17821",
+      "cliente": "prot sol",
+      "valor": 5900,
+      "vendedor": "Gabriel Ferreira",
+      "data": "2026-06-23",
+      "obs": "",
+      "tipo": "Venda"
+    },
+    {
+      "ano": 2026,
+      "mes": 6,
+      "pedido": "17826",
+      "cliente": "Natal",
+      "valor": 17910,
+      "vendedor": "Rogislei",
+      "data": "2026-06-23",
+      "obs": "Cobrindo orçamento",
+      "tipo": "Venda"
+    },
+    {
+      "ano": 2026,
+      "mes": 6,
+      "pedido": "17832",
+      "cliente": "RC Nutry",
+      "valor": 4600,
+      "vendedor": "Rogislei",
+      "data": "2026-06-23",
+      "obs": "",
+      "tipo": "Venda"
+    },
+    {
+      "ano": 2026,
+      "mes": 6,
+      "pedido": "17835",
+      "cliente": "mariano gabriel",
+      "valor": 19190.05,
+      "vendedor": "Gabriel Ferreira",
+      "data": "2026-06-23",
+      "obs": "exportação",
+      "tipo": "Venda"
+    },
+    {
+      "ano": 2026,
+      "mes": 6,
+      "pedido": "17836",
+      "cliente": "Engra",
+      "valor": 22190,
+      "vendedor": "Gabriel Dias",
+      "data": "2026-06-23",
+      "obs": "",
+      "tipo": "Venda"
+    },
+    {
+      "ano": 2026,
+      "mes": 6,
+      "pedido": "17837",
+      "cliente": "Engenharia 3D",
+      "valor": 14000,
+      "vendedor": "Gabriel Klein",
+      "data": "2026-06-23",
+      "obs": "",
+      "tipo": "Venda"
+    },
+    {
+      "ano": 2026,
+      "mes": 6,
+      "pedido": "17839",
+      "cliente": "Engenharia 3D",
+      "valor": 1290,
+      "vendedor": "Gabriel Klein",
+      "data": "2026-06-23",
+      "obs": "",
+      "tipo": "Venda"
+    },
+    {
+      "ano": 2026,
+      "mes": 6,
       "pedido": "LOC-17316",
       "cliente": "TOXIMED",
       "valor": 360,
@@ -14963,7 +15084,7 @@
       "valor": 3750,
       "vendedor": "Josiane",
       "data": "2026-06-12",
-      "obs": "VENDA SONUS N/S - Contrato 780",
+      "obs": "VENDA SONUS 181692  e CR-2 37003288 - Contrato 780",
       "tipo": "Locação"
     },
     {
@@ -15139,6 +15260,28 @@
       "valor": 740,
       "vendedor": "Vanessa",
       "data": "2026-06-19",
+      "obs": "",
+      "tipo": "Locação"
+    },
+    {
+      "ano": 2026,
+      "mes": 6,
+      "pedido": "LOC-796",
+      "cliente": "HT MICRON SEMICONDUTORES",
+      "valor": 7575,
+      "vendedor": "Josiane",
+      "data": "2026-06-22",
+      "obs": "",
+      "tipo": "Locação"
+    },
+    {
+      "ano": 2026,
+      "mes": 6,
+      "pedido": "LOC-17804",
+      "cliente": "FRAS-LE AS",
+      "valor": 810,
+      "vendedor": "Vanessa",
+      "data": "2026-06-22",
       "obs": "",
       "tipo": "Locação"
     }
