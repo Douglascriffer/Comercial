@@ -122,7 +122,7 @@ function SellerList({ items, title, hovered, setHovered, darkMode, onSellerClick
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                   <p style={{
                     margin: 0,
-                    fontSize: 16,
+                    fontSize: 18,
                     fontWeight: 500,
                     color: darkMode ? '#fff' : '#000000',
                     whiteSpace: 'nowrap',
@@ -131,7 +131,7 @@ function SellerList({ items, title, hovered, setHovered, darkMode, onSellerClick
                   }}>
                     {s.name}
                   </p>
-                  <span style={{ fontSize: 16, fontWeight: 600, color: '#ec6e2a' }} className="numeric">
+                  <span style={{ fontSize: 18, fontWeight: 600, color: '#ec6e2a' }} className="numeric">
                     {fmt(s.valor)}
                   </span>
                 </div>
