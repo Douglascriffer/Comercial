@@ -246,11 +246,11 @@ export default function DashboardPage() {
 
         {/* Aviso de Atualização */}
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '0 12px' }}>
-          <span style={{ fontSize: 13, color: 'rgba(255,255,255,0.95)', fontWeight: 500, letterSpacing: 0.5 }}>
-            Atualizações efetuadas às
+          <span style={{ fontSize: 14, color: 'rgba(255,255,255,0.95)', fontWeight: 500, letterSpacing: 0.5 }}>
+            Atualizações a cada 2 horas
           </span>
-          <span style={{ fontSize: 13, color: 'rgba(255,255,255,0.95)', fontWeight: 600, letterSpacing: 0.5 }}>
-            10h, 16h e 17h50 diariamente.
+          <span style={{ fontSize: 14, color: 'rgba(255,255,255,0.95)', fontWeight: 600, letterSpacing: 0.5 }}>
+            das 08h30 às 18h00.
           </span>
         </div>
 
