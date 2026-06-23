@@ -33,16 +33,16 @@ export default function GraficoMensalMeta({ historyMonths = [], darkMode = false
           boxShadow: darkMode ? '0 4px 20px rgba(0,0,0,0.15)' : '0 4px 20px rgba(0,0,0,0.05)',
           minWidth: 160
         }}>
-          <p style={{ fontSize: 13, fontWeight: 500, color: darkMode ? '#fff' : '#000', marginBottom: 12, borderBottom: `1px solid ${colors.tooltipBorder}`, paddingBottom: 8 }}>
+          <p style={{ fontSize: 14, fontWeight: 500, color: darkMode ? '#fff' : '#000', margin: 0, marginBottom: 12, borderBottom: `1px solid ${colors.tooltipBorder}`, paddingBottom: 8 }}>
             {fullMonthNames[label] || label}
           </p>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
             {payload.map((entry, index) => (
               <div key={index} style={{ display: 'flex', flexDirection: 'column' }}>
-                 <span style={{ fontSize: 11, fontWeight: 400, color: colors.text, textTransform: 'uppercase', letterSpacing: '1px', marginBottom: 4 }}>
+                 <span style={{ fontSize: 14, fontWeight: 400, color: colors.text, textTransform: 'uppercase', letterSpacing: '1px', marginBottom: 4 }}>
                    {entry.name}
                  </span>
-                 <span style={{ fontSize: 22, fontWeight: 400, color: entry.color, lineHeight: 1.1, letterSpacing: '-0.5px' }} className="numeric">
+                 <span style={{ fontSize: 14, fontWeight: 600, color: entry.color, lineHeight: 1.1, letterSpacing: '-0.5px' }} className="numeric">
                    {Math.round(entry.value).toLocaleString('pt-BR')}
                  </span>
               </div>
@@ -57,8 +57,8 @@ export default function GraficoMensalMeta({ historyMonths = [], darkMode = false
   return (
     <div style={{ width: '100%', height: '100%', display: 'flex', flexDirection: 'column', gap: 10 }}>
       <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-        <h4 style={{ fontSize: 13, color: darkMode ? '#ccc' : '#000', textTransform: 'uppercase', letterSpacing: '0.5px', margin: 0 }}>
-          Histórico Mensal vs Metas (2026)
+        <h4 style={{ fontSize: 16, fontWeight: 700, color: darkMode ? '#ccc' : '#000', margin: 0 }}>
+          HISTÓRICO MENSAL VS METAS (2026)
         </h4>
       </div>
 
@@ -69,7 +69,7 @@ export default function GraficoMensalMeta({ historyMonths = [], darkMode = false
             <XAxis 
               dataKey="name" 
               stroke={colors.text} 
-              fontSize={11}
+              fontSize={12}
               tickLine={false}
               axisLine={false}
               dy={10}
@@ -87,7 +87,7 @@ export default function GraficoMensalMeta({ historyMonths = [], darkMode = false
               content={<CustomTooltip />} 
               cursor={{ fill: darkMode ? 'rgba(255,255,255,0.05)' : 'rgba(0,0,0,0.05)' }}
             />
-            <Legend verticalAlign="top" height={36} iconType="circle" iconSize={8} wrapperStyle={{ fontSize: 12 }} />
+            <Legend verticalAlign="top" height={36} iconType="circle" iconSize={8} wrapperStyle={{ fontSize: 14 }} />
             <Bar dataKey="Faturamento" fill="#ec6e2a" radius={[4, 4, 0, 0]} maxBarSize={28} />
             <Bar dataKey="Meta" fill="#71717a" radius={[4, 4, 0, 0]} maxBarSize={28} />
           </BarChart>

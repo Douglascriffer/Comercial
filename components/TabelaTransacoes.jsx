@@ -137,7 +137,7 @@ export default function TabelaTransacoes({ transactions = [], darkMode = false }
                 background: t.inputBg,
                 border: `1px solid ${t.border}`,
                 borderRadius: 8,
-                fontSize: 13,
+                fontSize: 14,
                 color: t.inputText,
                 outline: 'none',
                 transition: 'border-color 0.2s'
@@ -154,7 +154,7 @@ export default function TabelaTransacoes({ transactions = [], darkMode = false }
               background: t.inputBg,
               border: `1px solid ${t.border}`,
               borderRadius: 8,
-              fontSize: 13,
+              fontSize: 14,
               color: t.inputText,
               outline: 'none',
               cursor: 'pointer'
@@ -176,7 +176,7 @@ export default function TabelaTransacoes({ transactions = [], darkMode = false }
               color: '#ffffff',
               border: 'none',
               borderRadius: 8,
-              fontSize: 13,
+              fontSize: 14,
               display: 'flex',
               alignItems: 'center',
               gap: 6,
@@ -192,7 +192,7 @@ export default function TabelaTransacoes({ transactions = [], darkMode = false }
 
       {/* Grid de Tabela */}
       <div style={{ overflowX: 'auto', border: `1px solid ${t.border}`, borderRadius: 8 }}>
-        <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 13, textAlign: 'left', minWidth: 700 }}>
+        <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 14, textAlign: 'left', minWidth: 700 }}>
           <thead>
             <tr style={{ background: t.thBg, borderBottom: `1px solid ${t.border}` }}>
               <th style={{ padding: '12px 16px', color: t.text }}>Pedido</th>
@@ -256,7 +256,7 @@ export default function TabelaTransacoes({ transactions = [], darkMode = false }
       {/* Paginação */}
       {totalPages > 1 && (
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: 8 }}>
-          <span style={{ fontSize: 12, color: t.textMuted, fontWeight: 400 }}>
+          <span style={{ fontSize: 14, color: t.textMuted, fontWeight: 400 }}>
             Mostrando {paginated.length} de {filteredTxs.length} transações (Pág. {page}/{totalPages})
           </span>
           
@@ -305,7 +305,7 @@ export default function TabelaTransacoes({ transactions = [], darkMode = false }
                     border: `1px solid ${page === targetPage ? '#ec6e2a' : t.border}`,
                     background: page === targetPage ? '#ec6e2a' : t.inputBg,
                     color: page === targetPage ? '#ffffff' : t.text,
-                    fontSize: 12,
+                    fontSize: 14,
                     cursor: 'pointer'
                   }}
                 >
