@@ -148,7 +148,7 @@ function MetaCard({ title, icon: Icon, data, color, darkMode, diasUteis }) {
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }}>
           <div style={{ textAlign: 'center' }}>
             <div style={{ fontSize: 18, color: restante_empresa < 0 ? '#10b981' : '#ffffff', marginBottom: 4 }}>
-              {restante_empresa < 0 ? 'Superou a Meta' : 'Restante Empresa'}
+              {restante_empresa < 0 ? 'Superou a Meta Empresa' : 'Restante Empresa'}
             </div>
             <div className="numeric" style={{ fontSize: 18, fontWeight: 400, letterSpacing: '-0.5px', color: restante_empresa < 0 ? '#10b981' : '#ffffff' }}>
               {fmt(Math.abs(restante_empresa))}
@@ -156,7 +156,7 @@ function MetaCard({ title, icon: Icon, data, color, darkMode, diasUteis }) {
           </div>
           <div style={{ textAlign: 'center' }}>
             <div style={{ fontSize: 18, color: restante_comercial < 0 ? '#10b981' : '#ffffff', marginBottom: 4 }}>
-              {restante_comercial < 0 ? 'Superou a Meta' : 'Restante Comercial'}
+              {restante_comercial < 0 ? 'Superou a Meta Comercial' : 'Restante Comercial'}
             </div>
             <div className="numeric" style={{ fontSize: 18, fontWeight: 400, letterSpacing: '-0.5px', color: restante_comercial < 0 ? '#10b981' : '#ffffff' }}>
               {fmt(Math.abs(restante_comercial))}
