@@ -60,11 +60,14 @@ export default function TabelaTransacoes({ transactions = [], darkMode = false }
       return true
     });
 
-    // Ordenar do mais novo (maior data) para o mais antigo (menor data)
+    // Ordenar por Pedido decrescente (do maior/mais recente para o menor/mais antigo)
     return result.sort((a, b) => {
-      const dateA = new Date(a.data || 0);
-      const dateB = new Date(b.data || 0);
-      return dateB - dateA;
+      const numA = Number(a.pedido);
+      const numB = Number(b.pedido);
+      if (!isNaN(numA) && !isNaN(numB)) {
+        return numB - numA;
+      }
+      return String(b.pedido || '').localeCompare(String(a.pedido || ''));
     });
   }, [transactions, search, vendedorFilter])
 
