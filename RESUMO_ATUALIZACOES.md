@@ -33,6 +33,10 @@ Toda vez que uma alteração é feita no código ou nas planilhas, o fluxo de at
         *   O "R$" foi removido dos card da aba de metas. O valor passou a ser formatado como puro com milhar matemático (ex: `935.202`) e sem decimais, acompanhando a mesma lógica de Javascript utilizada na aba Vendas.
         *   A fonte e tipografia de todos os números da Aba Metas foram padronizados (`fontWeight: 400`, `letterSpacing: -0.5px`, CSS class `.numeric`).
         *   Os ícones e cabeçalhos dos cards da aba Metas foram centralizados de maneira simétrica (títulos ao centro fixo, logotipos/ícones do lado esquerdo de forma absoluta).
+*   **Atualizações da Transmissão Automática (24/06/2026)**:
+    *   O ciclo de transmissão automática de tela (modo TV) teve seu intervalo alterado de 10 para 40 segundos por slide.
+    *   A etapa com a "Tabela de Transações Detalhadas" foi completamente removida da aplicação para simplificar o visual.
+    *   A transmissão agora alterna em um loop contínuo apenas entre as abas de **VENDAS** e **METAS**.
 
 ## 4. Onde Encontrar Arquivos Importantes
 *   `lib/hooks.js`: Onde ocorre a filtragem dos vendedores por nome e mês.
