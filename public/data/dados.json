@@ -207,15 +207,15 @@
       "vendas_meta": 1100000,
       "vendas_realizado": 1115049.69,
       "locacao_meta": 75000,
-      "locacao_realizado": 112795,
+      "locacao_realizado": 113554,
       "servicos_meta": 248000,
       "servicos_realizado": 411954,
       "servicos_falta": -163954,
       "total_meta": 1423000,
-      "total_realizado": 1639798.69,
+      "total_realizado": 1640557.69,
       "historico_meta": 1423000,
       "historico_faturamento": 0,
-      "count": 238,
+      "count": 239,
       "metas_pessoais": {
         "vendas": {
           "meta_empresa": 1100000,
@@ -227,9 +227,9 @@
         "locacao": {
           "meta_empresa": 75000,
           "meta_comercial": 100000,
-          "meta_realizada": 112795,
-          "restante_empresa": -37795,
-          "restante_comercial": -12795
+          "meta_realizada": 113554,
+          "restante_empresa": -38554,
+          "restante_comercial": -13554
         },
         "servicos": {
           "meta_empresa": 248000,
@@ -731,8 +731,8 @@
       "ano": 2026,
       "mes": 6,
       "vendedor": "Josiane",
-      "valor": 98788,
-      "count": 43
+      "valor": 99547,
+      "count": 44
     },
     {
       "ano": 2026,
@@ -15392,6 +15392,17 @@
       "valor": 305,
       "vendedor": "Josiane",
       "data": "2026-06-23",
+      "obs": "",
+      "tipo": "Locação"
+    },
+    {
+      "ano": 2026,
+      "mes": 6,
+      "pedido": "LOC-801",
+      "cliente": "CAMPERO ASSESSORIA",
+      "valor": 759,
+      "vendedor": "Josiane",
+      "data": "2026-06-24",
       "obs": "",
       "tipo": "Locação"
     }
