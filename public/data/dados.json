@@ -205,24 +205,24 @@
       "mes": 6,
       "label": "Junho/26",
       "vendas_meta": 1100000,
-      "vendas_realizado": 1109731.8299999998,
+      "vendas_realizado": 1115049.69,
       "locacao_meta": 75000,
       "locacao_realizado": 113418,
       "servicos_meta": 248000,
       "servicos_realizado": 406632.94999999995,
       "servicos_falta": -158632.94999999995,
       "total_meta": 1423000,
-      "total_realizado": 1629782.7799999998,
+      "total_realizado": 1635100.64,
       "historico_meta": 1423000,
       "historico_faturamento": 0,
-      "count": 234,
+      "count": 239,
       "metas_pessoais": {
         "vendas": {
           "meta_empresa": 1100000,
           "meta_comercial": 1500000,
-          "meta_realizada": 1109731.8299999998,
-          "restante_empresa": -9731.829999999842,
-          "restante_comercial": 390268.17000000016
+          "meta_realizada": 1115049.69,
+          "restante_empresa": -15049.689999999944,
+          "restante_comercial": 384950.31000000006
         },
         "locacao": {
           "meta_empresa": 75000,
@@ -703,15 +703,15 @@
       "ano": 2026,
       "mes": 6,
       "vendedor": "Rogislei",
-      "valor": 340955.14,
-      "count": 40
+      "valor": 346170.14,
+      "count": 41
     },
     {
       "ano": 2026,
       "mes": 6,
       "vendedor": "Mercado Livre",
-      "valor": 183287.56000000006,
-      "count": 101
+      "valor": 183390.42000000007,
+      "count": 105
     },
     {
       "ano": 2026,
@@ -14807,6 +14807,61 @@
       "pedido": "17813",
       "cliente": "AGN",
       "valor": 196.65,
+      "vendedor": "Mercado Livre",
+      "data": "2026-06-24",
+      "obs": "",
+      "tipo": "Venda"
+    },
+    {
+      "ano": 2026,
+      "mes": 6,
+      "pedido": "17862",
+      "cliente": "Tatiana",
+      "valor": 5215,
+      "vendedor": "Rogislei",
+      "data": "2026-06-24",
+      "obs": "Valor Mercado Livre",
+      "tipo": "Venda"
+    },
+    {
+      "ano": 2026,
+      "mes": 6,
+      "pedido": "17856",
+      "cliente": "Guilherme",
+      "valor": 63.58,
+      "vendedor": "Mercado Livre",
+      "data": "2026-06-24",
+      "obs": "",
+      "tipo": "Venda"
+    },
+    {
+      "ano": 2026,
+      "mes": 6,
+      "pedido": "17858",
+      "cliente": "Vera",
+      "valor": 19.64,
+      "vendedor": "Mercado Livre",
+      "data": "2026-06-24",
+      "obs": "",
+      "tipo": "Venda"
+    },
+    {
+      "ano": 2026,
+      "mes": 6,
+      "pedido": "17859",
+      "cliente": "Leandro",
+      "valor": 9.82,
+      "vendedor": "Mercado Livre",
+      "data": "2026-06-24",
+      "obs": "",
+      "tipo": "Venda"
+    },
+    {
+      "ano": 2026,
+      "mes": 6,
+      "pedido": "17860",
+      "cliente": "Victoria",
+      "valor": 9.82,
       "vendedor": "Mercado Livre",
       "data": "2026-06-24",
       "obs": "",
