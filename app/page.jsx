@@ -41,8 +41,8 @@ export default function DashboardPage() {
     let interval;
     if (autoPlay) {
       interval = setInterval(() => {
-        setPresentationStep(prev => (prev + 1) % 3)
-      }, 10000) // 10 segundos
+        setPresentationStep(prev => (prev + 1) % 2)
+      }, 40000) // 40 segundos
     }
     return () => clearInterval(interval)
   }, [autoPlay])
@@ -52,7 +52,6 @@ export default function DashboardPage() {
     if (autoPlay) {
       if (presentationStep === 0) setCurrentTab('VENDAS')
       if (presentationStep === 1) setCurrentTab('METAS')
-      if (presentationStep === 2) setCurrentTab('VENDAS')
     }
   }, [presentationStep, autoPlay])
 
@@ -442,16 +441,6 @@ export default function DashboardPage() {
             />
           </div>
         </section>
-
-            {/* Only render Table in combined view if NOT autoPlay */}
-            {!autoPlay && (
-              <section>
-                <TabelaTransacoes 
-                  transactions={filtered.transactions}
-                  darkMode={isDark}
-                />
-              </section>
-            )}
           </>
         ) : (!autoPlay && currentTab === 'METAS') || (autoPlay && presentationStep === 1) ? (
           <div style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
@@ -459,14 +448,6 @@ export default function DashboardPage() {
               metas_pessoais={filtered?.metas_pessoais} 
               darkMode={isDark} 
               filters={filters}
-            />
-          </div>
-        ) : (autoPlay && presentationStep === 2) ? (
-          <div style={{ flex: 1, display: 'flex', flexDirection: 'column', height: 'calc(100vh - 180px)', overflow: 'hidden' }}>
-            <TabelaTransacoes 
-              transactions={filtered.transactions}
-              darkMode={isDark}
-              pageSize={18}
             />
           </div>
         ) : null}
