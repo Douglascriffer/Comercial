@@ -205,31 +205,31 @@
       "mes": 6,
       "label": "Junho/26",
       "vendas_meta": 1100000,
-      "vendas_realizado": 1115049.69,
+      "vendas_realizado": 1116062.0899999999,
       "locacao_meta": 75000,
-      "locacao_realizado": 113554,
+      "locacao_realizado": 114184,
       "servicos_meta": 248000,
       "servicos_realizado": 411954,
       "servicos_falta": -163954,
       "total_meta": 1423000,
-      "total_realizado": 1640557.69,
+      "total_realizado": 1642200.0899999999,
       "historico_meta": 1423000,
       "historico_faturamento": 0,
-      "count": 239,
+      "count": 241,
       "metas_pessoais": {
         "vendas": {
           "meta_empresa": 1100000,
           "meta_comercial": 1500000,
-          "meta_realizada": 1115049.69,
-          "restante_empresa": -15049.689999999944,
-          "restante_comercial": 384950.31000000006
+          "meta_realizada": 1116062.0899999999,
+          "restante_empresa": -16062.089999999851,
+          "restante_comercial": 383937.91000000015
         },
         "locacao": {
           "meta_empresa": 75000,
           "meta_comercial": 100000,
-          "meta_realizada": 113554,
-          "restante_empresa": -38554,
-          "restante_comercial": -13554
+          "meta_realizada": 114184,
+          "restante_empresa": -39184,
+          "restante_comercial": -14184
         },
         "servicos": {
           "meta_empresa": 248000,
@@ -703,8 +703,8 @@
       "ano": 2026,
       "mes": 6,
       "vendedor": "Rogislei",
-      "valor": 346170.14,
-      "count": 41
+      "valor": 347182.54000000004,
+      "count": 42
     },
     {
       "ano": 2026,
@@ -731,8 +731,8 @@
       "ano": 2026,
       "mes": 6,
       "vendedor": "Josiane",
-      "valor": 99547,
-      "count": 44
+      "valor": 100177,
+      "count": 45
     },
     {
       "ano": 2026,
@@ -14870,6 +14870,17 @@
     {
       "ano": 2026,
       "mes": 6,
+      "pedido": "17875",
+      "cliente": "Mafra-seg",
+      "valor": 1012.4,
+      "vendedor": "Rogislei",
+      "data": "2026-06-24",
+      "obs": "Origem SEO",
+      "tipo": "Venda"
+    },
+    {
+      "ano": 2026,
+      "mes": 6,
       "pedido": "LOC-17316",
       "cliente": "TOXIMED",
       "valor": 360,
@@ -15401,6 +15412,17 @@
       "pedido": "LOC-801",
       "cliente": "CAMPERO ASSESSORIA",
       "valor": 759,
+      "vendedor": "Josiane",
+      "data": "2026-06-24",
+      "obs": "",
+      "tipo": "Locação"
+    },
+    {
+      "ano": 2026,
+      "mes": 6,
+      "pedido": "LOC-802",
+      "cliente": "ETS TREINAMENTOS",
+      "valor": 630,
       "vendedor": "Josiane",
       "data": "2026-06-24",
       "obs": "",
