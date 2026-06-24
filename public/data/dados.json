@@ -205,37 +205,37 @@
       "mes": 6,
       "label": "Junho/26",
       "vendas_meta": 1100000,
-      "vendas_realizado": 1109535.18,
+      "vendas_realizado": 1109731.8299999998,
       "locacao_meta": 75000,
-      "locacao_realizado": 113113,
+      "locacao_realizado": 113418,
       "servicos_meta": 248000,
-      "servicos_realizado": 403428.94999999995,
-      "servicos_falta": -155428.94999999995,
+      "servicos_realizado": 406632.94999999995,
+      "servicos_falta": -158632.94999999995,
       "total_meta": 1423000,
-      "total_realizado": 1626077.13,
+      "total_realizado": 1629782.7799999998,
       "historico_meta": 1423000,
       "historico_faturamento": 0,
-      "count": 232,
+      "count": 234,
       "metas_pessoais": {
         "vendas": {
           "meta_empresa": 1100000,
           "meta_comercial": 1500000,
-          "meta_realizada": 1109731.83,
-          "restante_empresa": -9731.830000000075,
-          "restante_comercial": 390268.1699999999
+          "meta_realizada": 1109731.8299999998,
+          "restante_empresa": -9731.829999999842,
+          "restante_comercial": 390268.17000000016
         },
         "locacao": {
           "meta_empresa": 75000,
           "meta_comercial": 100000,
-          "meta_realizada": 113113,
-          "restante_empresa": -38113,
-          "restante_comercial": -13113
+          "meta_realizada": 113418,
+          "restante_empresa": -38418,
+          "restante_comercial": -13418
         },
         "servicos": {
           "meta_empresa": 248000,
           "meta_comercial": 500000,
-          "meta_realizada": 403428.94999999995,
-          "restante_empresa": -155428.94999999995,
+          "meta_realizada": 406632.94999999995,
+          "restante_empresa": -158632.94999999995,
           "restante_comercial": 266376.6
         }
       }
@@ -710,8 +710,8 @@
       "ano": 2026,
       "mes": 6,
       "vendedor": "Mercado Livre",
-      "valor": 183090.91000000006,
-      "count": 100
+      "valor": 183287.56000000006,
+      "count": 101
     },
     {
       "ano": 2026,
@@ -731,8 +731,8 @@
       "ano": 2026,
       "mes": 6,
       "vendedor": "Josiane",
-      "valor": 99106,
-      "count": 43
+      "valor": 99411,
+      "count": 44
     },
     {
       "ano": 2026,
@@ -14804,6 +14804,17 @@
     {
       "ano": 2026,
       "mes": 6,
+      "pedido": "17813",
+      "cliente": "AGN",
+      "valor": 196.65,
+      "vendedor": "Mercado Livre",
+      "data": "2026-06-24",
+      "obs": "",
+      "tipo": "Venda"
+    },
+    {
+      "ano": 2026,
+      "mes": 6,
       "pedido": "LOC-17316",
       "cliente": "TOXIMED",
       "valor": 360,
@@ -15324,6 +15335,17 @@
       "pedido": "LOC-799",
       "cliente": "EDUARDO LIRIA GARDIN",
       "valor": 404,
+      "vendedor": "Josiane",
+      "data": "2026-06-23",
+      "obs": "",
+      "tipo": "Locação"
+    },
+    {
+      "ano": 2026,
+      "mes": 6,
+      "pedido": "LOC-800",
+      "cliente": "DTA ENGENHARIA",
+      "valor": 305,
       "vendedor": "Josiane",
       "data": "2026-06-23",
       "obs": "",
