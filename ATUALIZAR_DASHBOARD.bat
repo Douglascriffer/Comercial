@@ -7,6 +7,7 @@ echo =====================================
 echo.
 
 :: 1. Executar processador python
+set GIT_ASK_YESNO=false
 echo [1/3] Processando dados do Excel...
 python bridge_data.py
 if %errorlevel% neq 0 (

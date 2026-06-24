@@ -205,24 +205,24 @@
       "mes": 6,
       "label": "Junho/26",
       "vendas_meta": 1100000,
-      "vendas_realizado": 1116062.0899999999,
+      "vendas_realizado": 1116329.0899999999,
       "locacao_meta": 75000,
       "locacao_realizado": 114184,
       "servicos_meta": 248000,
-      "servicos_realizado": 411954,
-      "servicos_falta": -163954,
+      "servicos_realizado": 416370.95,
+      "servicos_falta": -168370.95,
       "total_meta": 1423000,
-      "total_realizado": 1642200.0899999999,
+      "total_realizado": 1646884.0399999998,
       "historico_meta": 1423000,
       "historico_faturamento": 0,
-      "count": 241,
+      "count": 242,
       "metas_pessoais": {
         "vendas": {
           "meta_empresa": 1100000,
           "meta_comercial": 1500000,
-          "meta_realizada": 1116062.0899999999,
-          "restante_empresa": -16062.089999999851,
-          "restante_comercial": 383937.91000000015
+          "meta_realizada": 1116329.0899999999,
+          "restante_empresa": -16329.089999999851,
+          "restante_comercial": 383670.91000000015
         },
         "locacao": {
           "meta_empresa": 75000,
@@ -234,8 +234,8 @@
         "servicos": {
           "meta_empresa": 248000,
           "meta_comercial": 500000,
-          "meta_realizada": 411954,
-          "restante_empresa": -163954,
+          "meta_realizada": 416370.95,
+          "restante_empresa": -168370.95,
           "restante_comercial": 266376.6
         }
       }
@@ -724,8 +724,8 @@
       "ano": 2026,
       "mes": 6,
       "vendedor": "Gabriel Klein",
-      "valor": 274050,
-      "count": 23
+      "valor": 274317,
+      "count": 24
     },
     {
       "ano": 2026,
@@ -14876,6 +14876,17 @@
       "vendedor": "Rogislei",
       "data": "2026-06-24",
       "obs": "Origem SEO",
+      "tipo": "Venda"
+    },
+    {
+      "ano": 2026,
+      "mes": 6,
+      "pedido": "17890",
+      "cliente": "Unimed Chapeco",
+      "valor": 267,
+      "vendedor": "Gabriel Klein",
+      "data": "2026-06-24",
+      "obs": "",
       "tipo": "Venda"
     },
     {
