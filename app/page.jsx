@@ -55,8 +55,16 @@ export default function DashboardPage() {
     }
   }, [presentationStep, autoPlay])
 
-  const { data, loading, error } = useFinancialData()
+  const { data, loading, error, refetch } = useFinancialData()
   const filtered = useFilteredData(data, filters)
+
+  // Atualização silenciosa dos dados a cada 10 minutos (10 * 60 * 1000 ms)
+  useEffect(() => {
+    const dataFetchInterval = setInterval(() => {
+      refetch(true) // true = ignora o cache e busca o mais recente
+    }, 10 * 60 * 1000)
+    return () => clearInterval(dataFetchInterval)
+  }, [refetch])
 
   // Sincronizar tema
   useEffect(() => {
