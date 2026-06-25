@@ -205,24 +205,24 @@
       "mes": 6,
       "label": "Junho/26",
       "vendas_meta": 1100000,
-      "vendas_realizado": 1117142.36,
+      "vendas_realizado": 1134042.36,
       "locacao_meta": 75000,
       "locacao_realizado": 114184,
       "servicos_meta": 248000,
       "servicos_realizado": 419788.55,
       "servicos_falta": -171788.55,
       "total_meta": 1423000,
-      "total_realizado": 1651114.9100000001,
+      "total_realizado": 1668014.9100000001,
       "historico_meta": 1423000,
       "historico_faturamento": 0,
-      "count": 248,
+      "count": 249,
       "metas_pessoais": {
         "vendas": {
           "meta_empresa": 1100000,
           "meta_comercial": 1500000,
-          "meta_realizada": 1117142.36,
-          "restante_empresa": -17142.360000000102,
-          "restante_comercial": 382857.6399999999
+          "meta_realizada": 1134042.36,
+          "restante_empresa": -34042.3600000001,
+          "restante_comercial": 365957.6399999999
         },
         "locacao": {
           "meta_empresa": 75000,
@@ -724,8 +724,8 @@
       "ano": 2026,
       "mes": 6,
       "vendedor": "Gabriel Klein",
-      "valor": 274317,
-      "count": 24
+      "valor": 291217,
+      "count": 25
     },
     {
       "ano": 2026,
@@ -14951,6 +14951,17 @@
       "cliente": "Jane",
       "valor": 98.2,
       "vendedor": "Mercado Livre",
+      "data": "2026-06-25",
+      "obs": "",
+      "tipo": "Venda"
+    },
+    {
+      "ano": 2026,
+      "mes": 6,
+      "pedido": "17892",
+      "cliente": "Impactus",
+      "valor": 16900,
+      "vendedor": "Gabriel Klein",
       "data": "2026-06-25",
       "obs": "",
       "tipo": "Venda"
