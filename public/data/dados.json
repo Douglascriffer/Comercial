@@ -205,24 +205,24 @@
       "mes": 6,
       "label": "Junho/26",
       "vendas_meta": 1100000,
-      "vendas_realizado": 1154691.618,
+      "vendas_realizado": 2154691.618,
       "locacao_meta": 75000,
       "locacao_realizado": 115268,
       "servicos_meta": 248000,
-      "servicos_realizado": 419788.55,
-      "servicos_falta": -171788.55,
+      "servicos_realizado": 434663.55,
+      "servicos_falta": -186663.55,
       "total_meta": 1423000,
-      "total_realizado": 1689748.168,
+      "total_realizado": 2704623.1679999996,
       "historico_meta": 1423000,
       "historico_faturamento": 0,
-      "count": 250,
+      "count": 251,
       "metas_pessoais": {
         "vendas": {
           "meta_empresa": 1100000,
           "meta_comercial": 1500000,
-          "meta_realizada": 1154691.618,
-          "restante_empresa": -54691.61800000002,
-          "restante_comercial": 345308.382
+          "meta_realizada": 2154691.618,
+          "restante_empresa": -1054691.6179999998,
+          "restante_comercial": -654691.6179999998
         },
         "locacao": {
           "meta_empresa": 75000,
@@ -234,8 +234,8 @@
         "servicos": {
           "meta_empresa": 248000,
           "meta_comercial": 500000,
-          "meta_realizada": 419788.55,
-          "restante_empresa": -171788.55,
+          "meta_realizada": 434663.55,
+          "restante_empresa": -186663.55,
           "restante_comercial": 266376.6
         }
       }
@@ -726,6 +726,13 @@
       "vendedor": "Gabriel Klein",
       "valor": 291217,
       "count": 25
+    },
+    {
+      "ano": 2026,
+      "mes": 6,
+      "vendedor": "DOUGLAS",
+      "valor": 1000000,
+      "count": 1
     },
     {
       "ano": 2026,
@@ -14975,6 +14982,17 @@
       "vendedor": "Gabriel Ferreira",
       "data": "2026-06-25",
       "obs": "formis",
+      "tipo": "Venda"
+    },
+    {
+      "ano": 2026,
+      "mes": 6,
+      "pedido": "9999999",
+      "cliente": "DOUGLAS - TESTE",
+      "valor": 1000000,
+      "vendedor": "DOUGLAS",
+      "data": "2026-06-26",
+      "obs": "TESTE",
       "tipo": "Venda"
     },
     {
