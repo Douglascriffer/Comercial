@@ -205,14 +205,14 @@
       "mes": 6,
       "label": "Junho/26",
       "vendas_meta": 1100000,
-      "vendas_realizado": 2154691.618,
+      "vendas_realizado": 1154691.618,
       "locacao_meta": 75000,
-      "locacao_realizado": 115268,
+      "locacao_realizado": 117188,
       "servicos_meta": 248000,
       "servicos_realizado": 434663.55,
       "servicos_falta": -186663.55,
       "total_meta": 1423000,
-      "total_realizado": 2704623.1679999996,
+      "total_realizado": 1706543.168,
       "historico_meta": 1423000,
       "historico_faturamento": 0,
       "count": 251,
@@ -220,16 +220,16 @@
         "vendas": {
           "meta_empresa": 1100000,
           "meta_comercial": 1500000,
-          "meta_realizada": 2154691.618,
-          "restante_empresa": -1054691.6179999998,
-          "restante_comercial": -654691.6179999998
+          "meta_realizada": 1154691.618,
+          "restante_empresa": -54691.61800000002,
+          "restante_comercial": 345308.382
         },
         "locacao": {
           "meta_empresa": 75000,
           "meta_comercial": 100000,
-          "meta_realizada": 115268,
-          "restante_empresa": -40268,
-          "restante_comercial": -15268
+          "meta_realizada": 117188,
+          "restante_empresa": -42188,
+          "restante_comercial": -17188
         },
         "servicos": {
           "meta_empresa": 248000,
@@ -730,13 +730,6 @@
     {
       "ano": 2026,
       "mes": 6,
-      "vendedor": "DOUGLAS",
-      "valor": 1000000,
-      "count": 1
-    },
-    {
-      "ano": 2026,
-      "mes": 6,
       "vendedor": "Josiane",
       "valor": 101261,
       "count": 45
@@ -745,8 +738,8 @@
       "ano": 2026,
       "mes": 6,
       "vendedor": "Vanessa",
-      "valor": 14007,
-      "count": 5
+      "valor": 15927,
+      "count": 6
     }
   ],
   "transactions": [
@@ -14987,17 +14980,6 @@
     {
       "ano": 2026,
       "mes": 6,
-      "pedido": "9999999",
-      "cliente": "DOUGLAS - TESTE",
-      "valor": 1000000,
-      "vendedor": "DOUGLAS",
-      "data": "2026-06-26",
-      "obs": "TESTE",
-      "tipo": "Venda"
-    },
-    {
-      "ano": 2026,
-      "mes": 6,
       "pedido": "LOC-17316",
       "cliente": "TOXIMED",
       "valor": 360,
@@ -15543,6 +15525,17 @@
       "vendedor": "Josiane",
       "data": "2026-06-24",
       "obs": "",
+      "tipo": "Locação"
+    },
+    {
+      "ano": 2026,
+      "mes": 6,
+      "pedido": "LOC-17896",
+      "cliente": "GHS INDUSTRIA E SERVICOS",
+      "valor": 1920,
+      "vendedor": "Vanessa",
+      "data": "2026-06-25",
+      "obs": "Prorrogação contrato 684",
       "tipo": "Locação"
     }
   ],

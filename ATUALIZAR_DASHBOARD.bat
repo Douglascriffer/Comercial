@@ -27,6 +27,7 @@ git push
 
 :: 3. Deploy na Vercel
 echo [3/3] Enviando atualizacao para a Vercel...
+set CI=true
 vercel --prod --yes
 
 echo =====================================
