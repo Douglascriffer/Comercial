@@ -37,6 +37,10 @@ Toda vez que uma alteração é feita no código ou nas planilhas, o fluxo de at
     *   O ciclo de transmissão automática de tela (modo TV) teve seu intervalo alterado de 10 para 40 segundos por slide.
     *   A etapa com a "Tabela de Transações Detalhadas" foi completamente removida da aplicação para simplificar o visual.
     *   A transmissão agora alterna em um loop contínuo apenas entre as abas de **VENDAS** e **METAS**.
+*   **Polling Silencioso e Correção de Rede (24/06/2026)**:
+    *   **Auto-Refresh Invisível**: Adicionado um temporizador em `app/page.jsx` e `lib/hooks.js` que busca novos dados do `dados.json` a cada 10 minutos. Isso permite que a TV receba atualizações automaticamente sem a necessidade de dar "F5" (refresh manual) na página, e sem exibir bolinha de carregamento.
+    *   **Correção do Script de Atualização**: O arquivo `ATUALIZAR_DASHBOARD.bat` foi modificado para injetar a variável `GIT_ASK_YESNO=false`. Isso resolve definitivamente o problema do Git travar com a mensagem *"Rename from ... failed. Should I try again? (y/n)"*, que ocorria devido a um conflito de cache no servidor de rede Windows SMB. Adicionalmente, as configurações locais do Git (`gc.auto 0`, `core.fscache false`) foram ajustadas.
+
 
 ## 4. Onde Encontrar Arquivos Importantes
 *   `lib/hooks.js`: Onde ocorre a filtragem dos vendedores por nome e mês.

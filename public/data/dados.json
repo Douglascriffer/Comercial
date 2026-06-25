@@ -209,10 +209,10 @@
       "locacao_meta": 75000,
       "locacao_realizado": 114184,
       "servicos_meta": 248000,
-      "servicos_realizado": 416370.95,
-      "servicos_falta": -168370.95,
+      "servicos_realizado": 419788.55,
+      "servicos_falta": -171788.55,
       "total_meta": 1423000,
-      "total_realizado": 1646884.0399999998,
+      "total_realizado": 1650301.64,
       "historico_meta": 1423000,
       "historico_faturamento": 0,
       "count": 242,
@@ -234,8 +234,8 @@
         "servicos": {
           "meta_empresa": 248000,
           "meta_comercial": 500000,
-          "meta_realizada": 416370.95,
-          "restante_empresa": -168370.95,
+          "meta_realizada": 419788.55,
+          "restante_empresa": -171788.55,
           "restante_comercial": 266376.6
         }
       }
