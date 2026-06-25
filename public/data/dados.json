@@ -205,31 +205,31 @@
       "mes": 6,
       "label": "Junho/26",
       "vendas_meta": 1100000,
-      "vendas_realizado": 1134042.36,
+      "vendas_realizado": 1154691.618,
       "locacao_meta": 75000,
-      "locacao_realizado": 114184,
+      "locacao_realizado": 115268,
       "servicos_meta": 248000,
       "servicos_realizado": 419788.55,
       "servicos_falta": -171788.55,
       "total_meta": 1423000,
-      "total_realizado": 1668014.9100000001,
+      "total_realizado": 1689748.168,
       "historico_meta": 1423000,
       "historico_faturamento": 0,
-      "count": 249,
+      "count": 250,
       "metas_pessoais": {
         "vendas": {
           "meta_empresa": 1100000,
           "meta_comercial": 1500000,
-          "meta_realizada": 1134042.36,
-          "restante_empresa": -34042.3600000001,
-          "restante_comercial": 365957.6399999999
+          "meta_realizada": 1154691.618,
+          "restante_empresa": -54691.61800000002,
+          "restante_comercial": 345308.382
         },
         "locacao": {
           "meta_empresa": 75000,
           "meta_comercial": 100000,
-          "meta_realizada": 114184,
-          "restante_empresa": -39184,
-          "restante_comercial": -14184
+          "meta_realizada": 115268,
+          "restante_empresa": -40268,
+          "restante_comercial": -15268
         },
         "servicos": {
           "meta_empresa": 248000,
@@ -717,8 +717,8 @@
       "ano": 2026,
       "mes": 6,
       "vendedor": "Gabriel Ferreira",
-      "valor": 249899.13,
-      "count": 16
+      "valor": 270548.38800000004,
+      "count": 17
     },
     {
       "ano": 2026,
@@ -731,7 +731,7 @@
       "ano": 2026,
       "mes": 6,
       "vendedor": "Josiane",
-      "valor": 100177,
+      "valor": 101261,
       "count": 45
     },
     {
@@ -14751,7 +14751,7 @@
       "mes": 6,
       "pedido": "17835",
       "cliente": "mariano gabriel",
-      "valor": 19190.05,
+      "valor": 23389.308,
       "vendedor": "Gabriel Ferreira",
       "data": "2026-06-23",
       "obs": "exportação",
@@ -14963,7 +14963,18 @@
       "valor": 16900,
       "vendedor": "Gabriel Klein",
       "data": "2026-06-25",
-      "obs": "",
+      "obs": "cobrir orçamento InLite",
+      "tipo": "Venda"
+    },
+    {
+      "ano": 2026,
+      "mes": 6,
+      "pedido": "17893",
+      "cliente": "formis",
+      "valor": 16450,
+      "vendedor": "Gabriel Ferreira",
+      "data": "2026-06-25",
+      "obs": "formis",
       "tipo": "Venda"
     },
     {
@@ -15073,7 +15084,7 @@
       "valor": 987,
       "vendedor": "Josiane",
       "data": "2026-06-02",
-      "obs": "",
+      "obs": "Prorrogação contrato 672",
       "tipo": "Locação"
     },
     {
@@ -15488,7 +15499,7 @@
       "mes": 6,
       "pedido": "LOC-800",
       "cliente": "DTA ENGENHARIA",
-      "valor": 305,
+      "valor": 1389,
       "vendedor": "Josiane",
       "data": "2026-06-23",
       "obs": "",
