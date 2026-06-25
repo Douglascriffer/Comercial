@@ -205,24 +205,24 @@
       "mes": 6,
       "label": "Junho/26",
       "vendas_meta": 1100000,
-      "vendas_realizado": 1154691.618,
+      "vendas_realizado": 1169409.618,
       "locacao_meta": 75000,
       "locacao_realizado": 117188,
       "servicos_meta": 248000,
-      "servicos_realizado": 434663.55,
-      "servicos_falta": -186663.55,
+      "servicos_realizado": 453325.55,
+      "servicos_falta": -205325.55,
       "total_meta": 1423000,
-      "total_realizado": 1706543.168,
+      "total_realizado": 1739923.168,
       "historico_meta": 1423000,
       "historico_faturamento": 0,
-      "count": 251,
+      "count": 254,
       "metas_pessoais": {
         "vendas": {
           "meta_empresa": 1100000,
           "meta_comercial": 1500000,
-          "meta_realizada": 1154691.618,
-          "restante_empresa": -54691.61800000002,
-          "restante_comercial": 345308.382
+          "meta_realizada": 1169409.618,
+          "restante_empresa": -69409.61800000002,
+          "restante_comercial": 330590.382
         },
         "locacao": {
           "meta_empresa": 75000,
@@ -234,8 +234,8 @@
         "servicos": {
           "meta_empresa": 248000,
           "meta_comercial": 500000,
-          "meta_realizada": 434663.55,
-          "restante_empresa": -186663.55,
+          "meta_realizada": 453325.55,
+          "restante_empresa": -205325.55,
           "restante_comercial": 266376.6
         }
       }
@@ -703,8 +703,8 @@
       "ano": 2026,
       "mes": 6,
       "vendedor": "Rogislei",
-      "valor": 347182.54000000004,
-      "count": 42
+      "valor": 361900.54000000004,
+      "count": 45
     },
     {
       "ano": 2026,
@@ -14975,6 +14975,39 @@
       "vendedor": "Gabriel Ferreira",
       "data": "2026-06-25",
       "obs": "formis",
+      "tipo": "Venda"
+    },
+    {
+      "ano": 2026,
+      "mes": 6,
+      "pedido": "17897",
+      "cliente": "Micro lab",
+      "valor": 12000,
+      "vendedor": "Rogislei",
+      "data": "2026-06-25",
+      "obs": "Rede de pesquisa",
+      "tipo": "Venda"
+    },
+    {
+      "ano": 2026,
+      "mes": 6,
+      "pedido": "17899",
+      "cliente": "Projenor",
+      "valor": 1608,
+      "vendedor": "Rogislei",
+      "data": "2026-06-25",
+      "obs": "",
+      "tipo": "Venda"
+    },
+    {
+      "ano": 2026,
+      "mes": 6,
+      "pedido": "17900",
+      "cliente": "Amb",
+      "valor": 1110,
+      "vendedor": "Rogislei",
+      "data": "2026-06-25",
+      "obs": "",
       "tipo": "Venda"
     },
     {

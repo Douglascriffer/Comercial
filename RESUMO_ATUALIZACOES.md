@@ -40,6 +40,8 @@ Toda vez que uma alteração é feita no código ou nas planilhas, o fluxo de at
 *   **Polling Silencioso e Correção de Rede (24/06/2026)**:
     *   **Auto-Refresh Invisível**: Adicionado um temporizador em `app/page.jsx` e `lib/hooks.js` que busca novos dados do `dados.json` a cada 10 minutos. Isso permite que a TV receba atualizações automaticamente sem a necessidade de dar "F5" (refresh manual) na página, e sem exibir bolinha de carregamento.
     *   **Correção do Script de Atualização**: O arquivo `ATUALIZAR_DASHBOARD.bat` foi modificado para injetar a variável `GIT_ASK_YESNO=false`. Isso resolve definitivamente o problema do Git travar com a mensagem *"Rename from ... failed. Should I try again? (y/n)"*, que ocorria devido a um conflito de cache no servidor de rede Windows SMB. Adicionalmente, as configurações locais do Git (`gc.auto 0`, `core.fscache false`) foram ajustadas.
+*   **Correção de Travamento do Vercel CLI (25/06/2026)**:
+    *   O arquivo `ATUALIZAR_DASHBOARD.bat` foi modificado para incluir `set CI=true` antes do comando de deploy. Isso evita que a interface de linha de comando da Vercel pause a execução automática para perguntar sobre atualizações disponíveis (`Would you like to upgrade now? (Y/n)`), garantindo que a rotina agendada (ex: 17h) finalize perfeitamente sem intervenção humana.
 
 
 ## 4. Onde Encontrar Arquivos Importantes
