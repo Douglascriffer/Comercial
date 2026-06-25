@@ -205,24 +205,24 @@
       "mes": 6,
       "label": "Junho/26",
       "vendas_meta": 1100000,
-      "vendas_realizado": 1116329.0899999999,
+      "vendas_realizado": 1117142.36,
       "locacao_meta": 75000,
       "locacao_realizado": 114184,
       "servicos_meta": 248000,
       "servicos_realizado": 419788.55,
       "servicos_falta": -171788.55,
       "total_meta": 1423000,
-      "total_realizado": 1650301.64,
+      "total_realizado": 1651114.9100000001,
       "historico_meta": 1423000,
       "historico_faturamento": 0,
-      "count": 242,
+      "count": 248,
       "metas_pessoais": {
         "vendas": {
           "meta_empresa": 1100000,
           "meta_comercial": 1500000,
-          "meta_realizada": 1116329.0899999999,
-          "restante_empresa": -16329.089999999851,
-          "restante_comercial": 383670.91000000015
+          "meta_realizada": 1117142.36,
+          "restante_empresa": -17142.360000000102,
+          "restante_comercial": 382857.6399999999
         },
         "locacao": {
           "meta_empresa": 75000,
@@ -710,8 +710,8 @@
       "ano": 2026,
       "mes": 6,
       "vendedor": "Mercado Livre",
-      "valor": 183390.42000000007,
-      "count": 105
+      "valor": 184203.6900000001,
+      "count": 111
     },
     {
       "ano": 2026,
@@ -14886,6 +14886,72 @@
       "valor": 267,
       "vendedor": "Gabriel Klein",
       "data": "2026-06-24",
+      "obs": "",
+      "tipo": "Venda"
+    },
+    {
+      "ano": 2026,
+      "mes": 6,
+      "pedido": "17879",
+      "cliente": "Victor",
+      "valor": 65.55,
+      "vendedor": "Mercado Livre",
+      "data": "2026-06-25",
+      "obs": "",
+      "tipo": "Venda"
+    },
+    {
+      "ano": 2026,
+      "mes": 6,
+      "pedido": "17880",
+      "cliente": "Alex",
+      "valor": 9.82,
+      "vendedor": "Mercado Livre",
+      "data": "2026-06-25",
+      "obs": "",
+      "tipo": "Venda"
+    },
+    {
+      "ano": 2026,
+      "mes": 6,
+      "pedido": "17881",
+      "cliente": "Cleber",
+      "valor": 180.85,
+      "vendedor": "Mercado Livre",
+      "data": "2026-06-25",
+      "obs": "",
+      "tipo": "Venda"
+    },
+    {
+      "ano": 2026,
+      "mes": 6,
+      "pedido": "17882",
+      "cliente": "Engemedical",
+      "valor": 327.75,
+      "vendedor": "Mercado Livre",
+      "data": "2026-06-25",
+      "obs": "",
+      "tipo": "Venda"
+    },
+    {
+      "ano": 2026,
+      "mes": 6,
+      "pedido": "17883",
+      "cliente": "Leonardo",
+      "valor": 131.1,
+      "vendedor": "Mercado Livre",
+      "data": "2026-06-25",
+      "obs": "",
+      "tipo": "Venda"
+    },
+    {
+      "ano": 2026,
+      "mes": 6,
+      "pedido": "17891",
+      "cliente": "Jane",
+      "valor": 98.2,
+      "vendedor": "Mercado Livre",
+      "data": "2026-06-25",
       "obs": "",
       "tipo": "Venda"
     },
