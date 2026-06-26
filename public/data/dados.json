@@ -207,15 +207,15 @@
       "vendas_meta": 1100000,
       "vendas_realizado": 1193271.948,
       "locacao_meta": 75000,
-      "locacao_realizado": 117188,
+      "locacao_realizado": 121905,
       "servicos_meta": 248000,
       "servicos_realizado": 461490.95,
       "servicos_falta": -213490.95,
       "total_meta": 1423000,
-      "total_realizado": 1771950.898,
+      "total_realizado": 1776667.898,
       "historico_meta": 1423000,
       "historico_faturamento": 0,
-      "count": 261,
+      "count": 263,
       "metas_pessoais": {
         "vendas": {
           "meta_empresa": 1100000,
@@ -227,9 +227,9 @@
         "locacao": {
           "meta_empresa": 75000,
           "meta_comercial": 100000,
-          "meta_realizada": 117188,
-          "restante_empresa": -42188,
-          "restante_comercial": -17188
+          "meta_realizada": 121905,
+          "restante_empresa": -46905,
+          "restante_comercial": -21905
         },
         "servicos": {
           "meta_empresa": 248000,
@@ -731,8 +731,8 @@
       "ano": 2026,
       "mes": 6,
       "vendedor": "Josiane",
-      "valor": 101261,
-      "count": 45
+      "valor": 105978,
+      "count": 47
     },
     {
       "ano": 2026,
@@ -15568,7 +15568,7 @@
       "valor": 810,
       "vendedor": "Vanessa",
       "data": "2026-06-22",
-      "obs": "",
+      "obs": "Prorrogação contrato 742",
       "tipo": "Locação"
     },
     {
@@ -15646,6 +15646,28 @@
       "vendedor": "Vanessa",
       "data": "2026-06-25",
       "obs": "Prorrogação contrato 684",
+      "tipo": "Locação"
+    },
+    {
+      "ano": 2026,
+      "mes": 6,
+      "pedido": "LOC-803",
+      "cliente": "MCR CONSULTORIA",
+      "valor": 940,
+      "vendedor": "Josiane",
+      "data": "2026-06-26",
+      "obs": "",
+      "tipo": "Locação"
+    },
+    {
+      "ano": 2026,
+      "mes": 6,
+      "pedido": "LOC-804",
+      "cliente": "SMLL MEDICINA",
+      "valor": 3777,
+      "vendedor": "Josiane",
+      "data": "2026-06-26",
+      "obs": "",
       "tipo": "Locação"
     }
   ],
