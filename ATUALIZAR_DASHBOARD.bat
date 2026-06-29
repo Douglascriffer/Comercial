@@ -9,7 +9,7 @@ echo.
 :: 1. Executar processador python
 set GIT_ASK_YESNO=false
 echo [1/3] Processando dados do Excel...
-python bridge_data.py
+node generate_json.js
 if %errorlevel% neq 0 (
     echo.
     echo [ERRO] Falha ao processar os dados do Excel. Verifique se o Python esta instalado

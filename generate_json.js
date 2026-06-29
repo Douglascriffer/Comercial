@@ -294,9 +294,9 @@ function run() {
             servicos: {
                 meta_empresa: metrics.servicos_meta,
                 meta_comercial: sMetaComercial,
-                meta_realizada: m <= 5 ? metrics.servicos_realizado : sFat,
-                restante_empresa: sRestanteEmpresa,
-                restante_comercial: sRestanteComercial
+                meta_realizada: metrics.servicos_realizado,
+                restante_empresa: metrics.servicos_meta - metrics.servicos_realizado,
+                restante_comercial: sMetaComercial - metrics.servicos_realizado
             }
         };
         

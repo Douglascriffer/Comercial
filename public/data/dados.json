@@ -35,8 +35,8 @@
           "meta_empresa": 236000,
           "meta_comercial": 0,
           "meta_realizada": 348258.23,
-          "restante_empresa": 0,
-          "restante_comercial": 0
+          "restante_empresa": -112258.22999999998,
+          "restante_comercial": -348258.23
         }
       }
     },
@@ -75,8 +75,8 @@
           "meta_empresa": 319000,
           "meta_comercial": 0,
           "meta_realizada": 326510.59,
-          "restante_empresa": 0,
-          "restante_comercial": 0
+          "restante_empresa": -7510.590000000026,
+          "restante_comercial": -326510.59
         }
       }
     },
@@ -115,8 +115,8 @@
           "meta_empresa": 324000,
           "meta_comercial": 0,
           "meta_realizada": 398365.56,
-          "restante_empresa": 0,
-          "restante_comercial": 0
+          "restante_empresa": -74365.56,
+          "restante_comercial": -398365.56
         }
       }
     },
@@ -155,8 +155,8 @@
           "meta_empresa": 336000,
           "meta_comercial": 0,
           "meta_realizada": 401048.2,
-          "restante_empresa": 0,
-          "restante_comercial": 0
+          "restante_empresa": -65048.20000000001,
+          "restante_comercial": -401048.2
         }
       }
     },
@@ -195,8 +195,8 @@
           "meta_empresa": 233000,
           "meta_comercial": 0,
           "meta_realizada": 359720.36,
-          "restante_empresa": 0,
-          "restante_comercial": 0
+          "restante_empresa": -126720.35999999999,
+          "restante_comercial": -359720.36
         }
       }
     },
@@ -209,10 +209,10 @@
       "locacao_meta": 75000,
       "locacao_realizado": 121905,
       "servicos_meta": 248000,
-      "servicos_realizado": 461490.95,
-      "servicos_falta": -213490.95,
+      "servicos_realizado": 473538.45,
+      "servicos_falta": -225538.45,
       "total_meta": 1423000,
-      "total_realizado": 1776667.898,
+      "total_realizado": 1788715.398,
       "historico_meta": 1423000,
       "historico_faturamento": 0,
       "count": 263,
@@ -234,9 +234,9 @@
         "servicos": {
           "meta_empresa": 248000,
           "meta_comercial": 500000,
-          "meta_realizada": 461490.95,
-          "restante_empresa": -213490.95,
-          "restante_comercial": 266376.6
+          "meta_realizada": 473538.45,
+          "restante_empresa": -225538.45,
+          "restante_comercial": 26461.54999999999
         }
       }
     },
@@ -275,7 +275,7 @@
           "meta_empresa": 377000,
           "meta_comercial": 0,
           "meta_realizada": 0,
-          "restante_empresa": 0,
+          "restante_empresa": 377000,
           "restante_comercial": 0
         }
       }
@@ -315,7 +315,7 @@
           "meta_empresa": 387000,
           "meta_comercial": 0,
           "meta_realizada": 0,
-          "restante_empresa": 0,
+          "restante_empresa": 387000,
           "restante_comercial": 0
         }
       }
@@ -355,7 +355,7 @@
           "meta_empresa": 315000,
           "meta_comercial": 0,
           "meta_realizada": 0,
-          "restante_empresa": 0,
+          "restante_empresa": 315000,
           "restante_comercial": 0
         }
       }
@@ -395,7 +395,7 @@
           "meta_empresa": 350000,
           "meta_comercial": 0,
           "meta_realizada": 0,
-          "restante_empresa": 0,
+          "restante_empresa": 350000,
           "restante_comercial": 0
         }
       }
@@ -435,7 +435,7 @@
           "meta_empresa": 392000,
           "meta_comercial": 0,
           "meta_realizada": 0,
-          "restante_empresa": 0,
+          "restante_empresa": 392000,
           "restante_comercial": 0
         }
       }
@@ -475,7 +475,7 @@
           "meta_empresa": 253000,
           "meta_comercial": 0,
           "meta_realizada": 0,
-          "restante_empresa": 0,
+          "restante_empresa": 253000,
           "restante_comercial": 0
         }
       }
