@@ -42,7 +42,9 @@ Toda vez que uma alteração é feita no código ou nas planilhas, o fluxo de at
     *   **Correção do Script de Atualização**: O arquivo `ATUALIZAR_DASHBOARD.bat` foi modificado para injetar a variável `GIT_ASK_YESNO=false`. Isso resolve definitivamente o problema do Git travar com a mensagem *"Rename from ... failed. Should I try again? (y/n)"*, que ocorria devido a um conflito de cache no servidor de rede Windows SMB. Adicionalmente, as configurações locais do Git (`gc.auto 0`, `core.fscache false`) foram ajustadas.
 *   **Correção de Travamento do Vercel CLI (25/06/2026)**:
     *   O arquivo `ATUALIZAR_DASHBOARD.bat` foi modificado para incluir `set CI=true` antes do comando de deploy. Isso evita que a interface de linha de comando da Vercel pause a execução automática para perguntar sobre atualizações disponíveis (`Would you like to upgrade now? (Y/n)`), garantindo que a rotina agendada (ex: 17h) finalize perfeitamente sem intervenção humana.
-
+*   **Correção de Cálculo da Meta de Serviços e Deploy (29/06/2026)**:
+    *   Foi corrigido o cálculo do "Restante Comercial" e "Restante Empresa" na extração de Serviços dentro do script `generate_json.js`. Ele agora calcula dinamicamente a diferença exata através do `realizado` (`D11`) em vez de herdar dados residuais da planilha.
+    *   O script `ATUALIZAR_DASHBOARD.bat` foi modernizado. A linha de processamento de dados que usava o comando obsoleto `python bridge_data.py` foi oficialmente substituída para rodar de forma nativa com Node.js através do comando `node generate_json.js`.
 
 ## 4. Onde Encontrar Arquivos Importantes
 *   `lib/hooks.js`: Onde ocorre a filtragem dos vendedores por nome e mês.
