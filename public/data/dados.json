@@ -205,31 +205,31 @@
       "mes": 6,
       "label": "Junho/26",
       "vendas_meta": 1100000,
-      "vendas_realizado": 1193271.948,
+      "vendas_realizado": 1260772.3080000002,
       "locacao_meta": 75000,
-      "locacao_realizado": 121905,
+      "locacao_realizado": 122758,
       "servicos_meta": 248000,
       "servicos_realizado": 473538.45,
       "servicos_falta": -225538.45,
       "total_meta": 1423000,
-      "total_realizado": 1788715.398,
+      "total_realizado": 1857068.7580000001,
       "historico_meta": 1423000,
       "historico_faturamento": 0,
-      "count": 263,
+      "count": 272,
       "metas_pessoais": {
         "vendas": {
           "meta_empresa": 1100000,
           "meta_comercial": 1500000,
-          "meta_realizada": 1193271.948,
-          "restante_empresa": -93271.94800000009,
-          "restante_comercial": 306728.0519999999
+          "meta_realizada": 1260772.3080000002,
+          "restante_empresa": -160772.3080000002,
+          "restante_comercial": 239227.6919999998
         },
         "locacao": {
           "meta_empresa": 75000,
           "meta_comercial": 100000,
-          "meta_realizada": 121905,
-          "restante_empresa": -46905,
-          "restante_comercial": -21905
+          "meta_realizada": 122758,
+          "restante_empresa": -47758,
+          "restante_comercial": -22758
         },
         "servicos": {
           "meta_empresa": 248000,
@@ -710,29 +710,29 @@
       "ano": 2026,
       "mes": 6,
       "vendedor": "Mercado Livre",
-      "valor": 195812.22000000012,
-      "count": 116
+      "valor": 210568.55000000013,
+      "count": 122
     },
     {
       "ano": 2026,
       "mes": 6,
       "vendedor": "Gabriel Ferreira",
-      "valor": 270548.38800000004,
-      "count": 17
+      "valor": 299492.41800000006,
+      "count": 18
     },
     {
       "ano": 2026,
       "mes": 6,
       "vendedor": "Gabriel Klein",
-      "valor": 302495,
-      "count": 26
+      "valor": 326295,
+      "count": 27
     },
     {
       "ano": 2026,
       "mes": 6,
       "vendedor": "Josiane",
-      "valor": 105978,
-      "count": 47
+      "valor": 106831,
+      "count": 48
     },
     {
       "ano": 2026,
@@ -15090,6 +15090,94 @@
     {
       "ano": 2026,
       "mes": 6,
+      "pedido": "17747",
+      "cliente": "erick",
+      "valor": 28944.03,
+      "vendedor": "Gabriel Ferreira",
+      "data": "2026-06-29",
+      "obs": "exportação",
+      "tipo": "Venda"
+    },
+    {
+      "ano": 2026,
+      "mes": 6,
+      "pedido": "17949",
+      "cliente": "Jefferson",
+      "valor": 5436.85,
+      "vendedor": "Mercado Livre",
+      "data": "2026-06-29",
+      "obs": "",
+      "tipo": "Venda"
+    },
+    {
+      "ano": 2026,
+      "mes": 6,
+      "pedido": "17950",
+      "cliente": "Roger",
+      "valor": 9.82,
+      "vendedor": "Mercado Livre",
+      "data": "2026-06-29",
+      "obs": "",
+      "tipo": "Venda"
+    },
+    {
+      "ano": 2026,
+      "mes": 6,
+      "pedido": "17951",
+      "cliente": "Sirius",
+      "valor": 8531,
+      "vendedor": "Mercado Livre",
+      "data": "2026-06-29",
+      "obs": "",
+      "tipo": "Venda"
+    },
+    {
+      "ano": 2026,
+      "mes": 6,
+      "pedido": "17953",
+      "cliente": "Arthur",
+      "valor": 198.55,
+      "vendedor": "Mercado Livre",
+      "data": "2026-06-29",
+      "obs": "",
+      "tipo": "Venda"
+    },
+    {
+      "ano": 2026,
+      "mes": 6,
+      "pedido": "17954",
+      "cliente": "Tadeu",
+      "valor": 317.91,
+      "vendedor": "Mercado Livre",
+      "data": "2026-06-29",
+      "obs": "",
+      "tipo": "Venda"
+    },
+    {
+      "ano": 2026,
+      "mes": 6,
+      "pedido": "17955",
+      "cliente": "Zilton",
+      "valor": 262.2,
+      "vendedor": "Mercado Livre",
+      "data": "2026-06-29",
+      "obs": "",
+      "tipo": "Venda"
+    },
+    {
+      "ano": 2026,
+      "mes": 6,
+      "pedido": "17956",
+      "cliente": "Kawakami",
+      "valor": 23800,
+      "vendedor": "Gabriel Klein",
+      "data": "2026-06-29",
+      "obs": "",
+      "tipo": "Venda"
+    },
+    {
+      "ano": 2026,
+      "mes": 6,
       "pedido": "LOC-17316",
       "cliente": "TOXIMED",
       "valor": 360,
@@ -15665,6 +15753,17 @@
       "pedido": "LOC-804",
       "cliente": "SMLL MEDICINA",
       "valor": 3777,
+      "vendedor": "Josiane",
+      "data": "2026-06-26",
+      "obs": "",
+      "tipo": "Locação"
+    },
+    {
+      "ano": 2026,
+      "mes": 6,
+      "pedido": "LOC-805",
+      "cliente": "DALLA ROSA SERVICOS",
+      "valor": 853,
       "vendedor": "Josiane",
       "data": "2026-06-26",
       "obs": "",
