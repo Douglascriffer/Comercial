@@ -205,24 +205,24 @@
       "mes": 6,
       "label": "Junho/26",
       "vendas_meta": 1100000,
-      "vendas_realizado": 1273414.3080000002,
+      "vendas_realizado": 1286420.9980000004,
       "locacao_meta": 75000,
       "locacao_realizado": 126558,
       "servicos_meta": 248000,
       "servicos_realizado": 508544.6,
       "servicos_falta": -260544.59999999998,
       "total_meta": 1423000,
-      "total_realizado": 1908516.9080000003,
+      "total_realizado": 1921523.5980000002,
       "historico_meta": 1423000,
       "historico_faturamento": 0,
-      "count": 276,
+      "count": 283,
       "metas_pessoais": {
         "vendas": {
           "meta_empresa": 1100000,
           "meta_comercial": 1500000,
-          "meta_realizada": 1273414.3080000002,
-          "restante_empresa": -173414.3080000002,
-          "restante_comercial": 226585.6919999998
+          "meta_realizada": 1286420.9980000004,
+          "restante_empresa": -186420.99800000037,
+          "restante_comercial": 213579.00199999963
         },
         "locacao": {
           "meta_empresa": 75000,
@@ -710,8 +710,8 @@
       "ano": 2026,
       "mes": 6,
       "vendedor": "Mercado Livre",
-      "valor": 210568.55000000013,
-      "count": 122
+      "valor": 212405.24000000014,
+      "count": 127
     },
     {
       "ano": 2026,
@@ -724,8 +724,8 @@
       "ano": 2026,
       "mes": 6,
       "vendedor": "Gabriel Klein",
-      "valor": 326295,
-      "count": 27
+      "valor": 337465,
+      "count": 29
     },
     {
       "ano": 2026,
@@ -15183,6 +15183,83 @@
       "valor": 12642,
       "vendedor": "Rogislei",
       "data": "2026-06-29",
+      "obs": "",
+      "tipo": "Venda"
+    },
+    {
+      "ano": 2026,
+      "mes": 6,
+      "pedido": "17966",
+      "cliente": "FGM",
+      "valor": 940.5,
+      "vendedor": "Mercado Livre",
+      "data": "2026-06-30",
+      "obs": "venda por publicidade",
+      "tipo": "Venda"
+    },
+    {
+      "ano": 2026,
+      "mes": 6,
+      "pedido": "17967",
+      "cliente": "João",
+      "valor": 114.55,
+      "vendedor": "Mercado Livre",
+      "data": "2026-06-30",
+      "obs": "",
+      "tipo": "Venda"
+    },
+    {
+      "ano": 2026,
+      "mes": 6,
+      "pedido": "17969",
+      "cliente": "Taiane",
+      "valor": 640.72,
+      "vendedor": "Mercado Livre",
+      "data": "2026-06-30",
+      "obs": "",
+      "tipo": "Venda"
+    },
+    {
+      "ano": 2026,
+      "mes": 6,
+      "pedido": "17970",
+      "cliente": "Francieli",
+      "valor": 131.1,
+      "vendedor": "Mercado Livre",
+      "data": "2026-06-30",
+      "obs": "",
+      "tipo": "Venda"
+    },
+    {
+      "ano": 2026,
+      "mes": 6,
+      "pedido": "17972",
+      "cliente": "Djuh",
+      "valor": 9.82,
+      "vendedor": "Mercado Livre",
+      "data": "2026-06-30",
+      "obs": "",
+      "tipo": "Venda"
+    },
+    {
+      "ano": 2026,
+      "mes": 6,
+      "pedido": "17977",
+      "cliente": "Municipio de Recife",
+      "valor": 11032,
+      "vendedor": "Gabriel Klein",
+      "data": "2026-06-30",
+      "obs": "",
+      "tipo": "Venda"
+    },
+    {
+      "ano": 2026,
+      "mes": 6,
+      "pedido": "17978",
+      "cliente": "Voestalpine",
+      "valor": 138,
+      "vendedor": "Gabriel Klein",
+      "data": "2026-06-30",
       "obs": "",
       "tipo": "Venda"
     },
