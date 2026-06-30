@@ -205,31 +205,31 @@
       "mes": 6,
       "label": "Junho/26",
       "vendas_meta": 1100000,
-      "vendas_realizado": 1329558.3980000003,
+      "vendas_realizado": 1349489.3980000003,
       "locacao_meta": 75000,
-      "locacao_realizado": 132958,
+      "locacao_realizado": 124107.99,
       "servicos_meta": 248000,
       "servicos_realizado": 537170.4,
       "servicos_falta": -289170.4,
       "total_meta": 1423000,
-      "total_realizado": 1999686.7980000004,
+      "total_realizado": 2010767.7880000002,
       "historico_meta": 1423000,
       "historico_faturamento": 0,
-      "count": 291,
+      "count": 290,
       "metas_pessoais": {
         "vendas": {
           "meta_empresa": 1100000,
           "meta_comercial": 1500000,
-          "meta_realizada": 1329558.3980000003,
-          "restante_empresa": -229558.39800000028,
-          "restante_comercial": 170441.60199999972
+          "meta_realizada": 1349489.3980000003,
+          "restante_empresa": -249489.39800000028,
+          "restante_comercial": 150510.60199999972
         },
         "locacao": {
           "meta_empresa": 75000,
           "meta_comercial": 100000,
-          "meta_realizada": 132958,
-          "restante_empresa": -57958,
-          "restante_comercial": -32958
+          "meta_realizada": 124107.99,
+          "restante_empresa": -49107.990000000005,
+          "restante_comercial": -24107.990000000005
         },
         "servicos": {
           "meta_empresa": 248000,
@@ -724,15 +724,15 @@
       "ano": 2026,
       "mes": 6,
       "vendedor": "Gabriel Klein",
-      "valor": 337465,
-      "count": 29
+      "valor": 357396,
+      "count": 30
     },
     {
       "ano": 2026,
       "mes": 6,
       "vendedor": "Josiane",
-      "valor": 109371,
-      "count": 51
+      "valor": 100520.99,
+      "count": 49
     },
     {
       "ano": 2026,
@@ -15310,6 +15310,17 @@
     {
       "ano": 2026,
       "mes": 6,
+      "pedido": "18015",
+      "cliente": "Trombini",
+      "valor": 19931,
+      "vendedor": "Gabriel Klein",
+      "data": "2026-06-30",
+      "obs": "",
+      "tipo": "Venda"
+    },
+    {
+      "ano": 2026,
+      "mes": 6,
       "pedido": "LOC-17316",
       "cliente": "TOXIMED",
       "valor": 360,
@@ -15772,17 +15783,6 @@
     {
       "ano": 2026,
       "mes": 6,
-      "pedido": "LOC-796",
-      "cliente": "HT MICRON SEMICONDUTORES",
-      "valor": 7575,
-      "vendedor": "Josiane",
-      "data": "2026-06-22",
-      "obs": "",
-      "tipo": "Locação"
-    },
-    {
-      "ano": 2026,
-      "mes": 6,
       "pedido": "LOC-17804",
       "cliente": "FRAS-LE AS",
       "valor": 810,
@@ -15796,18 +15796,7 @@
       "mes": 6,
       "pedido": "LOC-797",
       "cliente": "VERTICE",
-      "valor": 644,
-      "vendedor": "Josiane",
-      "data": "2026-06-23",
-      "obs": "",
-      "tipo": "Locação"
-    },
-    {
-      "ano": 2026,
-      "mes": 6,
-      "pedido": "LOC-798",
-      "cliente": "ALLES ESPUMAS E ESTOFADOS",
-      "valor": 1275,
+      "valor": 643.99,
       "vendedor": "Josiane",
       "data": "2026-06-23",
       "obs": "",
