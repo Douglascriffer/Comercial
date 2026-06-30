@@ -205,38 +205,38 @@
       "mes": 6,
       "label": "Junho/26",
       "vendas_meta": 1100000,
-      "vendas_realizado": 1304588.3980000003,
+      "vendas_realizado": 1329558.3980000003,
       "locacao_meta": 75000,
-      "locacao_realizado": 126558,
+      "locacao_realizado": 132958,
       "servicos_meta": 248000,
-      "servicos_realizado": 533070.9,
-      "servicos_falta": -285070.9,
+      "servicos_realizado": 537170.4,
+      "servicos_falta": -289170.4,
       "total_meta": 1423000,
-      "total_realizado": 1964217.2980000004,
+      "total_realizado": 1999686.7980000004,
       "historico_meta": 1423000,
       "historico_faturamento": 0,
-      "count": 285,
+      "count": 291,
       "metas_pessoais": {
         "vendas": {
           "meta_empresa": 1100000,
           "meta_comercial": 1500000,
-          "meta_realizada": 1304588.3980000003,
-          "restante_empresa": -204588.39800000028,
-          "restante_comercial": 195411.60199999972
+          "meta_realizada": 1329558.3980000003,
+          "restante_empresa": -229558.39800000028,
+          "restante_comercial": 170441.60199999972
         },
         "locacao": {
           "meta_empresa": 75000,
           "meta_comercial": 100000,
-          "meta_realizada": 126558,
-          "restante_empresa": -51558,
-          "restante_comercial": -26558
+          "meta_realizada": 132958,
+          "restante_empresa": -57958,
+          "restante_comercial": -32958
         },
         "servicos": {
           "meta_empresa": 248000,
           "meta_comercial": 550000,
-          "meta_realizada": 533070.9,
-          "restante_empresa": -285070.9,
-          "restante_comercial": 16929.099999999977
+          "meta_realizada": 537170.4,
+          "restante_empresa": -289170.4,
+          "restante_comercial": 12829.599999999977
         }
       }
     },
@@ -703,8 +703,8 @@
       "ano": 2026,
       "mes": 6,
       "vendedor": "Rogislei",
-      "valor": 375518.34,
-      "count": 47
+      "valor": 400488.34,
+      "count": 49
     },
     {
       "ano": 2026,
@@ -731,15 +731,15 @@
       "ano": 2026,
       "mes": 6,
       "vendedor": "Josiane",
-      "valor": 107831,
-      "count": 49
+      "valor": 109371,
+      "count": 51
     },
     {
       "ano": 2026,
       "mes": 6,
       "vendedor": "Vanessa",
-      "valor": 18727,
-      "count": 8
+      "valor": 23587,
+      "count": 10
     }
   ],
   "transactions": [
@@ -15288,6 +15288,28 @@
     {
       "ano": 2026,
       "mes": 6,
+      "pedido": "17998",
+      "cliente": "Marcos Pompeo",
+      "valor": 13000,
+      "vendedor": "Rogislei",
+      "data": "2026-06-30",
+      "obs": "Mantendo valor do mercado livre",
+      "tipo": "Venda"
+    },
+    {
+      "ano": 2026,
+      "mes": 6,
+      "pedido": "18007",
+      "cliente": "Gabriel Barreto",
+      "valor": 11970,
+      "vendedor": "Rogislei",
+      "data": "2026-06-30",
+      "obs": "",
+      "tipo": "Venda"
+    },
+    {
+      "ano": 2026,
+      "mes": 6,
       "pedido": "LOC-17316",
       "cliente": "TOXIMED",
       "valor": 360,
@@ -15910,6 +15932,50 @@
       "vendedor": "Vanessa",
       "data": "2026-06-30",
       "obs": "Prorrogação do contrato 729 - 27/05 à 11/06",
+      "tipo": "Locação"
+    },
+    {
+      "ano": 2026,
+      "mes": 6,
+      "pedido": "LOC-17974",
+      "cliente": "LEADEC SERVICOS",
+      "valor": 810,
+      "vendedor": "Vanessa",
+      "data": "2026-06-30",
+      "obs": "Prorrogação contrato 306",
+      "tipo": "Locação"
+    },
+    {
+      "ano": 2026,
+      "mes": 6,
+      "pedido": "LOC-17975",
+      "cliente": "LEADEC SER.INDS.DO BRASIL",
+      "valor": 4050,
+      "vendedor": "Vanessa",
+      "data": "2026-06-30",
+      "obs": "",
+      "tipo": "Locação"
+    },
+    {
+      "ano": 2026,
+      "mes": 6,
+      "pedido": "LOC-807",
+      "cliente": "L D M SERVICOS DE APOIO",
+      "valor": 190,
+      "vendedor": "Josiane",
+      "data": "2026-06-30",
+      "obs": "",
+      "tipo": "Locação"
+    },
+    {
+      "ano": 2026,
+      "mes": 6,
+      "pedido": "LOC-809",
+      "cliente": "JORGE RICARDO BESSA GARCIA",
+      "valor": 1350,
+      "vendedor": "Josiane",
+      "data": "2026-06-30",
+      "obs": "",
       "tipo": "Locação"
     }
   ],
