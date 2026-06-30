@@ -205,24 +205,24 @@
       "mes": 6,
       "label": "Junho/26",
       "vendas_meta": 1100000,
-      "vendas_realizado": 1286420.9980000004,
+      "vendas_realizado": 1304588.3980000003,
       "locacao_meta": 75000,
       "locacao_realizado": 126558,
       "servicos_meta": 248000,
-      "servicos_realizado": 508544.6,
-      "servicos_falta": -260544.59999999998,
+      "servicos_realizado": 525586.6,
+      "servicos_falta": -277586.6,
       "total_meta": 1423000,
-      "total_realizado": 1921523.5980000002,
+      "total_realizado": 1956732.9980000001,
       "historico_meta": 1423000,
       "historico_faturamento": 0,
-      "count": 283,
+      "count": 285,
       "metas_pessoais": {
         "vendas": {
           "meta_empresa": 1100000,
           "meta_comercial": 1500000,
-          "meta_realizada": 1286420.9980000004,
-          "restante_empresa": -186420.99800000037,
-          "restante_comercial": 213579.00199999963
+          "meta_realizada": 1304588.3980000003,
+          "restante_empresa": -204588.39800000028,
+          "restante_comercial": 195411.60199999972
         },
         "locacao": {
           "meta_empresa": 75000,
@@ -234,9 +234,9 @@
         "servicos": {
           "meta_empresa": 248000,
           "meta_comercial": 550000,
-          "meta_realizada": 508544.6,
-          "restante_empresa": -260544.59999999998,
-          "restante_comercial": 41455.40000000002
+          "meta_realizada": 525586.6,
+          "restante_empresa": -277586.6,
+          "restante_comercial": 24413.400000000023
         }
       }
     },
@@ -710,8 +710,8 @@
       "ano": 2026,
       "mes": 6,
       "vendedor": "Mercado Livre",
-      "valor": 212405.24000000014,
-      "count": 127
+      "valor": 230572.64000000013,
+      "count": 129
     },
     {
       "ano": 2026,
@@ -15261,6 +15261,28 @@
       "vendedor": "Gabriel Klein",
       "data": "2026-06-30",
       "obs": "",
+      "tipo": "Venda"
+    },
+    {
+      "ano": 2026,
+      "mes": 6,
+      "pedido": "17983",
+      "cliente": "Alvaro",
+      "valor": 5215.5,
+      "vendedor": "Mercado Livre",
+      "data": "2026-06-30",
+      "obs": "antecipação faturamento",
+      "tipo": "Venda"
+    },
+    {
+      "ano": 2026,
+      "mes": 6,
+      "pedido": "17984",
+      "cliente": "Francisco",
+      "valor": 12951.9,
+      "vendedor": "Mercado Livre",
+      "data": "2026-06-30",
+      "obs": "antecipação faturamento",
       "tipo": "Venda"
     },
     {
