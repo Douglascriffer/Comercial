@@ -205,24 +205,24 @@
       "mes": 6,
       "label": "Junho/26",
       "vendas_meta": 1100000,
-      "vendas_realizado": 1349489.3980000003,
+      "vendas_realizado": 1397889.3980000003,
       "locacao_meta": 75000,
       "locacao_realizado": 124107.99,
       "servicos_meta": 248000,
-      "servicos_realizado": 537170.4,
-      "servicos_falta": -289170.4,
+      "servicos_realizado": 538908.05,
+      "servicos_falta": -290908.05000000005,
       "total_meta": 1423000,
-      "total_realizado": 2010767.7880000002,
+      "total_realizado": 2060905.4380000003,
       "historico_meta": 1423000,
       "historico_faturamento": 0,
-      "count": 290,
+      "count": 292,
       "metas_pessoais": {
         "vendas": {
           "meta_empresa": 1100000,
           "meta_comercial": 1500000,
-          "meta_realizada": 1349489.3980000003,
-          "restante_empresa": -249489.39800000028,
-          "restante_comercial": 150510.60199999972
+          "meta_realizada": 1397889.3980000003,
+          "restante_empresa": -297889.3980000003,
+          "restante_comercial": 102110.60199999972
         },
         "locacao": {
           "meta_empresa": 75000,
@@ -234,9 +234,9 @@
         "servicos": {
           "meta_empresa": 248000,
           "meta_comercial": 550000,
-          "meta_realizada": 537170.4,
-          "restante_empresa": -289170.4,
-          "restante_comercial": 12829.599999999977
+          "meta_realizada": 538908.05,
+          "restante_empresa": -290908.05000000005,
+          "restante_comercial": 11091.949999999953
         }
       }
     },
@@ -724,8 +724,8 @@
       "ano": 2026,
       "mes": 6,
       "vendedor": "Gabriel Klein",
-      "valor": 357396,
-      "count": 30
+      "valor": 405796,
+      "count": 32
     },
     {
       "ano": 2026,
@@ -15313,6 +15313,28 @@
       "pedido": "18015",
       "cliente": "Trombini",
       "valor": 19931,
+      "vendedor": "Gabriel Klein",
+      "data": "2026-06-30",
+      "obs": "",
+      "tipo": "Venda"
+    },
+    {
+      "ano": 2026,
+      "mes": 6,
+      "pedido": "18016",
+      "cliente": "Proteg",
+      "valor": 42500,
+      "vendedor": "Gabriel Klein",
+      "data": "2026-06-30",
+      "obs": "cobrir orçamento InLite",
+      "tipo": "Venda"
+    },
+    {
+      "ano": 2026,
+      "mes": 6,
+      "pedido": "18017",
+      "cliente": "Pro Epi's",
+      "valor": 5900,
       "vendedor": "Gabriel Klein",
       "data": "2026-06-30",
       "obs": "",
