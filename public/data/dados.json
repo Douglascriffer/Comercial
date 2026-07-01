@@ -245,24 +245,24 @@
       "mes": 7,
       "label": "Julho/26",
       "vendas_meta": 2116000,
-      "vendas_realizado": 92789.55,
+      "vendas_realizado": 96869.55,
       "locacao_meta": 75000,
       "locacao_realizado": 0,
       "servicos_meta": 377000,
       "servicos_realizado": 17354.65,
       "servicos_falta": 359645.35,
       "total_meta": 2568000,
-      "total_realizado": 110144.20000000001,
+      "total_realizado": 114224.20000000001,
       "historico_meta": 2568000,
       "historico_faturamento": 0,
-      "count": 13,
+      "count": 14,
       "metas_pessoais": {
         "vendas": {
           "meta_empresa": 2116000,
           "meta_comercial": 2250000,
-          "meta_realizada": 92789.55,
-          "restante_empresa": 2023210.45,
-          "restante_comercial": 2157210.45
+          "meta_realizada": 96869.55,
+          "restante_empresa": 2019130.45,
+          "restante_comercial": 2153130.45
         },
         "locacao": {
           "meta_empresa": 75000,
@@ -759,8 +759,8 @@
       "ano": 2026,
       "mes": 7,
       "vendedor": "Rogislei",
-      "valor": 16790,
-      "count": 2
+      "valor": 20870,
+      "count": 3
     },
     {
       "ano": 2026,
@@ -16152,6 +16152,17 @@
       "cliente": "Ekosfera",
       "valor": 15500,
       "vendedor": "Gabriel Dias",
+      "data": "2026-07-01",
+      "obs": "",
+      "tipo": "Venda"
+    },
+    {
+      "ano": 2026,
+      "mes": 7,
+      "pedido": "18051",
+      "cliente": "DM",
+      "valor": 4080,
+      "vendedor": "Rogislei",
       "data": "2026-07-01",
       "obs": "",
       "tipo": "Venda"
