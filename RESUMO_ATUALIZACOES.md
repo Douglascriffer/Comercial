@@ -45,6 +45,8 @@ Toda vez que uma alteração é feita no código ou nas planilhas, o fluxo de at
 *   **Correção de Cálculo da Meta de Serviços e Deploy (29/06/2026)**:
     *   Foi corrigido o cálculo do "Restante Comercial" e "Restante Empresa" na extração de Serviços dentro do script `generate_json.js`. Ele agora calcula dinamicamente a diferença exata através do `realizado` (`D11`) em vez de herdar dados residuais da planilha.
     *   O script `ATUALIZAR_DASHBOARD.bat` foi modernizado. A linha de processamento de dados que usava o comando obsoleto `python bridge_data.py` foi oficialmente substituída para rodar de forma nativa com Node.js através do comando `node generate_json.js`.
+*   **Correção de Cálculo da Meta de Locação (01/07/2026)**:
+    *   Foi corrigido o cálculo do "Restante Comercial" e "Restante Empresa" na extração de Locações dentro do script `generate_json.js`. O cálculo agora é feito matematicamente (subtraindo o realizado da meta) para evitar que o Card de "Faturamento a Realizar" fique zerado devido a dados residuais ou falhas de leitura na planilha Excel.
 
 ## 4. Onde Encontrar Arquivos Importantes
 *   `lib/hooks.js`: Onde ocorre a filtragem dos vendedores por nome e mês.
