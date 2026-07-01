@@ -245,24 +245,24 @@
       "mes": 7,
       "label": "Julho/26",
       "vendas_meta": 2116000,
-      "vendas_realizado": 43286.5,
+      "vendas_realizado": 43399.55,
       "locacao_meta": 75000,
       "locacao_realizado": 0,
       "servicos_meta": 377000,
       "servicos_realizado": 17354.65,
       "servicos_falta": 359645.35,
       "total_meta": 2568000,
-      "total_realizado": 60641.15,
+      "total_realizado": 60754.200000000004,
       "historico_meta": 2568000,
       "historico_faturamento": 0,
-      "count": 9,
+      "count": 10,
       "metas_pessoais": {
         "vendas": {
           "meta_empresa": 2116000,
           "meta_comercial": 2250000,
-          "meta_realizada": 43286.5,
-          "restante_empresa": 2072713.5,
-          "restante_comercial": 2206713.5
+          "meta_realizada": 43399.55,
+          "restante_empresa": 2072600.45,
+          "restante_comercial": 2206600.45
         },
         "locacao": {
           "meta_empresa": 75000,
@@ -752,8 +752,8 @@
       "ano": 2026,
       "mes": 7,
       "vendedor": "Mercado Livre",
-      "valor": 261.5,
-      "count": 4
+      "valor": 374.55,
+      "count": 5
     },
     {
       "ano": 2026,
@@ -16094,6 +16094,17 @@
       "cliente": "Sustentare",
       "valor": 10900,
       "vendedor": "Rogislei",
+      "data": "2026-07-01",
+      "obs": "",
+      "tipo": "Venda"
+    },
+    {
+      "ano": 2026,
+      "mes": 7,
+      "pedido": "18037",
+      "cliente": "Juliano",
+      "valor": 113.05,
+      "vendedor": "Mercado Livre",
       "data": "2026-07-01",
       "obs": "",
       "tipo": "Venda"
