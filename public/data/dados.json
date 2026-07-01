@@ -28,8 +28,8 @@
           "meta_empresa": 75000,
           "meta_comercial": 0,
           "meta_realizada": 81621.1,
-          "restante_empresa": 0,
-          "restante_comercial": 0
+          "restante_empresa": -6621.100000000006,
+          "restante_comercial": -81621.1
         },
         "servicos": {
           "meta_empresa": 236000,
@@ -68,8 +68,8 @@
           "meta_empresa": 75000,
           "meta_comercial": 0,
           "meta_realizada": 76264,
-          "restante_empresa": 0,
-          "restante_comercial": 0
+          "restante_empresa": -1264,
+          "restante_comercial": -76264
         },
         "servicos": {
           "meta_empresa": 319000,
@@ -108,8 +108,8 @@
           "meta_empresa": 75000,
           "meta_comercial": 0,
           "meta_realizada": 80167.55,
-          "restante_empresa": 0,
-          "restante_comercial": 0
+          "restante_empresa": -5167.550000000003,
+          "restante_comercial": -80167.55
         },
         "servicos": {
           "meta_empresa": 324000,
@@ -148,8 +148,8 @@
           "meta_empresa": 75000,
           "meta_comercial": 0,
           "meta_realizada": 115370.5,
-          "restante_empresa": 0,
-          "restante_comercial": 0
+          "restante_empresa": -40370.5,
+          "restante_comercial": -115370.5
         },
         "servicos": {
           "meta_empresa": 336000,
@@ -245,30 +245,30 @@
       "mes": 7,
       "label": "Julho/26",
       "vendas_meta": 2116000,
-      "vendas_realizado": 43399.55,
+      "vendas_realizado": 92789.55,
       "locacao_meta": 75000,
       "locacao_realizado": 0,
       "servicos_meta": 377000,
       "servicos_realizado": 17354.65,
       "servicos_falta": 359645.35,
       "total_meta": 2568000,
-      "total_realizado": 60754.200000000004,
+      "total_realizado": 110144.20000000001,
       "historico_meta": 2568000,
       "historico_faturamento": 0,
-      "count": 10,
+      "count": 13,
       "metas_pessoais": {
         "vendas": {
           "meta_empresa": 2116000,
           "meta_comercial": 2250000,
-          "meta_realizada": 43399.55,
-          "restante_empresa": 2072600.45,
-          "restante_comercial": 2206600.45
+          "meta_realizada": 92789.55,
+          "restante_empresa": 2023210.45,
+          "restante_comercial": 2157210.45
         },
         "locacao": {
           "meta_empresa": 75000,
           "meta_comercial": 0,
           "meta_realizada": 0,
-          "restante_empresa": 0,
+          "restante_empresa": 75000,
           "restante_comercial": 0
         },
         "servicos": {
@@ -308,7 +308,7 @@
           "meta_empresa": 75000,
           "meta_comercial": 0,
           "meta_realizada": 0,
-          "restante_empresa": 0,
+          "restante_empresa": 75000,
           "restante_comercial": 0
         },
         "servicos": {
@@ -348,7 +348,7 @@
           "meta_empresa": 75000,
           "meta_comercial": 0,
           "meta_realizada": 0,
-          "restante_empresa": 0,
+          "restante_empresa": 75000,
           "restante_comercial": 0
         },
         "servicos": {
@@ -388,7 +388,7 @@
           "meta_empresa": 75000,
           "meta_comercial": 0,
           "meta_realizada": 0,
-          "restante_empresa": 0,
+          "restante_empresa": 75000,
           "restante_comercial": 0
         },
         "servicos": {
@@ -428,7 +428,7 @@
           "meta_empresa": 75000,
           "meta_comercial": 0,
           "meta_realizada": 0,
-          "restante_empresa": 0,
+          "restante_empresa": 75000,
           "restante_comercial": 0
         },
         "servicos": {
@@ -468,7 +468,7 @@
           "meta_empresa": 75000,
           "meta_comercial": 0,
           "meta_realizada": 0,
-          "restante_empresa": 0,
+          "restante_empresa": 75000,
           "restante_comercial": 0
         },
         "servicos": {
@@ -745,8 +745,8 @@
       "ano": 2026,
       "mes": 7,
       "vendedor": "Gabriel Klein",
-      "valor": 26235,
-      "count": 3
+      "valor": 55135,
+      "count": 4
     },
     {
       "ano": 2026,
@@ -761,6 +761,20 @@
       "vendedor": "Rogislei",
       "valor": 16790,
       "count": 2
+    },
+    {
+      "ano": 2026,
+      "mes": 7,
+      "vendedor": "Gabriel Ferreira",
+      "valor": 4990,
+      "count": 1
+    },
+    {
+      "ano": 2026,
+      "mes": 7,
+      "vendedor": "Gabriel Dias",
+      "valor": 15500,
+      "count": 1
     }
   ],
   "transactions": [
@@ -16105,6 +16119,39 @@
       "cliente": "Juliano",
       "valor": 113.05,
       "vendedor": "Mercado Livre",
+      "data": "2026-07-01",
+      "obs": "",
+      "tipo": "Venda"
+    },
+    {
+      "ano": 2026,
+      "mes": 7,
+      "pedido": "18047",
+      "cliente": "RH Health",
+      "valor": 28900,
+      "vendedor": "Gabriel Klein",
+      "data": "2026-07-01",
+      "obs": "",
+      "tipo": "Venda"
+    },
+    {
+      "ano": 2026,
+      "mes": 7,
+      "pedido": "18048",
+      "cliente": "AVENORTE",
+      "valor": 4990,
+      "vendedor": "Gabriel Ferreira",
+      "data": "2026-07-01",
+      "obs": "",
+      "tipo": "Venda"
+    },
+    {
+      "ano": 2026,
+      "mes": 7,
+      "pedido": "18050",
+      "cliente": "Ekosfera",
+      "valor": 15500,
+      "vendedor": "Gabriel Dias",
       "data": "2026-07-01",
       "obs": "",
       "tipo": "Venda"

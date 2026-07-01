@@ -288,8 +288,8 @@ function run() {
                 meta_empresa: metrics.locacao_meta,
                 meta_comercial: lMetaComercial,
                 meta_realizada: m <= 4 ? metrics.locacao_realizado : lFat,
-                restante_empresa: lRestanteEmpresa,
-                restante_comercial: lRestanteComercial
+                restante_empresa: metrics.locacao_meta - (m <= 4 ? metrics.locacao_realizado : lFat),
+                restante_comercial: lMetaComercial - (m <= 4 ? metrics.locacao_realizado : lFat)
             },
             servicos: {
                 meta_empresa: metrics.servicos_meta,
