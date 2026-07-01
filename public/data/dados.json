@@ -205,17 +205,17 @@
       "mes": 6,
       "label": "Junho/26",
       "vendas_meta": 1100000,
-      "vendas_realizado": 1397889.3980000003,
+      "vendas_realizado": 1397889.4,
       "locacao_meta": 75000,
-      "locacao_realizado": 124107.99,
+      "locacao_realizado": 122833.99,
       "servicos_meta": 248000,
       "servicos_realizado": 538908.05,
       "servicos_falta": -290908.05000000005,
       "total_meta": 1423000,
-      "total_realizado": 2060905.4380000003,
+      "total_realizado": 2059631.44,
       "historico_meta": 1423000,
-      "historico_faturamento": 0,
-      "count": 292,
+      "historico_faturamento": 1397889.4,
+      "count": 291,
       "metas_pessoais": {
         "vendas": {
           "meta_empresa": 1100000,
@@ -227,9 +227,9 @@
         "locacao": {
           "meta_empresa": 75000,
           "meta_comercial": 100000,
-          "meta_realizada": 124107.99,
-          "restante_empresa": -49107.990000000005,
-          "restante_comercial": -24107.990000000005
+          "meta_realizada": 122833.99,
+          "restante_empresa": -47833.990000000005,
+          "restante_comercial": -22833.990000000005
         },
         "servicos": {
           "meta_empresa": 248000,
@@ -245,31 +245,31 @@
       "mes": 7,
       "label": "Julho/26",
       "vendas_meta": 2116000,
-      "vendas_realizado": 21300,
+      "vendas_realizado": 43286.5,
       "locacao_meta": 75000,
       "locacao_realizado": 0,
       "servicos_meta": 377000,
       "servicos_realizado": 17354.65,
       "servicos_falta": 359645.35,
       "total_meta": 2568000,
-      "total_realizado": 38654.65,
+      "total_realizado": 60641.15,
       "historico_meta": 2568000,
       "historico_faturamento": 0,
-      "count": 1,
+      "count": 9,
       "metas_pessoais": {
         "vendas": {
           "meta_empresa": 2116000,
           "meta_comercial": 2250000,
-          "meta_realizada": 21300,
-          "restante_empresa": 2094700,
-          "restante_comercial": 2228700
+          "meta_realizada": 43286.5,
+          "restante_empresa": 2072713.5,
+          "restante_comercial": 2206713.5
         },
         "locacao": {
           "meta_empresa": 75000,
-          "meta_comercial": 100000,
+          "meta_comercial": 0,
           "meta_realizada": 0,
-          "restante_empresa": 75000,
-          "restante_comercial": 100000
+          "restante_empresa": 0,
+          "restante_comercial": 0
         },
         "servicos": {
           "meta_empresa": 377000,
@@ -731,8 +731,8 @@
       "ano": 2026,
       "mes": 6,
       "vendedor": "Josiane",
-      "valor": 100520.99,
-      "count": 49
+      "valor": 99246.99,
+      "count": 48
     },
     {
       "ano": 2026,
@@ -745,8 +745,22 @@
       "ano": 2026,
       "mes": 7,
       "vendedor": "Gabriel Klein",
-      "valor": 21300,
-      "count": 1
+      "valor": 26235,
+      "count": 3
+    },
+    {
+      "ano": 2026,
+      "mes": 7,
+      "vendedor": "Mercado Livre",
+      "valor": 261.5,
+      "count": 4
+    },
+    {
+      "ano": 2026,
+      "mes": 7,
+      "vendedor": "Rogislei",
+      "valor": 16790,
+      "count": 2
     }
   ],
   "transactions": [
@@ -15847,7 +15861,7 @@
       "mes": 6,
       "pedido": "LOC-800",
       "cliente": "DTA ENGENHARIA",
-      "valor": 1389,
+      "valor": 305,
       "vendedor": "Josiane",
       "data": "2026-06-23",
       "obs": "",
@@ -15977,17 +15991,6 @@
     {
       "ano": 2026,
       "mes": 6,
-      "pedido": "LOC-807",
-      "cliente": "L D M SERVICOS DE APOIO",
-      "valor": 190,
-      "vendedor": "Josiane",
-      "data": "2026-06-30",
-      "obs": "",
-      "tipo": "Locação"
-    },
-    {
-      "ano": 2026,
-      "mes": 6,
       "pedido": "LOC-809",
       "cliente": "JORGE RICARDO BESSA GARCIA",
       "valor": 1350,
@@ -16005,6 +16008,94 @@
       "vendedor": "Gabriel Klein",
       "data": "2026-07-01",
       "obs": "Indicação",
+      "tipo": "Venda"
+    },
+    {
+      "ano": 2026,
+      "mes": 7,
+      "pedido": "18029",
+      "cliente": "Medit",
+      "valor": 65.55,
+      "vendedor": "Mercado Livre",
+      "data": "2026-07-01",
+      "obs": "",
+      "tipo": "Venda"
+    },
+    {
+      "ano": 2026,
+      "mes": 7,
+      "pedido": "18030",
+      "cliente": "Cyvan",
+      "valor": 46.55,
+      "vendedor": "Mercado Livre",
+      "data": "2026-07-01",
+      "obs": "",
+      "tipo": "Venda"
+    },
+    {
+      "ano": 2026,
+      "mes": 7,
+      "pedido": "18031",
+      "cliente": "Adriano",
+      "valor": 133.62,
+      "vendedor": "Mercado Livre",
+      "data": "2026-07-01",
+      "obs": "",
+      "tipo": "Venda"
+    },
+    {
+      "ano": 2026,
+      "mes": 7,
+      "pedido": "18032",
+      "cliente": "Jessica",
+      "valor": 15.78,
+      "vendedor": "Mercado Livre",
+      "data": "2026-07-01",
+      "obs": "",
+      "tipo": "Venda"
+    },
+    {
+      "ano": 2026,
+      "mes": 7,
+      "pedido": "18033",
+      "cliente": "Icassia",
+      "valor": 5890,
+      "vendedor": "Rogislei",
+      "data": "2026-07-01",
+      "obs": "Origem - Shopping",
+      "tipo": "Venda"
+    },
+    {
+      "ano": 2026,
+      "mes": 7,
+      "pedido": "18034",
+      "cliente": "Haragushiku",
+      "valor": 3900,
+      "vendedor": "Gabriel Klein",
+      "data": "2026-07-01",
+      "obs": "",
+      "tipo": "Venda"
+    },
+    {
+      "ano": 2026,
+      "mes": 7,
+      "pedido": "18035",
+      "cliente": "Pettenati",
+      "valor": 1035,
+      "vendedor": "Gabriel Klein",
+      "data": "2026-07-01",
+      "obs": "",
+      "tipo": "Venda"
+    },
+    {
+      "ano": 2026,
+      "mes": 7,
+      "pedido": "18036",
+      "cliente": "Sustentare",
+      "valor": 10900,
+      "vendedor": "Rogislei",
+      "data": "2026-07-01",
+      "obs": "",
       "tipo": "Venda"
     }
   ],
